@@ -1,8 +1,7 @@
-import { SignUpNames } from "@/entities/auth";
+import { ISignUpSteps, SignUpNames } from "@/entities/auth";
 import { SignUpMain, SignUpPrice, SingUpPassword } from "@/features/sign-up";
-import { ReactNode } from "@tanstack/react-router";
 
-export const SignUpComponents: Record<SignUpNames, ReactNode> = {
+export const SignUpComponents: Record<SignUpNames, (props: ISignUpSteps) => JSX.Element> = {
   Main: SignUpMain,
   Password: SingUpPassword,
   Price: SignUpPrice,

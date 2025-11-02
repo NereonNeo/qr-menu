@@ -8,7 +8,7 @@
     "prepare": "husky",
     "preview": "vite preview",
     "route-clear": "rm -rf ./src/app/routes/routeTree.gen.ts",
-    "build": "tsc && npm run route-clear && vite build",
+    "build": "tsc -b && npm run route-clear && vite build",
     "prettier": "npx prettier src --check",
     "lint": "eslint --fix ./src/**/*.{ts,tsx}",
     "prettier:fix": "npm run prettier -- --write"
