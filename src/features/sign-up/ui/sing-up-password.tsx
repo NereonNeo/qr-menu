@@ -1,5 +1,6 @@
-import { ISignUpSteps } from "@/entities/auth";
 import { Input } from "@/shared/ui/input";
+
+import { ISignUpSteps } from "@/entities/auth";
 
 interface ISignUpPassword extends ISignUpSteps {}
 

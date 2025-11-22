@@ -1,6 +1,9 @@
-import { Icon } from "@/shared/ui/icon";
-import clsx from "clsx";
 import { memo, useMemo } from "react";
+
+import clsx from "clsx";
+
+import { Icon } from "@/shared/ui/icon";
+
 import { PricePlanItemClassNames } from "../price-plan-classnames";
 import { IPricePlan, PricePlan } from "../types";
 

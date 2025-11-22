@@ -1,8 +1,11 @@
+import { useState } from "react";
+
+import { Control, Controller, UseFormSetValue } from "react-hook-form";
+
 import { Button } from "@/shared/ui/button";
 import { Dropzone } from "@/shared/ui/dropzone";
 import { Label } from "@/shared/ui/label";
-import { useState } from "react";
-import { Control, Controller, UseFormSetValue } from "react-hook-form";
+
 import { IProduct } from "../types";
 
 interface IProductImageProps {

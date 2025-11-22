@@ -1,5 +1,6 @@
-import { ISignUpSteps, SignUpNames } from "@/entities/auth";
 import { SignUpMain, SignUpPrice, SingUpPassword } from "@/features/sign-up";
+
+import { ISignUpSteps, SignUpNames } from "@/entities/auth";
 
 export const SignUpComponents: Record<SignUpNames, (props: ISignUpSteps) => JSX.Element> = {
   Main: SignUpMain,

@@ -1,11 +1,15 @@
-import { ISignUp, ISignUpSteps, SignUpNames } from "@/entities/auth";
+import { useMemo, useState } from "react";
+
+import { useNavigate } from "@tanstack/react-router";
+import { useForm } from "react-hook-form";
+
 import { SessionStorageNames } from "@/shared/const/storage";
 import { useAuth } from "@/shared/hooks/use-auth";
 import { useSessionStorage } from "@/shared/hooks/use-session-storage";
 import { Button } from "@/shared/ui/button";
-import { useNavigate } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
-import { useForm } from "react-hook-form";
+
+import { ISignUp, ISignUpSteps, SignUpNames } from "@/entities/auth";
+
 import { SignUpComponents, SignUpSteps } from "../const";
 
 interface IStorageType extends ISignUp {

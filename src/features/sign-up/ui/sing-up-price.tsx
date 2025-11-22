@@ -1,8 +1,10 @@
+import { useCallback } from "react";
+
+import { useWatch } from "react-hook-form";
+
 import { ISignUpSteps } from "@/entities/auth";
 import { IPricePlan, PricePlanItem, PricePlanRadio } from "@/entities/price-plan";
 import { PricePlanArr } from "@/entities/price-plan/const";
-import { useCallback } from "react";
-import { useWatch } from "react-hook-form";
 
 interface ISignUpPrice extends ISignUpSteps {}
 

@@ -1,5 +1,6 @@
+import { Outlet, createFileRoute } from "@tanstack/react-router";
+
 import { Preview } from "@/widgets/preview";
-import { createFileRoute, Outlet } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/_authenticated/_preview")({
   component: () => (

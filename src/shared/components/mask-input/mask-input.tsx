@@ -1,6 +1,9 @@
-import { IInputProps, Input } from "@/shared/ui/input";
-import { useMaskito } from "@maskito/react";
 import { forwardRef, useImperativeHandle, useMemo, useRef } from "react";
+
+import { useMaskito } from "@maskito/react";
+
+import { IInputProps, Input } from "@/shared/ui/input";
+
 import { InputMasks, MaskInputOptions } from "./const";
 
 interface IMaskInputProps extends IInputProps {

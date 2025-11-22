@@ -1,7 +1,9 @@
-import { Icon } from "@/shared/ui/icon";
-import { Logo } from "@/shared/ui/logo";
 import { Link } from "@tanstack/react-router";
 import clsx from "clsx";
+
+import { Icon } from "@/shared/ui/icon";
+import { Logo } from "@/shared/ui/logo";
+
 import { listLink } from "../const";
 import { useSidebarContext } from "../hooks/use-sidebar-context/use-sidebar-context";
 

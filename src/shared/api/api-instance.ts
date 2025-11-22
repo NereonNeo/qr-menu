@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosRequestHeaders } from "axios";
+
 import { LocalStorageNames } from "../const/storage";
 
 interface AdaptAxiosRequestConfig extends AxiosRequestConfig {

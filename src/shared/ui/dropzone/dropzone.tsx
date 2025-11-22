@@ -1,6 +1,9 @@
-import { DropzoneFileAccept, FileAcceptTypes } from "@/shared/const/file-types-const";
-import clsx from "clsx";
 import { forwardRef, useImperativeHandle, useRef } from "react";
+
+import clsx from "clsx";
+
+import { DropzoneFileAccept, FileAcceptTypes } from "@/shared/const/file-types-const";
+
 import { Icon } from "../icon";
 
 interface IUIDropzoneProps extends React.InputHTMLAttributes<HTMLInputElement> {

@@ -1,9 +1,11 @@
-import { IProduct, ProductImage } from "@/entities/product";
+import { useForm } from "react-hook-form";
+
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
 import { TextArea } from "@/shared/ui/textarea";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
-import { useForm } from "react-hook-form";
+
+import { IProduct, ProductImage } from "@/entities/product";
 
 export const ProductCreate = () => {
   const {

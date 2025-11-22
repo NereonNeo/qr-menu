@@ -1,5 +1,7 @@
 import React from "react";
+
 import { Control, UseFormRegister } from "react-hook-form";
+
 import { PricePlan } from "../price-plan";
 
 export enum SignUpNames {

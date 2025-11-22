@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+
 import { Icon } from "../icon";
 
 export const Logo = () => {

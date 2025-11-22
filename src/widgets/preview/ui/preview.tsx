@@ -1,7 +1,11 @@
-import { ShopPreview } from "@/features/shop-preview";
-import { Button } from "@/shared/ui/button";
-import clsx from "clsx";
 import { useState } from "react";
+
+import clsx from "clsx";
+
+import { Button } from "@/shared/ui/button";
+
+import { ShopPreview } from "@/features/shop-preview";
+
 // 2xl:w-2xl-preview xl:w-xl-preview md:w-md-preview
 export const Preview = () => {
   const [isShowPreview, setIsShowPreview] = useState(false);

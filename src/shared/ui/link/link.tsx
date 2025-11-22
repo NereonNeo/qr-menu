@@ -1,6 +1,7 @@
 import type { LinkProps } from "@tanstack/react-router";
 import { Link as RouterLink } from "@tanstack/react-router";
 import clsx from "clsx";
+
 import { linkSizeVariantClassNames, linkStyleVariantClassNames } from "./link-class-names";
 import { LinkSizeVariantTypes, LinkStyleVariantTypes } from "./link-types";
 

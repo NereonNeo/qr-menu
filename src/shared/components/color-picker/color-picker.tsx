@@ -1,7 +1,10 @@
+import { ComponentProps, forwardRef, useId, useImperativeHandle, useRef } from "react";
+
+import clsx from "clsx";
+
 import { IInputProps } from "@/shared/ui/input";
 import { Label } from "@/shared/ui/label";
-import clsx from "clsx";
-import { ComponentProps, forwardRef, useId, useImperativeHandle, useRef } from "react";
+
 import { MaskInput, MaskInputOptions } from "../mask-input";
 
 interface ColorPickerProps extends ComponentProps<"input">, Pick<IInputProps, "message" | "invalid"> {

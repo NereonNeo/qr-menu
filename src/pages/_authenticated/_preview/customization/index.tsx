@@ -1,9 +1,10 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { useForm } from "react-hook-form";
+
 import { ColorPicker } from "@/shared/components/color-picker";
 import { InputPatterns } from "@/shared/const/input-patterns";
 import { Button } from "@/shared/ui/button";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
-import { createFileRoute } from "@tanstack/react-router";
-import { useForm } from "react-hook-form";
 
 export const Route = createFileRoute("/_authenticated/_preview/customization/")({
   component: CustomizationPage,

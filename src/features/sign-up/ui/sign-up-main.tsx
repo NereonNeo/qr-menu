@@ -1,5 +1,7 @@
-import { ISignUpSteps } from "@/entities/auth";
 import { Input } from "@/shared/ui/input";
+
+import { ISignUpSteps } from "@/entities/auth";
+
 interface ISignUpMain extends ISignUpSteps {}
 
 export const SignUpMain = (props: ISignUpMain) => {

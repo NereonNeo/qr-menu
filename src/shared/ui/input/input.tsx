@@ -1,3 +1,7 @@
+import { forwardRef, useId } from "react";
+
+import clsx from "clsx/lite";
+
 import {
   inputDefaultClassName,
   inputDisabledClassName,
@@ -7,8 +11,7 @@ import {
 } from "@/shared/const/input-const";
 import { IconNameTypes } from "@/shared/types/icon-name-types";
 import { AverageSizeVariantType } from "@/shared/types/ui-types";
-import clsx from "clsx/lite";
-import { forwardRef, useId } from "react";
+
 import { Icon } from "../icon";
 import { Label } from "../label/Label";
 import { Message } from "../message/Message";

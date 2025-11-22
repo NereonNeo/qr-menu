@@ -1,6 +1,7 @@
+import { HTMLAttributes, forwardRef } from "react";
+
 import { iconListComponents } from "@/shared/const/icon-components";
 import { IconNameTypes } from "@/shared/types/icon-name-types";
-import { forwardRef, HTMLAttributes } from "react";
 
 interface IconProps extends HTMLAttributes<SVGSVGElement> {
   name: IconNameTypes;

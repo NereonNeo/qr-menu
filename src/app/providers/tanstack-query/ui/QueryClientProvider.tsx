@@ -1,5 +1,6 @@
-import { queryClient } from "@/shared/api/query-client";
 import { QueryClientProvider as TanstackQueryClientProvider } from "@tanstack/react-query";
+
+import { queryClient } from "@/shared/api/query-client";
 
 type QueryClientProviderProps = {
   children?: React.ReactNode;

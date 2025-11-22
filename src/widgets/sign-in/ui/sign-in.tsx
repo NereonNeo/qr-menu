@@ -1,9 +1,11 @@
-import { ISignIn } from "@/entities/auth";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { useForm } from "react-hook-form";
+
 import { useAuth } from "@/shared/hooks/use-auth";
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
-import { Link, useNavigate } from "@tanstack/react-router";
-import { useForm } from "react-hook-form";
+
+import { ISignIn } from "@/entities/auth";
 
 export const SignIn = () => {
   const { signIn } = useAuth();

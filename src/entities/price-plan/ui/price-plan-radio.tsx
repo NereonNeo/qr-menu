@@ -1,5 +1,6 @@
-import { Input } from "@/shared/ui/input";
 import React, { InputHTMLAttributes, useId } from "react";
+
+import { Input } from "@/shared/ui/input";
 
 interface IPricePlanRadioProps {
   value?: string;

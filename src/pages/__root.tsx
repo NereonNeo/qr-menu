@@ -1,7 +1,9 @@
-import { useAuth } from "@/shared/hooks/use-auth";
+import { Fragment } from "react";
+
 import { Outlet, createRootRouteWithContext } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
-import { Fragment } from "react";
+
+import { useAuth } from "@/shared/hooks/use-auth";
 
 type AuthContext = ReturnType<typeof useAuth>;
 type RouterContext = {

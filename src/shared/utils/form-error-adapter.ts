@@ -1,4 +1,4 @@
-import { FieldError, FieldErrors, FieldValues, get, Path } from "react-hook-form";
+import { FieldError, FieldErrors, FieldValues, Path, get } from "react-hook-form";
 
 export const formErrorsHandler =
   <T extends FieldValues>(errors?: FieldErrors<T>) =>

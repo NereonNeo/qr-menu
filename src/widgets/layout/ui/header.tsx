@@ -1,5 +1,6 @@
 import { Icon } from "@/shared/ui/icon";
 import { Logo } from "@/shared/ui/logo";
+
 import { useSidebarContextHandler } from "../hooks/use-sidebar-context/use-sidebar-context";
 
 export const Header = () => {

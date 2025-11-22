@@ -1,5 +1,6 @@
-import { IconNameTypes } from "@/shared/types/icon-name-types";
 import type { ToSubOptions } from "@tanstack/react-router";
+
+import { IconNameTypes } from "@/shared/types/icon-name-types";
 
 type LinkType = { icon: IconNameTypes; href: ToSubOptions["to"]; text: string };
 

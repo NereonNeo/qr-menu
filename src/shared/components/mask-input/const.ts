@@ -1,5 +1,4 @@
 import type { MaskitoOptions, MaskitoPreprocessor } from "@maskito/core";
-
 import { maskitoAddOnFocusPlugin, maskitoCaretGuard, maskitoPrefixPostprocessorGenerator } from "@maskito/kit";
 
 export const enum MaskInputOptions {
