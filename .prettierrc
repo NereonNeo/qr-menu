@@ -7,5 +7,20 @@
   "trailingComma": "all",
   "bracketSpacing": true,
   "jsxSingleQuote": false,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+
+  "importOrder": [
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/app/(.*)$",
+    "^@/pages/(.*)$",
+    "^@/shared/(.*)$",
+    "^@/features/(.*)$",
+    "^@/widgets/(.*)$",
+    "^@/entities/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
