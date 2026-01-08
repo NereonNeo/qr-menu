@@ -1,0 +1,51 @@
+services:
+  web:
+    build: .
+    container_name: frontend_web
+    environment:
+      - DOMAIN=${DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - letsencrypt:/etc/letsencrypt
+      - certbot_www:/var/www/certbot
+      - nginx_ssl_conf:/etc/nginx/ssl-conf
+    restart: unless-stopped
+
+  certbot:
+    image: certbot/certbot:latest
+    container_name: certbot
+    depends_on:
+      - web
+    environment:
+      - DOMAIN=${DOMAIN}
+      - EMAIL=${EMAIL}
+    volumes:
+      - letsencrypt:/etc/letsencrypt
+      - certbot_www:/var/www/certbot
+    restart: unless-stopped
+    entrypoint: /bin/sh -c
+    command: >
+      '
+      set -e;
+
+      # 1) первый выпуск сертификата (если нет)
+      if [ ! -f "/etc/letsencrypt/live/$DOMAIN/fullchain.pem" ]; then
+        echo "[certbot] Issuing first cert for $DOMAIN...";
+        certbot certonly --webroot -w /var/www/certbot
+          -d "$DOMAIN" -d "www.$DOMAIN"
+          --email "$EMAIL" --agree-tos --no-eff-email --non-interactive;
+      fi
+
+      # 2) дальше обновляем каждые 12 часов
+      while :; do
+        certbot renew --webroot -w /var/www/certbot --quiet || true;
+        sleep 12h;
+      done
+      '
+
+volumes:
+  letsencrypt:
+  certbot_www:
+  nginx_ssl_conf:
