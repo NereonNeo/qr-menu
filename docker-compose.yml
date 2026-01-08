@@ -25,26 +25,22 @@ services:
       - letsencrypt:/etc/letsencrypt
       - certbot_www:/var/www/certbot
     restart: unless-stopped
-    entrypoint: /bin/sh -c
-    command: >
-      '
-      set -e;
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -e
+        if [ ! -f "/etc/letsencrypt/live/$DOMAIN/fullchain.pem" ]; then
+          echo "[certbot] Issuing first cert for $DOMAIN..."
+          certbot certonly --webroot -w /var/www/certbot \
+            -d "$DOMAIN" -d "www.$DOMAIN" \
+            --email "$EMAIL" --agree-tos --no-eff-email \
+            --non-interactive
+        fi
 
-      # 1) первый выпуск сертификата (если нет)
-      if [ ! -f "/etc/letsencrypt/live/$DOMAIN/fullchain.pem" ]; then
-        echo "[certbot] Issuing first cert for $DOMAIN...";
-        certbot certonly --webroot -w /var/www/certbot
-          -d "$DOMAIN" -d "www.$DOMAIN"
-          --email "$EMAIL" --agree-tos --no-eff-email --non-interactive;
-          --non-interactive;
-      fi
-
-      # 2) дальше обновляем каждые 12 часов
-      while :; do
-        certbot renew --webroot -w /var/www/certbot --quiet || true;
-        sleep 12h;
-      done
-      '
+        while :; do
+          certbot renew --webroot -w /var/www/certbot --quiet || true
+          sleep 12h
+        done
 
 volumes:
   letsencrypt:
