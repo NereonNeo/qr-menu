@@ -10,7 +10,7 @@
     "checkup": "npm run typecheck && vite build",
     "preview": "vite preview",
     "route-clear": "rm -rf ./src/app/routes/routeTree.gen.ts",
-    "build": "npm run typecheck && npm run route-clear && vite build",
+    "build": "npm run route-clear && vite build && npm run typecheck",
     "prettier": "npx prettier src --check",
     "lint": "eslint --fix ./src/**/*.{ts,tsx}",
     "prettier:fix": "npm run prettier -- --write"
