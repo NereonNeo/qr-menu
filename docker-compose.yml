@@ -36,6 +36,7 @@ services:
         certbot certonly --webroot -w /var/www/certbot
           -d "$DOMAIN" -d "www.$DOMAIN"
           --email "$EMAIL" --agree-tos --no-eff-email --non-interactive;
+          --non-interactive;
       fi
 
       # 2) дальше обновляем каждые 12 часов
