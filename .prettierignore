@@ -9,3 +9,4 @@ dist/
 **/.svn
 **/.hg
 **/node_modules
+**/routeTree.gen.ts

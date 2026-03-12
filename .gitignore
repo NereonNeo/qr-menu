@@ -13,9 +13,8 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
 .idea
+.tanstack
 .DS_Store
 *.suo
 *.ntvs*
@@ -25,4 +24,4 @@ dist-ssr
 
 
 # in src directories and files
-src/app/routes/routeTree.gen.ts
+**/routeTree.gen.ts
