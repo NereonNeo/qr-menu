@@ -1,0 +1,20 @@
+server {
+  listen 80;
+  server_name ${DOMAIN} www.${DOMAIN};
+
+  # Let’s Encrypt challenge
+  location /.well-known/acme-challenge/ {
+    root /var/www/certbot;
+  }
+
+  # Пока нет SSL — сайт доступен по HTTP (после появления SSL появится редирект)
+  root /usr/share/nginx/html;
+  index index.html;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
+
+# когда watcher создаст https.conf — nginx начнёт слушать 443
+include /etc/nginx/ssl-conf/*.conf;
