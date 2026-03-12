@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 import { SignUpMain, SignUpPrice, SingUpPassword } from "@/features/sign-up";
 
 import { ISignUpSteps, SignUpNames } from "@/entities/auth";

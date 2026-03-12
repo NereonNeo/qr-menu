@@ -33,9 +33,9 @@ function createCompletePhoneInsertionPreprocessor(): MaskitoPreprocessor {
     return {
       elementState: {
         selection,
-        value: countDigits(value) > 11 ? trimPrefix(value) : value,
+        value: countDigits(value) > 12 ? trimPrefix(value) : value,
       },
-      data: countDigits(data) >= 11 ? trimPrefix(data) : data,
+      data: countDigits(data) >= 12 ? trimPrefix(data) : data,
     };
   };
 }

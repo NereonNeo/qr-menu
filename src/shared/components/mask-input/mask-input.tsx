@@ -1,33 +1,43 @@
-import { forwardRef, useImperativeHandle, useMemo, useRef } from "react";
+import { Ref, useEffect, useImperativeHandle, useMemo, useRef } from "react";
 
+import { MaskitoOptions, maskitoTransform } from "@maskito/core";
 import { useMaskito } from "@maskito/react";
 
 import { IInputProps, Input } from "@/shared/ui/input";
+import { mergeRefs } from "@/shared/utils/refs-merge";
 
 import { InputMasks, MaskInputOptions } from "./const";
 
 interface IMaskInputProps extends IInputProps {
   maskOption: MaskInputOptions;
+  maskitoOption?: { options: MaskitoOptions };
+  ref?: Ref<HTMLInputElement>;
 }
 
-export const MaskInput = forwardRef<HTMLInputElement, IMaskInputProps>((props, ref) => {
-  const { maskOption, onChange, ...otherProps } = props;
+export const MaskInput = (props: IMaskInputProps) => {
+  const { maskOption, onInput, ref, maskitoOption, value, ...otherProps } = props;
+
+  const parseOptions: { options: MaskitoOptions } = useMemo(() => ({ ...InputMasks[maskOption], ...maskitoOption }), [maskOption, maskitoOption]);
 
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const maskedMaskitoRef = useMaskito(InputMasks[maskOption]);
+  const maskedMaskitoRef = useMaskito(parseOptions);
+
+  const setMaskitoRef: React.RefCallback<HTMLInputElement> = (node) => {
+    maskedMaskitoRef(node);
+  };
 
   useImperativeHandle(ref, () => inputRef.current!, []);
 
-  const handleOnInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onChange?.(event);
+  useEffect(() => {
+    //! Сделано для изначального форматирования в сценариях когда у нас контролируемый input
+    if (!inputRef.current) return;
+
+    inputRef.current.value = maskitoTransform(String(value), parseOptions.options);
+  }, [value]);
+
+  const handleOnInput: React.InputEventHandler<HTMLInputElement> = (event) => {
+    onInput?.(event);
   };
 
-  const refWithMask = useMemo(
-    () => (node: HTMLInputElement | null) => {
-      return maskedMaskitoRef(node), (inputRef.current = node);
-    },
-    [maskedMaskitoRef],
-  );
-
-  return <Input {...otherProps} ref={refWithMask} onInput={handleOnInputChange} />;
-});
+  return <Input {...otherProps} ref={mergeRefs(setMaskitoRef, inputRef)} onInput={handleOnInput} />;
+};
