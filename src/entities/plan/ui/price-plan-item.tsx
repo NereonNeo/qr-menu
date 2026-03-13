@@ -4,8 +4,8 @@ import clsx from "clsx";
 
 import { Icon } from "@/shared/ui/icon";
 
-import { PricePlanItemClassNames } from "../price-plan-classnames";
-import { IPricePlan, PricePlan } from "../types";
+import { PricePlanItemClassNames } from "../common/price-plan-classnames";
+import { IPricePlan, PricePlan } from "../model/types";
 
 interface IPricePlanItem extends IPricePlan {
   value: PricePlan;

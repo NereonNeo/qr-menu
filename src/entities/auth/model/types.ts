@@ -2,12 +2,9 @@ import React from "react";
 
 import { Control, UseFormRegister } from "react-hook-form";
 
-import { PricePlan } from "../price-plan";
-
 export enum SignUpNames {
   Main = "Main",
   Password = "Password",
-  Price = "Price",
 }
 
 export interface ISignUpSteps {
@@ -21,7 +18,6 @@ export interface ISignUp {
   email: string;
   password: string;
   phoneNumber: string;
-  pricePlan: PricePlan;
 }
 
 export interface ISignIn {

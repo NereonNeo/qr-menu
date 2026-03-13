@@ -1,4 +1,4 @@
-export enum PricePlan {
+export const enum PricePlan {
   Start = "Start",
   Medium = "Medium",
   Pro = "Pro",

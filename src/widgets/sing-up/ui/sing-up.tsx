@@ -38,7 +38,6 @@ export const SignUp = () => {
       name: sessionStorageValue?.name,
       email: sessionStorageValue?.email,
       password: sessionStorageValue?.password,
-      pricePlan: sessionStorageValue?.pricePlan,
       phoneNumber: sessionStorageValue?.phoneNumber,
     },
   });
@@ -46,8 +45,10 @@ export const SignUp = () => {
   const formValues = getValues();
 
   const onSubmit = handleSubmit(async () => {
-    signIn();
+    const { plan } = await signIn();
     resetSessionStorageItem();
+
+    if (!plan) return navigate({ to: "/plan" });
     navigate({ to: "/" });
   });
 
