@@ -7,23 +7,27 @@ import { IPricePlan, PricePlanArr, PricePlanItem, PricePlanRadio } from "@/entit
 import { ChoosePlanForm } from "../common/choose-plan.types";
 
 export const ChoosePlan = () => {
-  const { register, watch } = useForm<ChoosePlanForm>();
+  const { register, getValues } = useForm<ChoosePlanForm>();
+  const plan = getValues("plan");
 
-  const pricePlanRender = useCallback((item: IPricePlan, index: number) => {
-    return (
-      <PricePlanRadio key={index} value={item.planType} inputProps={register("plan", { required: true })}>
-        <PricePlanItem
-          price={item.price}
-          title={item.title}
-          value={watch("plan")}
-          benefits={item.benefits}
-          subTitle={item.subTitle}
-          planType={item.planType}
-          priceInfo={item.priceInfo}
-        />
-      </PricePlanRadio>
-    );
-  }, []);
+  const pricePlanRender = useCallback(
+    (item: IPricePlan, index: number) => {
+      return (
+        <PricePlanRadio key={index} value={item.planType} inputProps={register("plan", { required: true })}>
+          <PricePlanItem
+            price={item.price}
+            title={item.title}
+            value={plan}
+            benefits={item.benefits}
+            subTitle={item.subTitle}
+            planType={item.planType}
+            priceInfo={item.priceInfo}
+          />
+        </PricePlanRadio>
+      );
+    },
+    [plan, register],
+  );
 
   return (
     <div className="grid grid-rows-3 gap-9 px-40 h-full items-center justify-items-center">

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import clsx from "clsx";
+import clsx from "clsx/lite";
 
 import { Icon } from "@/shared/ui/icon";
 import { Logo } from "@/shared/ui/logo";

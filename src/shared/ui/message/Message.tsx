@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import clsx from "clsx/lite";
 
 interface IMessageProps extends React.HTMLAttributes<HTMLDivElement> {
   text: string;

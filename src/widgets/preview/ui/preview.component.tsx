@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import clsx from "clsx";
+import clsx from "clsx/lite";
 
 import { Button } from "@/shared/ui/button";
 

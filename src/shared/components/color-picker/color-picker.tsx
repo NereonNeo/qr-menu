@@ -1,6 +1,6 @@
 import { ComponentProps, forwardRef, useId, useImperativeHandle, useRef } from "react";
 
-import clsx from "clsx";
+import clsx from "clsx/lite";
 
 import { IInputProps } from "@/shared/ui/input";
 import { Label } from "@/shared/ui/label";

@@ -42,6 +42,25 @@ export default tseslint.config(
               message: "Please import lite version like clsx/lite",
             },
           ],
+
+          patterns: [
+            {
+              group: [
+                "@/entities/*/**",
+                "!@/entities/*/*.entry",
+                "!@/entities/*",
+
+                "@/features/*/*/**",
+                "!@/features/*/*/*.entry",
+                "!@/features/*/*",
+
+                "@/widgets/*/*/**",
+                "!@/widgets/*/*/*.entry",
+                "!@/widgets/*/*",
+              ],
+              message: "Import available only from module entry",
+            },
+          ],
         },
       ],
     },

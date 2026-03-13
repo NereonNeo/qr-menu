@@ -3,3 +3,4 @@ git update-index --again
 
 npm run prettier:fix
 npm run lint
+npm run lint:fix

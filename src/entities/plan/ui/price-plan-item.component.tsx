@@ -1,6 +1,6 @@
 import { memo, useMemo } from "react";
 
-import clsx from "clsx";
+import clsx from "clsx/lite";
 
 import { Icon } from "@/shared/ui/icon";
 

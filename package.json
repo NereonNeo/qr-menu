@@ -12,7 +12,8 @@
     "route-clear": "rm -rf ./src/app/routes/routeTree.gen.ts",
     "build": "npm run route-clear && vite build && npm run typecheck",
     "prettier": "npx prettier src --check",
-    "lint": "eslint --fix ./src/**/*.{ts,tsx}",
+    "lint": "npx eslint .",
+    "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}",
     "prettier:fix": "npm run prettier -- --write"
   },
   "dependencies": {
