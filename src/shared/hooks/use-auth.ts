@@ -1,5 +1,5 @@
 //! Это тестовый хук имитация бекэнда
-import { PricePlan } from "@/entities/plan";
+import { PricePlan } from "@/entities/plan/plan.entry";
 
 export const useAuth = () => {
   const signIn = async (): Promise<{ plan: PricePlan | undefined }> => {

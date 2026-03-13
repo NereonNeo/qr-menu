@@ -1,6 +1,6 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
 
-import { Layout } from "@/widgets/layout";
+import { Layout } from "@/widgets/layout/layout.entry";
 
 export const Route = createFileRoute("/_authenticated")({
   pendingComponent: () => <span>Loading</span>,

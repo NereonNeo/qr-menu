@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ButtonLink } from "@/shared/components/button-link";
 import { Link } from "@/shared/ui/link/link";
 
-import { ProductCard } from "@/entities/product";
+import { ProductCard } from "@/entities/product/product.entry";
 
 export const Route = createFileRoute("/_authenticated/_preview/products/")({
   component: ProductPage,
