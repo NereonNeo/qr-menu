@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { useForm } from "react-hook-form";
 
-import { SessionStorageNames } from "@/shared/const/storage";
+import { SessionStorageNames } from "@/shared/const/web-storage.const";
 import { useAuth } from "@/shared/hooks/use-auth";
 import { useSessionStorage } from "@/shared/hooks/use-session-storage";
 import { Button } from "@/shared/ui/button";

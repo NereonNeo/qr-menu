@@ -1,10 +1,13 @@
-import { IInputPatternTypes } from "../types/input-pattern-types";
-
 export const enum PatternInputOptions {
   Phone = "Phone",
   Email = "Email",
   Color = "Color",
   URL = "Url",
+}
+
+export interface IInputPatternTypes {
+  value: RegExp;
+  message: string;
 }
 
 export const InputPatterns: Record<PatternInputOptions, IInputPatternTypes> = {

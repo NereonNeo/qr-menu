@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosRequestHeaders } from "axios";
 
-import { LocalStorageNames } from "../const/storage";
+import { LocalStorageNames } from "../const/web-storage.const";
 
 interface AdaptAxiosRequestConfig extends AxiosRequestConfig {
   headers: AxiosRequestHeaders;

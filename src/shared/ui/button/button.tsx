@@ -2,9 +2,9 @@ import { forwardRef } from "react";
 
 import clsx from "clsx/lite";
 
-import { buttonStyleVariantsClassNames } from "@/shared/const/button-const";
-import { ButtonColorVariant, ButtonSizeVariant } from "@/shared/types/button-types";
-import { IconNameTypes } from "@/shared/types/icon-name-types";
+import { buttonStyleVariantsClassNames } from "@/shared/const/button.const";
+import { IconNameTypes } from "@/shared/const/icon.const";
+import { ButtonColorVariant, ButtonSizeVariant } from "@/shared/types/button.types";
 
 import { Icon } from "../icon";
 import { buttonSizeVariantClassNames } from "./button-class-names";

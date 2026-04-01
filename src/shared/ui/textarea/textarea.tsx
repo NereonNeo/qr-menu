@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import clsx from "clsx/lite";
 
-import { inputDefaultClassName, inputDisabledClassName, inputInvalidClassName, inputPlaceholderClassName } from "@/shared/const/input-const";
+import { inputDefaultClassName, inputDisabledClassName, inputInvalidClassName, inputPlaceholderClassName } from "@/shared/const/input.const";
 
 import { Label } from "../label/Label";
 import { Message } from "../message/Message";

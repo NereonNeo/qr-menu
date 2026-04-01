@@ -6,7 +6,7 @@ import { useMaskito } from "@maskito/react";
 import { IInputProps, Input } from "@/shared/ui/input";
 import { mergeRefs } from "@/shared/utils/refs-merge";
 
-import { InputMasks, MaskInputOptions } from "./const";
+import { InputMasks, MaskInputOptions } from "./mask-input.const";
 
 interface IMaskInputProps extends IInputProps {
   maskOption: MaskInputOptions;

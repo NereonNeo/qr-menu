@@ -1,4 +1,4 @@
-import { AverageSizeVariantType } from "@/shared/types/ui-types";
+import { AverageSizeVariantType } from "../../types/ui.types";
 
 export const textareaStyleVariantClassNames: Record<AverageSizeVariantType, string> = {
   m: "h-11 text-m",

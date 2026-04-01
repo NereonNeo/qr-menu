@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { ButtonLink } from "@/shared/components/button-link";
+import { ButtonLink } from "@/shared/components/button-link/button-link.component";
 import { Link } from "@/shared/ui/link/link";
 
 import { ProductCard } from "@/entities/product/product.entry";

@@ -5,7 +5,7 @@ import clsx from "clsx/lite";
 import { IInputProps } from "@/shared/ui/input";
 import { Label } from "@/shared/ui/label";
 
-import { MaskInput, MaskInputOptions } from "../mask-input";
+import { MaskInput, MaskInputOptions } from "../mask-input/mask-input.entry";
 
 interface ColorPickerProps extends ComponentProps<"input">, Pick<IInputProps, "message" | "invalid"> {
   labelText: string;

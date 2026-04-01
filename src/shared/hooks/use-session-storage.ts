@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 
-import { SessionStorageNames } from "../const/storage";
+import { SessionStorageNames } from "../const/web-storage.const";
 
 export const useSessionStorage = <T extends object>(
   key: SessionStorageNames,

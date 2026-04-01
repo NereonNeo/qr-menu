@@ -2,15 +2,15 @@ import { forwardRef, useId } from "react";
 
 import clsx from "clsx/lite";
 
+import { IconNameTypes } from "@/shared/const/icon.const";
 import {
   inputDefaultClassName,
   inputDisabledClassName,
   inputInvalidClassName,
   inputPlaceholderClassName,
   inputSizeVariantClassNames,
-} from "@/shared/const/input-const";
-import { IconNameTypes } from "@/shared/types/icon-name-types";
-import { AverageSizeVariantType } from "@/shared/types/ui-types";
+} from "@/shared/const/input.const";
+import { AverageSizeVariantType } from "@/shared/types/ui.types";
 
 import { Icon } from "../icon";
 import { Label } from "../label/Label";

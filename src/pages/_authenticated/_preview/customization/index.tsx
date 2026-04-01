@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useForm } from "react-hook-form";
 
-import { ColorPicker } from "@/shared/components/color-picker";
-import { InputPatterns } from "@/shared/const/input-patterns";
+import { ColorPicker } from "@/shared/components/color-picker/color-picker.entry";
+import { InputPatterns } from "@/shared/const/input-pattern.const";
 import { Button } from "@/shared/ui/button";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 

@@ -2,7 +2,7 @@ import { forwardRef, useImperativeHandle, useRef } from "react";
 
 import clsx from "clsx/lite";
 
-import { DropzoneFileAccept, FileAcceptTypes } from "@/shared/const/file-types-const";
+import { DropzoneFileAccept, FileAcceptTypes } from "@/shared/const/file.const";
 
 import { Icon } from "../icon";
 

@@ -1,4 +1,4 @@
-import { SizeVariantType } from "./ui-types";
+import { SizeVariantType } from "./ui.types";
 
 export type ButtonStyleVariantType = "element" | "hover" | "focused" | "disabled";
 export type ButtonColorVariant = "beige" | "stroke-gray" | "stroke-gray-red" | "gray" | "white" | "red";
