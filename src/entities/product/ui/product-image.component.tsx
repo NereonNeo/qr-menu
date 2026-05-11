@@ -6,7 +6,7 @@ import { Button } from "@/shared/ui/button";
 import { Dropzone } from "@/shared/ui/dropzone";
 import { Label } from "@/shared/ui/label";
 
-import { IProduct } from "../types";
+import { IProduct } from "../product.contract";
 
 interface IProductImageProps {
   control: Control<IProduct, unknown>;

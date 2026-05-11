@@ -1,4 +1,4 @@
-import { IPricePlan, PricePlan } from "./types";
+import { IPricePlan, PricePlan } from "./plan.contract";
 
 export const PricePlanArr: Array<IPricePlan> = [
   {
