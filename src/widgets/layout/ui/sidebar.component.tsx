@@ -4,8 +4,8 @@ import clsx from "clsx/lite";
 import { Icon } from "@/shared/ui/icon";
 import { Logo } from "@/shared/ui/logo";
 
-import { listLink } from "../const";
 import { useSidebarContext } from "../hooks/use-sidebar-context/use-sidebar-context";
+import { listLink } from "../layout.const";
 
 export const Sidebar = () => {
   const isSidebarOpen = useSidebarContext();

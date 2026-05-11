@@ -1,4 +1,4 @@
-import { PricePlan } from "../model/types";
+import { PricePlan } from "../model/plan.contract";
 
 export const PricePlanItemClassNames: Record<PricePlan, { bgColor: string }> = {
   [PricePlan.Start]: {

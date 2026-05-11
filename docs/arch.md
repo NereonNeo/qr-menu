@@ -1,11 +1,13 @@
-Структура файлов
+Структура файлов:
 
 Каждый модуль имеет публичную точку входа: {scope}.entry.ts
 Также резервные имена для:
-{scope}.service.ts
-{scope}.store.ts
+{scope}.service.ts // сама бизнес логика и все запросы
+{scope}.store.ts //вся логика стора
+{scope}.component // UI сегмент
+{scope}.const.ts // Константы
+{scope}.contract.ts // Все типы
 
-для UI сегментов: {scope}.component.tsx
 Слой pages ИГНОРИРУЙ, оставляй как есть
 
 ```
@@ -18,7 +20,7 @@ entity/
   ui/
    credit-card.component.ts // Контент самой фичи
 
-featutes/
+features/
  credit/
   common/
    credit-application.const.ts
@@ -27,10 +29,10 @@ featutes/
    ui/
      credit-application.component.ts
  cross/ //только фичи, которые реально используются минимум в 2 модулях
-  sign-eimzo-modal/
-   sign-eimzo-modal.enrty.ts
+  sign-plan-modal/
+   sign-plan-modal.entry.ts
    ui/
-    sign-eimzo-modal.component.ts
+    sign-plan-modal.component.ts
 
 widgets/
   credit/
@@ -43,7 +45,7 @@ widgets/
     header/
      ui/
       heder.component.tsx
-     header.enrty.ts
+     header.entry.ts
     sidebar/
     notifications-panel/
 

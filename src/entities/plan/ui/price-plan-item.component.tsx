@@ -5,7 +5,7 @@ import clsx from "clsx/lite";
 import { Icon } from "@/shared/ui/icon";
 
 import { PricePlanItemClassNames } from "../common/price-plan-classnames";
-import { IPricePlan, PricePlan } from "../model/types";
+import { IPricePlan, PricePlan } from "../model/plan.contract";
 
 interface IPricePlanItem extends IPricePlan {
   value: PricePlan;
