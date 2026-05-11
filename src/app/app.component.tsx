@@ -1,5 +1,5 @@
-import { Router } from "./providers/router";
-import { QueryClientProvider } from "./providers/tanstack-query/ui/QueryClientProvider";
+import { QueryClientProvider } from "./providers/query-client/query-client.entry";
+import { Router } from "./providers/router/router.entry";
 import "./styles/main.css";
 
 export const App = () => {
