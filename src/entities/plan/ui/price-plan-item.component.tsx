@@ -22,7 +22,7 @@ export const PricePlanItem = memo((props: IPricePlanItem) => {
         isActive && "border-green-200 shadow-green-100 scale-110",
       )}
     >
-      <div className={clsx("p-3.5 pt-7 bg-linear-to-br h-fit text-white grid rounded-[20px]", PricePlanItemClassNames[planType].bgColor)}>
+      <div className={clsx("p-3.5 pt-7 bg-linear-to-br h-fit text-white grid rounded-lg", PricePlanItemClassNames[planType].bgColor)}>
         <p className="font-gotham font-bold text-xl mb-3">{planType}</p>
         <span className="font-gotham font-medium text-sm mb-5">{title}</span>
         <span className="font-gotham font-medium text-xs">{subTitle} </span>
