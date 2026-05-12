@@ -1,2 +1,2 @@
-export { SignUpNames } from "./model/types";
-export type { ISignIn, ISignUp, ISignUpSteps } from "./model/types";
+export { SignUpNames } from "./model/auth.contract";
+export type { ISignIn, ISignUp, ISignUpSteps } from "./model/auth.contract";
