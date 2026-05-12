@@ -103,11 +103,9 @@ const NavItem = ({ item, isExpanded, onToggle, currentPath }: NavItemProps) => {
                   <li key={child.href} className="child:mb-1">
                     <Link
                       to={child.href}
-                      className={clsx(
-                        isActive && "bg-gray-100",
-                        "pl-12 pr-2.5 py-2 rounded-md flex items-center transition-colors hover:bg-gray-100 group ",
-                      )}
+                      className={clsx(isActive && "bg-gray-100", "px-5 py-2 rounded-md flex items-center transition-colors hover:bg-gray-100 ")}
                     >
+                      <Icon className={clsx(isActive && "text-primary-500", "size-4 mr-3 transition-colors")} name={child.icon} />
                       <span className={clsx(isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>{child.text}</span>
                     </Link>
                   </li>
