@@ -1,6 +1,20 @@
 import { FunctionComponent } from "react";
 
-import { Bolt, Box, ChartColumnIncreasing, Check, CircleAlert, CloudUpload, Eye, Loader, MonitorCog, Share, Store, Trash } from "lucide-react";
+import {
+  Bolt,
+  Box,
+  ChartColumnIncreasing,
+  Check,
+  ChevronDown,
+  CircleAlert,
+  CloudUpload,
+  Eye,
+  Loader,
+  MonitorCog,
+  Share,
+  Store,
+  Trash,
+} from "lucide-react";
 
 import Logo from "../assets/icons/logo.svg?react";
 
@@ -16,8 +30,9 @@ export const iconListComponents = {
   loader: Loader,
   "monitor-cog": MonitorCog,
   "alert-circle": CircleAlert,
-  "chart-column-increasing": ChartColumnIncreasing,
+  "chevron-down": ChevronDown,
   "cloud-upload": CloudUpload,
+  "chart-column-increasing": ChartColumnIncreasing,
 } as const satisfies Record<string, FunctionComponent<React.RefAttributes<SVGSVGElement>>>;
 
 export type IconNameTypes = keyof typeof iconListComponents;

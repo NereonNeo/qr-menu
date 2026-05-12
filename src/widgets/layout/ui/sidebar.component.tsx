@@ -1,14 +1,29 @@
-import { Link } from "@tanstack/react-router";
+import { useState } from "react";
+
+import { Link, useRouterState } from "@tanstack/react-router";
 import clsx from "clsx/lite";
 
 import { Icon } from "@/shared/ui/icon";
 import { Logo } from "@/shared/ui/logo";
 
 import { useSidebarContext } from "../hooks/use-sidebar-context/use-sidebar-context";
-import { listLink } from "../layout.const";
+import { type LinkType, listLink } from "../layout.const";
 
 export const Sidebar = () => {
   const isSidebarOpen = useSidebarContext();
+  const { location } = useRouterState();
+
+  const getInitialExpanded = () =>
+    listLink.reduce<Record<string, boolean>>((acc, item) => {
+      if (item.children?.some((c) => c.href === location.pathname)) {
+        acc[item.href as string] = true;
+      }
+      return acc;
+    }, {});
+
+  const [expanded, setExpanded] = useState<Record<string, boolean>>(getInitialExpanded);
+
+  const toggle = (href: string) => setExpanded((prev) => ({ ...prev, [href]: !prev[href] }));
 
   return (
     <aside
@@ -22,24 +37,15 @@ export const Sidebar = () => {
           <Logo />
         </div>
         <nav className="flex-1">
-          <ul className="child:not-last:mb-1.5">
+          <ul className="child:not-last:mb-1.5 w-full px-3.5">
             {listLink.map((item) => (
-              <li key={item.text}>
-                <Link
-                  to={item.href}
-                  activeProps={activeLinkProps}
-                  className="p-2.5 rounded-md mx-3.5 flex items-center gap-4 transition-colors hover:bg-gray-100 group"
-                >
-                  {(state: { isActive: boolean }) => (
-                    <>
-                      <Icon className={clsx(state.isActive && "text-primary-500", "size-5 transition-colors")} name={item.icon} />
-                      <span className={clsx(state.isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>
-                        {item.text}
-                      </span>
-                    </>
-                  )}
-                </Link>
-              </li>
+              <NavItem
+                item={item}
+                key={item.href}
+                isExpanded={!!expanded[item.href as string]}
+                onToggle={() => toggle(item.href as string)}
+                currentPath={location.pathname}
+              />
             ))}
           </ul>
         </nav>
@@ -53,6 +59,82 @@ export const Sidebar = () => {
         </div>
       </div>
     </aside>
+  );
+};
+
+type NavItemProps = {
+  item: LinkType;
+  isExpanded: boolean;
+  onToggle: () => void;
+  currentPath: string;
+};
+
+const NavItem = ({ item, isExpanded, onToggle, currentPath }: NavItemProps) => {
+  const hasChildren = !!item.children?.length;
+  const isChildActive = item.children?.some((c) => c.href === currentPath) ?? false;
+
+  if (hasChildren) {
+    return (
+      <li>
+        <button
+          onClick={onToggle}
+          className={clsx(
+            (isExpanded || isChildActive) && "bg-gray-100",
+            "p-2.5 rounded-md flex items-center gap-4 transition-colors hover:bg-gray-100 group w-full",
+          )}
+        >
+          <Icon className={clsx(isChildActive && "text-primary-500", "size-5 transition-colors")} name={item.icon} />
+          <span className={clsx(isChildActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors flex-1 text-left")}>
+            {item.text}
+          </span>
+
+          <Icon
+            name="chevron-down"
+            className={clsx(isExpanded ? "rotate-180" : "rotate-0", isChildActive && "text-primary-500", "size-4 transition-all")}
+          />
+        </button>
+
+        <ul className={clsx(isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]", "grid transition-all duration-200 ")}>
+          <li className="overflow-hidden ">
+            <ul className="pt-1 pb-0.5 ">
+              {item.children?.map((child) => {
+                const isActive = child.href === currentPath;
+                return (
+                  <li key={child.href} className="child:mb-1">
+                    <Link
+                      to={child.href}
+                      className={clsx(
+                        isActive && "bg-gray-100",
+                        "pl-12 pr-2.5 py-2 rounded-md flex items-center transition-colors hover:bg-gray-100 group ",
+                      )}
+                    >
+                      <span className={clsx(isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>{child.text}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </li>
+        </ul>
+      </li>
+    );
+  }
+
+  return (
+    <li>
+      <Link
+        to={item.href}
+        activeProps={activeLinkProps}
+        className=" p-2.5 rounded-md flex items-center gap-4 transition-colors hover:bg-gray-100 group"
+      >
+        {(state: { isActive: boolean }) => (
+          <>
+            <Icon className={clsx(state.isActive && "text-primary-500", "size-5 transition-colors")} name={item.icon} />
+            <span className={clsx(state.isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>{item.text}</span>
+          </>
+        )}
+      </Link>
+    </li>
   );
 };
 

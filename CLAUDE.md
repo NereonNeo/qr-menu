@@ -73,3 +73,7 @@ The `cross/` sub-directory holds modules genuinely used in 2+ different slices. 
 ## Commit conventions
 
 Conventional Commits enforced by commitlint. Allowed types: `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test`, `translation`, `security`, `changeset`. Subject must be lower-case, no trailing period, max 100 chars.
+
+## References IMPORTANT
+
+Look at the project structure, patterns and rules in @/docs/\*
