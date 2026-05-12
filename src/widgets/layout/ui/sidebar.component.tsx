@@ -22,11 +22,15 @@ export const Sidebar = () => {
           <Logo />
         </div>
         <nav className="flex-1">
-          <ul>
+          <ul className="child:not-last:mb-1.5">
             {listLink.map((item) => (
               <li key={item.text}>
-                <Link to={item.href} activeProps={activeLinkProps} className="p-2.5 rounded-md mx-3.5 flex items-center gap-4 transition-colors">
-                  {(state: { isActive: boolean; isTransitioning: boolean }) => (
+                <Link
+                  to={item.href}
+                  activeProps={activeLinkProps}
+                  className="p-2.5 rounded-md mx-3.5 flex items-center gap-4 transition-colors hover:bg-gray-100 group"
+                >
+                  {(state: { isActive: boolean }) => (
                     <>
                       <Icon className={clsx(state.isActive && "text-primary-500", "size-5 transition-colors")} name={item.icon} />
                       <span className={clsx(state.isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>

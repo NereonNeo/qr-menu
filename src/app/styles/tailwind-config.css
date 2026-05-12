@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @custom-variant aria-invalid (&[aria-invalid="true"]);
+@custom-variant child (& > *);
 
 @theme {
   /* Fonts */
