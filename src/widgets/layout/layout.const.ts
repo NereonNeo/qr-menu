@@ -9,14 +9,14 @@ export const listLink: Array<LinkType> = [
   {
     icon: "shop",
     href: "/",
-    text: "Магазин",
+    text: "Главная",
   },
   {
     icon: "box",
     text: "Продукты",
     href: "/products",
     children: [
-      { href: "/products", text: "Категории", icon: "layers" },
+      { href: "/products", text: "Меню", icon: "layers" },
       { href: "/products/positions", text: "Позиции", icon: "layout-list" },
     ],
   },
