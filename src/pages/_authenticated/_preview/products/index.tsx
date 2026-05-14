@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { ButtonLink } from "@/shared/components/button-link/button-link.entry";
+import { Button } from "@/shared/ui/button";
+import { Drawer } from "@/shared/ui/drawer/drawer.entry";
 import { Link } from "@/shared/ui/link/link";
 
 import { MenuCard } from "@/entities/menu/menu.entry";
@@ -12,9 +14,13 @@ export const Route = createFileRoute("/_authenticated/_preview/products/")({
 function ProductPage() {
   return (
     <div className="grid grid-flow-row gap-10">
+      <Drawer id="drawer.settings" title="Settings" position="right" sizeVariant="m">
+        <p>Content here</p>
+      </Drawer>
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-gotham font-medium">Меню</h1>
         <ButtonLink sizeVariant="m" content="Создать меню" to="/products/create" />
+        <Button content="test" onClick={() => window.ezzyModal["drawer.settings"].showModal()} />
       </div>
       <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
         <Link to="/products/edit/$id" params={{ id: "1" }}>

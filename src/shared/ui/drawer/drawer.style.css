@@ -1,0 +1,74 @@
+/* ezzy-modal: reset dialog defaults + scroll-lock (without the * reset that breaks Tailwind) */
+.ezzy-modal {
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition:
+    overlay 0.3s ease allow-discrete,
+    display 0.3s ease allow-discrete;
+}
+
+html:has(dialog[open]):has(dialog[data-lock]) {
+  overflow: hidden;
+}
+
+/* Drawer: backdrop */
+.ezzy-modal::backdrop {
+  background: rgb(0 0 0 / 0);
+  transition:
+    background 0.3s ease,
+    overlay 0.3s ease allow-discrete,
+    display 0.3s ease allow-discrete;
+}
+
+.ezzy-modal[open]::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+@starting-style {
+  .ezzy-modal[open]::backdrop {
+    background: rgb(0 0 0 / 0);
+  }
+}
+
+/* Drawer: panel slide animations */
+.ezzy-modal[data-position] .ezzy-modal-content-wrapper {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ezzy-modal[data-position="right"] .ezzy-modal-content-wrapper {
+  transform: translateX(100%);
+}
+.ezzy-modal[data-position="left"] .ezzy-modal-content-wrapper {
+  transform: translateX(-100%);
+}
+.ezzy-modal[data-position="top"] .ezzy-modal-content-wrapper {
+  transform: translateY(-100%);
+}
+.ezzy-modal[data-position="bottom"] .ezzy-modal-content-wrapper {
+  transform: translateY(100%);
+}
+
+.ezzy-modal[open][data-position="right"],
+.ezzy-modal[open][data-position="left"],
+.ezzy-modal[open][data-position="top"],
+.ezzy-modal[open][data-position="bottom"] {
+  .ezzy-modal-content-wrapper {
+    transform: translate(0, 0);
+  }
+}
+
+@starting-style {
+  .ezzy-modal[open][data-position="right"] .ezzy-modal-content-wrapper {
+    transform: translateX(100%);
+  }
+  .ezzy-modal[open][data-position="left"] .ezzy-modal-content-wrapper {
+    transform: translateX(-100%);
+  }
+  .ezzy-modal[open][data-position="top"] .ezzy-modal-content-wrapper {
+    transform: translateY(-100%);
+  }
+  .ezzy-modal[open][data-position="bottom"] .ezzy-modal-content-wrapper {
+    transform: translateY(100%);
+  }
+}

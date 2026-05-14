@@ -24,6 +24,7 @@
     "@tanstack/react-router": "^1.166.7",
     "axios": "^1.13.6",
     "clsx": "^2.1.1",
+    "ezzy-modal": "^4.1.6",
     "lucide-react": "^0.577.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

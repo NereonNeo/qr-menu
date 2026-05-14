@@ -1,8 +1,9 @@
-@import "tailwindcss";
 @import "./tailwind-config.css";
+@import "tailwindcss";
 
 html {
   @apply bg-gray-50;
+  scrollbar-gutter: stable both-edges;
 }
 
 html,

@@ -16,6 +16,7 @@ import {
   Share,
   Store,
   Trash,
+  X,
 } from "lucide-react";
 
 import Logo from "../assets/icons/logo.svg?react";
@@ -37,6 +38,7 @@ export const iconListComponents = {
   "chevron-down": ChevronDown,
   "cloud-upload": CloudUpload,
   "chart-column-increasing": ChartColumnIncreasing,
+  x: X,
 } as const satisfies Record<string, FunctionComponent<React.RefAttributes<SVGSVGElement>>>;
 
 export type IconNameTypes = keyof typeof iconListComponents;
