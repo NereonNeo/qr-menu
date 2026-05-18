@@ -1,0 +1,2 @@
+- [shared/ui must use index.ts not entry.ts](feedback-shared-ui-entry-vs-index.md) — avatar/badge/drawer/indicator batch introduced .entry.ts files in shared/ui; existing components (button, link, dropzone) all use index.ts
+- [ESLint no-restricted-imports does not cover shared/](feedback-eslint-coverage-gaps.md) — violations in shared/ui pass lint silently; manual review required for that layer
