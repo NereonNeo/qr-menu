@@ -5,11 +5,11 @@ import { Drawer } from "@/shared/ui/drawer/drawer.entry";
 
 import { MenuCard } from "@/entities/menu/menu.entry";
 
-export const Route = createFileRoute("/_authenticated/_preview/products/menu")({
-  component: ProductMenuPage,
+export const Route = createFileRoute("/_authenticated/_preview/products/menu/")({
+  component: RouteComponent,
 });
 
-function ProductMenuPage() {
+function RouteComponent() {
   return (
     <div className="grid grid-flow-row gap-10">
       <Drawer id="drawer.settings" title="Settings" position="right" sizeVariant="m">
@@ -17,7 +17,7 @@ function ProductMenuPage() {
       </Drawer>
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-gotham font-medium">Меню</h1>
-        <ButtonLink sizeVariant="m" content="Создать меню" to="/products/create" />
+        <ButtonLink sizeVariant="m" content="Создать меню" to="/products/menu/create" />
       </div>
       <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
         <button className="text-left" onClick={() => window.ezzyModal["drawer.settings"].showModal()}>

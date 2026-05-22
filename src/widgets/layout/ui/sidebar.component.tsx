@@ -15,8 +15,8 @@ export const Sidebar = () => {
 
   const getInitialExpanded = () =>
     listLink.reduce<Record<string, boolean>>((acc, item) => {
-      if (item.children?.some((c) => c.href === location.pathname)) {
-        acc[item.href as string] = true;
+      if (item.viewType === "sub-link" && item.children?.some((c) => c.href === location.pathname)) {
+        acc[item.parentHref as string] = true;
       }
       return acc;
     }, {});
@@ -38,9 +38,10 @@ export const Sidebar = () => {
         </div>
         <nav className="flex-1">
           <ul className="child:not-last:mb-1.5 w-full px-3.5">
-            {listLink.map((item) => (
-              <NavItem item={item} key={item.href} isExpanded={!!expanded[item.href as string]} onToggle={() => toggle(item.href as string)} />
-            ))}
+            {listLink.map((item) => {
+              const key = (item.viewType === "sub-link" ? item.parentHref : item.href) as string;
+              return <NavItem item={item} key={key} isExpanded={!!expanded[key]} onToggle={() => toggle(key)} />;
+            })}
           </ul>
         </nav>
         <div>
@@ -64,8 +65,8 @@ type NavItemProps = {
 
 const NavItem = ({ item, isExpanded, onToggle }: NavItemProps) => {
   const matches = useMatches();
-  const hasChildren = !!item.children?.length;
-  const isChildActive = matches?.some((match) => match.pathname.startsWith(item.href as string)) ?? false;
+  const hasChildren = item.viewType === "sub-link";
+  const isChildActive = hasChildren ? matches?.some((match) => match.pathname.startsWith(item.parentHref as string)) : false;
 
   if (hasChildren) {
     return (
