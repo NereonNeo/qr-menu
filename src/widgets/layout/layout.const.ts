@@ -1,9 +1,9 @@
-import type { ToSubOptions } from "@tanstack/react-router";
+import type { ToOptions } from "@tanstack/react-router";
 
 import { IconNameTypes } from "@/shared/const/icon.const";
 
-export type ChildLinkType = { href: ToSubOptions["to"]; text: string; icon: IconNameTypes };
-export type LinkType = { icon: IconNameTypes; href: ToSubOptions["to"]; text: string; children?: Array<ChildLinkType> };
+export type ChildLinkType = { href: ToOptions["to"]; text: string; icon: IconNameTypes };
+export type LinkType = { icon: IconNameTypes; href: ToOptions["to"]; text: string; children?: Array<ChildLinkType> };
 
 export const listLink: Array<LinkType> = [
   {
@@ -16,7 +16,7 @@ export const listLink: Array<LinkType> = [
     text: "Продукты",
     href: "/products",
     children: [
-      { href: "/products", text: "Меню", icon: "layers" },
+      { href: "/products/menu", text: "Меню", icon: "layers" },
       { href: "/products/positions", text: "Позиции", icon: "layout-list" },
     ],
   },

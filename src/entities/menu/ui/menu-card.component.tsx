@@ -4,12 +4,12 @@ import { Indicator } from "@/shared/ui/indicator/indicator.entry";
 interface MenuCardProps {
   name: string;
   banner: string;
-  views: number;
-  visible: boolean;
   tags: string[];
+  visible: boolean;
+  positionsCount: number;
 }
 
-export const MenuCard = ({ name, banner, views, visible, tags }: MenuCardProps) => {
+export const MenuCard = ({ name, banner, positionsCount, visible, tags }: MenuCardProps) => {
   return (
     <div className="relative w-62.5 h-80 rounded-lg overflow-hidden shadow">
       <img src={banner} alt={name} className="absolute inset-0 w-full h-full object-cover" />
@@ -23,7 +23,7 @@ export const MenuCard = ({ name, banner, views, visible, tags }: MenuCardProps) 
 
       <div className="absolute inset-x-0 bottom-0 p-4 flex flex-col gap-1.5">
         <p className="font-gotham font-medium text-m text-white truncate">{name}</p>
-        <p className="font-gotham text-xs text-gray-400">{views} просмотров</p>
+        <p className="font-gotham text-xs text-gray-400">{positionsCount} Позиций</p>
         {tags.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-0.5">
             {tags.map((tag) => (
