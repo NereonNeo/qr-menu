@@ -1,4 +1,3 @@
-import { useParams } from "@tanstack/react-router";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/shared/ui/button";
@@ -9,8 +8,6 @@ import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 import { IProduct, ProductImage } from "@/entities/product/product.entry";
 
 export const ProductEdit = () => {
-  const { id } = useParams({ strict: false });
-
   const {
     control,
     register,
@@ -21,9 +18,7 @@ export const ProductEdit = () => {
 
   const errorsInit = formErrorsHandler(errors);
 
-  const handleCreate = handleSubmit((data) => {
-    console.log(data, id);
-  });
+  const handleCreate = handleSubmit(() => {});
 
   return (
     <>
