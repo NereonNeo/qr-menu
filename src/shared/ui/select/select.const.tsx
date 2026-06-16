@@ -25,13 +25,13 @@ export const selectComponents: SelectComponentsConfig<ISelectType<unknown>, true
   },
 
   LoadingIndicator: () => {
-    return <Icon name="loader" />;
+    return <Icon name="loader" className="size-4 animate-spin" />;
   },
 
   Option: (props) => {
     return (
       <components.Option {...props}>
-        {props.data.avatar && <Avatar type="img" img={props.data.avatar} className="shrink-0" sizeVariant="xxs" />}
+        {props.data.avatar && <Avatar type="img" img={props.data.avatar} className="shrink-0" sizeVariant="xs" />}
         {props.data.icon && <Icon name={props.data.icon} className="size-4" />}
         <p className="basis-full">{props.children}</p>
         {props.isSelected && <Icon name="check" className="text-primary-500 size-4" />}
@@ -106,7 +106,7 @@ export const selectComponents: SelectComponentsConfig<ISelectType<unknown>, true
     const input = items[items.length - 1]; // последний — это поле ввода
     const values = items.slice(0, -1); // всё остальное — выбранные теги
 
-    const limit = 1; // сколько показываем
+    const limit = 2; // сколько показываем
     const visible = values.slice(0, limit);
     const hiddenCount = values.length - limit;
     return (
@@ -126,7 +126,7 @@ export const selectClassNames: ClassNamesConfig<ISelectType<unknown>, false | tr
     return clsx(
       isNotValid && inputInvalidClassName,
       isDisabled && inputDisabledClassName,
-      "border rounded-lg transition-shadow px-3.5 h-10 w-full!",
+      "border rounded-lg transition-shadow px-3.5 h-10 w-full! bg-white",
       selectProps.withoutBorder ? "border-none px-0!" : inputDefaultClassName,
     );
   },
@@ -147,13 +147,13 @@ export const selectClassNames: ClassNamesConfig<ISelectType<unknown>, false | tr
   option: ({ isFocused, isDisabled, isSelected }) =>
     clsx(
       !isDisabled && isFocused && "bg-gray-50",
-      !isDisabled && "text-gray-700 !cursor-pointer",
-      isDisabled && "text-gray-300 !cursor-not-allowed",
+      !isDisabled && "text-gray-700 cursor-pointer!",
+      isDisabled && "text-gray-300 cursor-not-allowed!",
       isSelected && "bg-gray-50",
-      "px-4 py-2.5 font-medium rounded-lg !flex !text-base items-center gap-2",
+      "px-4 py-2.5 font-medium rounded-lg flex! text-base! items-center gap-2 mb-1",
     ),
 
   valueContainer: (props) => {
-    return clsx(props.isMulti && "flex gap-2 max-h-[2.375rem]", "text-sm text-gray-700 font-medium");
+    return clsx(props.isMulti && "flex gap-2 max-h-9.5", "text-sm text-gray-700 font-medium");
   },
 };
