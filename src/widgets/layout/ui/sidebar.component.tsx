@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Link, useRouterState } from "@tanstack/react-router";
+import { Link, useMatches, useRouterState } from "@tanstack/react-router";
 import clsx from "clsx/lite";
 
 import { Icon } from "@/shared/ui/icon";
@@ -15,8 +15,8 @@ export const Sidebar = () => {
 
   const getInitialExpanded = () =>
     listLink.reduce<Record<string, boolean>>((acc, item) => {
-      if (item.children?.some((c) => c.href === location.pathname)) {
-        acc[item.href as string] = true;
+      if (item.viewType === "sub-link" && item.children?.some((c) => c.href === location.pathname)) {
+        acc[item.parentHref as string] = true;
       }
       return acc;
     }, {});
@@ -38,15 +38,10 @@ export const Sidebar = () => {
         </div>
         <nav className="flex-1">
           <ul className="child:not-last:mb-1.5 w-full px-3.5">
-            {listLink.map((item) => (
-              <NavItem
-                item={item}
-                key={item.href}
-                isExpanded={!!expanded[item.href as string]}
-                onToggle={() => toggle(item.href as string)}
-                currentPath={location.pathname}
-              />
-            ))}
+            {listLink.map((item) => {
+              const key = (item.viewType === "sub-link" ? item.parentHref : item.href) as string;
+              return <NavItem item={item} key={key} isExpanded={!!expanded[key]} onToggle={() => toggle(key)} />;
+            })}
           </ul>
         </nav>
         <div>
@@ -66,12 +61,12 @@ type NavItemProps = {
   item: LinkType;
   isExpanded: boolean;
   onToggle: () => void;
-  currentPath: string;
 };
 
-const NavItem = ({ item, isExpanded, onToggle, currentPath }: NavItemProps) => {
-  const hasChildren = !!item.children?.length;
-  const isChildActive = item.children?.some((c) => c.href === currentPath) ?? false;
+const NavItem = ({ item, isExpanded, onToggle }: NavItemProps) => {
+  const matches = useMatches();
+  const hasChildren = item.viewType === "sub-link";
+  const isChildActive = hasChildren ? matches?.some((match) => match.pathname.startsWith(item.parentHref as string)) : false;
 
   if (hasChildren) {
     return (
@@ -98,15 +93,22 @@ const NavItem = ({ item, isExpanded, onToggle, currentPath }: NavItemProps) => {
           <li className="overflow-hidden ">
             <ul className="pt-1 pb-0.5 ">
               {item.children?.map((child) => {
-                const isActive = child.href === currentPath;
                 return (
                   <li key={child.href} className="child:mb-1">
                     <Link
                       to={child.href}
-                      className={clsx(isActive && "bg-gray-100", "px-5 py-2 rounded-md flex items-center transition-colors hover:bg-gray-100 ")}
+                      activeOptions={{ exact: false }}
+                      activeProps={activeLinkProps}
+                      className={clsx("px-5 py-2 rounded-md flex items-center transition-colors hover:bg-gray-100 ")}
                     >
-                      <Icon className={clsx(isActive && "text-primary-500", "size-4 mr-3 transition-colors")} name={child.icon} />
-                      <span className={clsx(isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>{child.text}</span>
+                      {(state: { isActive: boolean }) => (
+                        <>
+                          <Icon className={clsx(state.isActive && "text-primary-500", "size-4 mr-3 transition-colors")} name={child.icon} />
+                          <span className={clsx(state.isActive && "text-primary-500", "font-gotham leading-6 text-m transition-colors")}>
+                            {child.text}
+                          </span>
+                        </>
+                      )}
                     </Link>
                   </li>
                 );
