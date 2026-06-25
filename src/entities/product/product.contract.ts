@@ -38,3 +38,17 @@ export interface IPositionEditForm {
   visible: boolean;
   menuId: string;
 }
+
+export interface IPositionCreateForm {
+  title: string;
+  price: string;
+  weight: string;
+  description: string;
+  visible: boolean;
+  inStock: boolean;
+  menuId: string;
+  calories: string;
+  protein: string;
+  carbs: string;
+  fat: string;
+}
