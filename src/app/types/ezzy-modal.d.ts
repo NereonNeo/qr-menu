@@ -4,6 +4,7 @@ interface ModalNames {
   drawer: {
     settings: "Settings Drawer";
     position: "Position Drawer";
+    addons: "Addons Drawer";
   };
 }
 
