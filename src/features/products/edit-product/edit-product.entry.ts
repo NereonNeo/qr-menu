@@ -1,1 +1,1 @@
-export {};
+export { EditProduct } from "./ui/edit-product.component";

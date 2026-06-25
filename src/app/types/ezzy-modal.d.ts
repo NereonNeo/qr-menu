@@ -3,6 +3,7 @@ import "ezzy-modal";
 interface ModalNames {
   drawer: {
     settings: "Settings Drawer";
+    position: "Position Drawer";
   };
 }
 
