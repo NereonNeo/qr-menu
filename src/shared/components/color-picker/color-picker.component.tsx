@@ -8,7 +8,7 @@ import { Label } from "@/shared/ui/label";
 import { MaskInput, MaskInputOptions } from "../mask-input/mask-input.entry";
 
 interface ColorPickerProps extends ComponentProps<"input">, Pick<IInputProps, "message" | "invalid"> {
-  labelText: string;
+  labelText?: string;
   wrapperClassname?: string;
 }
 
@@ -37,7 +37,7 @@ export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props
 
   return (
     <div className={clsx(wrapperClassname)}>
-      <Label htmlFor={id} text={labelText} />
+      {labelText && <Label htmlFor={id} text={labelText} />}
       <div className="h-10 w-full flex gap-2">
         <input
           id={id}
