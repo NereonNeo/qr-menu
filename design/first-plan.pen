@@ -1,5 +1,5 @@
 {
-  "version": "2.13",
+  "version": "2.14",
   "children": [
     {
       "type": "frame",
@@ -19274,8 +19274,8 @@
       "name": "Admin – Кастомизация",
       "clip": true,
       "width": 1440,
-      "height": 1100,
-      "fill": "#f3f3f1",
+      "height": 830,
+      "fill": "$--background",
       "children": [
         {
           "type": "frame",
@@ -19283,8 +19283,8 @@
           "name": "Sidebar",
           "width": 240,
           "height": "fill_container",
-          "fill": "#ffffff",
-          "stroke": "#eaecf0",
+          "fill": "$--card",
+          "stroke": "$--border",
           "strokeWidth": {
             "right": 1
           },
@@ -19312,7 +19312,7 @@
                   "type": "text",
                   "id": "lG5je",
                   "name": "Logo Text",
-                  "fill": "#131313",
+                  "fill": "$--foreground",
                   "content": "SHOPNEXT",
                   "fontFamily": "Kodchasan",
                   "fontSize": 20,
@@ -19339,7 +19339,7 @@
                   "name": "Главная",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -19356,13 +19356,13 @@
                       "height": 16,
                       "icon": "layout-dashboard",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "ZW0Tn",
                       "name": "Главная Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Главная",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -19376,7 +19376,7 @@
                   "name": "Продукты",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -19393,13 +19393,13 @@
                       "height": 16,
                       "icon": "package",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "dNCYY",
                       "name": "Продукты Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Продукты",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -19413,7 +19413,7 @@
                   "name": "Кастомизация",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#f2f4f7",
+                  "fill": "$--secondary",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -19430,13 +19430,13 @@
                       "height": 16,
                       "icon": "palette",
                       "library": "lucide",
-                      "fill": "#e8a98b"
+                      "fill": "$--primary"
                     },
                     {
                       "type": "text",
                       "id": "C0hoz",
                       "name": "Кастомизация Label",
-                      "fill": "#e8a98b",
+                      "fill": "$--primary",
                       "content": "Кастомизация",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -19450,7 +19450,7 @@
                   "name": "Статистика",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -19467,13 +19467,13 @@
                       "height": 16,
                       "icon": "chart-bar",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "tdq73",
                       "name": "Статистика Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Статистика",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -19487,7 +19487,7 @@
                   "name": "Настройки",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -19504,13 +19504,13 @@
                       "height": 16,
                       "icon": "settings",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "nsppF",
                       "name": "Настройки Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Настройки",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -19539,7 +19539,7 @@
                   "name": "Avatar",
                   "width": 32,
                   "height": 32,
-                  "fill": "#f2f4f7",
+                  "fill": "$--secondary",
                   "cornerRadius": 999,
                   "justifyContent": "center",
                   "alignItems": "center",
@@ -19548,7 +19548,7 @@
                       "type": "text",
                       "id": "tfTz5",
                       "name": "Avatar Init",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "L",
                       "fontFamily": "Gotham",
                       "fontSize": 13,
@@ -19560,7 +19560,7 @@
                   "type": "text",
                   "id": "GVwaV",
                   "name": "User Email",
-                  "fill": "#667085",
+                  "fill": "$--muted-foreground",
                   "content": "@luv2kmail.ru",
                   "fontFamily": "Gotham",
                   "fontSize": 14,
@@ -19576,7 +19576,7 @@
           "name": "Content",
           "width": "fill_container",
           "height": "fill_container",
-          "fill": "#f3f3f1",
+          "fill": "$--background",
           "layout": "vertical",
           "gap": 20,
           "padding": 40,
@@ -19600,7 +19600,7 @@
                       "type": "text",
                       "id": "Jwfwg",
                       "name": "Page Title",
-                      "fill": "#131313",
+                      "fill": "$--foreground",
                       "content": "Кастомизация",
                       "fontFamily": "Inter",
                       "fontSize": 24,
@@ -19610,7 +19610,7 @@
                       "type": "text",
                       "id": "fXq4Q",
                       "name": "Subtitle",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "Настройте внешний вид и брендинг вашего меню",
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -19625,9 +19625,9 @@
               "id": "B8NIn",
               "name": "Tabs Bar",
               "width": "fill_container",
-              "fill": "#ffffff",
+              "fill": "$--card",
               "cornerRadius": 10,
-              "stroke": "#eaecf0",
+              "stroke": "$--border",
               "strokeWidth": 1,
               "strokeAlignment": "inner",
               "gap": 4,
@@ -19637,7 +19637,7 @@
                   "type": "frame",
                   "id": "ywlfO",
                   "name": "Tab Внешний вид",
-                  "fill": "#131313",
+                  "fill": "$--foreground",
                   "cornerRadius": 7,
                   "gap": 6,
                   "padding": [
@@ -19654,13 +19654,13 @@
                       "height": 14,
                       "icon": "palette",
                       "library": "lucide",
-                      "fill": "#ffffff"
+                      "fill": "$--white"
                     },
                     {
                       "type": "text",
                       "id": "cdtES",
                       "name": "Tab Label",
-                      "fill": "#ffffff",
+                      "fill": "$--white",
                       "content": "Внешний вид",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -19674,7 +19674,7 @@
                   "name": "Tab Брендинг",
                   "fill": {
                     "type": "color",
-                    "color": "#f2f4f7",
+                    "color": "$--secondary",
                     "enabled": false
                   },
                   "cornerRadius": 7,
@@ -19693,13 +19693,13 @@
                       "height": 14,
                       "icon": "image",
                       "library": "lucide",
-                      "fill": "#667085"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "Kdnf3",
                       "name": "Tab Label",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "Брендинг",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -19713,7 +19713,7 @@
                   "name": "Tab QR-код",
                   "fill": {
                     "type": "color",
-                    "color": "#f2f4f7",
+                    "color": "$--secondary",
                     "enabled": false
                   },
                   "cornerRadius": 7,
@@ -19732,13 +19732,13 @@
                       "height": 14,
                       "icon": "scan-line",
                       "library": "lucide",
-                      "fill": "#667085"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "UY6PB",
                       "name": "Tab Label",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "QR-код",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -19750,14 +19750,14 @@
             },
             {
               "type": "frame",
-              "id": "oFYHQ",
+              "id": "u6t6j",
               "name": "Columns",
               "width": "fill_container",
               "gap": 20,
               "children": [
                 {
                   "type": "frame",
-                  "id": "KGrKB",
+                  "id": "C04T3o",
                   "name": "Left Column",
                   "width": "fill_container",
                   "layout": "vertical",
@@ -19765,77 +19765,81 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "U7j2xD",
+                      "id": "lvCPb",
                       "name": "Card – Акцентный цвет",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "helHc",
+                          "id": "q07F1j",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "USbFh",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
+                              "id": "ZhMIv",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "text",
-                                  "id": "aNne1",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Акцентный цвет",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "I6RbD1",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Основной цвет кнопок и активных элементов меню",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
+                                  "type": "icon",
+                                  "id": "MOrb6",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "palette",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
                                 }
                               ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "tQQA4",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Акцентный цвет",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
                             }
                           ]
                         },
                         {
-                          "type": "rectangle",
-                          "id": "EilSy",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
+                          "type": "text",
+                          "id": "TlT5N",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "height": 1
+                          "content": "Основной цвет кнопок и активных элементов меню",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "frame",
-                          "id": "hsTHW",
+                          "id": "A1lj3w",
                           "name": "Swatch Row 1",
                           "gap": 10,
                           "children": [
                             {
                               "type": "frame",
-                              "id": "GmvtO",
+                              "id": "C8HYZ",
                               "name": "Selected",
                               "cornerRadius": 11,
-                              "stroke": "#FF8400",
+                              "stroke": "$--primary",
                               "strokeWidth": 2,
                               "padding": 3,
                               "justifyContent": "center",
@@ -19844,9 +19848,9 @@
                                 {
                                   "type": "rectangle",
                                   "cornerRadius": 8,
-                                  "id": "iW9xf",
+                                  "id": "OJji5",
                                   "name": "Color",
-                                  "fill": "#FF8400",
+                                  "fill": "$--primary",
                                   "width": 36,
                                   "height": 36
                                 }
@@ -19855,8 +19859,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "FSJg4",
-                              "name": "SwK",
+                              "id": "s0wEx",
+                              "name": "Sw",
                               "fill": "#111111",
                               "width": 36,
                               "height": 36
@@ -19864,8 +19868,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "qOCjo",
-                              "name": "SwB",
+                              "id": "SqmgU",
+                              "name": "Sw",
                               "fill": "#2563EB",
                               "width": 36,
                               "height": 36
@@ -19873,8 +19877,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "LqIJL",
-                              "name": "SwG",
+                              "id": "rvzta",
+                              "name": "Sw",
                               "fill": "#16A34A",
                               "width": 36,
                               "height": 36
@@ -19882,8 +19886,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "KuSd9",
-                              "name": "SwR",
+                              "id": "yMOcj",
+                              "name": "Sw",
                               "fill": "#DC2626",
                               "width": 36,
                               "height": 36
@@ -19892,15 +19896,15 @@
                         },
                         {
                           "type": "frame",
-                          "id": "t1NUFd",
+                          "id": "d0mzWO",
                           "name": "Swatch Row 2",
                           "gap": 10,
                           "children": [
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "zgiU4",
-                              "name": "SwV",
+                              "id": "dd3po",
+                              "name": "Sw",
                               "fill": "#7C3AED",
                               "width": 36,
                               "height": 36
@@ -19908,8 +19912,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "W1XM3Q",
-                              "name": "SwC",
+                              "id": "bJbzN",
+                              "name": "Sw",
                               "fill": "#0891B2",
                               "width": 36,
                               "height": 36
@@ -19917,8 +19921,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "P4fiNC",
-                              "name": "SwA",
+                              "id": "Q5fPb",
+                              "name": "Sw",
                               "fill": "#D97706",
                               "width": 36,
                               "height": 36
@@ -19926,8 +19930,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "OoEH0",
-                              "name": "SwP",
+                              "id": "Ekjoh",
+                              "name": "Sw",
                               "fill": "#BE185D",
                               "width": 36,
                               "height": 36
@@ -19935,8 +19939,8 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "U9ccD",
-                              "name": "SwE",
+                              "id": "jUM9g",
+                              "name": "Sw",
                               "fill": "#059669",
                               "width": 36,
                               "height": 36
@@ -19945,7 +19949,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "d5kI2S",
+                          "id": "lgKu4",
                           "name": "Custom Row",
                           "width": "fill_container",
                           "gap": 10,
@@ -19954,15 +19958,15 @@
                             {
                               "type": "rectangle",
                               "cornerRadius": 8,
-                              "id": "WyKAY",
+                              "id": "tq596",
                               "name": "Preview",
-                              "fill": "#FF8400",
+                              "fill": "$--primary",
                               "width": 36,
                               "height": 36
                             },
                             {
                               "type": "frame",
-                              "id": "bw5Pc",
+                              "id": "sw15m",
                               "name": "Hex Input",
                               "width": "fill_container",
                               "height": 36,
@@ -19978,7 +19982,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "iHxBd",
+                                  "id": "UA39E",
                                   "name": "Value",
                                   "fill": "$--foreground",
                                   "content": "#FF8400",
@@ -19994,74 +19998,78 @@
                     },
                     {
                       "type": "frame",
-                      "id": "V8Cxl",
+                      "id": "e1Cia8",
                       "name": "Card – Стиль карточек",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "FjKPF",
+                          "id": "bG9Op",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "i5nLIl",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
+                              "id": "b82j9",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "text",
-                                  "id": "ogJyl",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Стиль карточек",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "jYRpM",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Скругление углов карточек позиций меню",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
+                                  "type": "icon",
+                                  "id": "sPM4H",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "layout-grid",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
                                 }
                               ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "zBXE4",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Стиль карточек",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
                             }
                           ]
                         },
                         {
-                          "type": "rectangle",
-                          "id": "M6idKH",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
+                          "type": "text",
+                          "id": "mjhJQ",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "height": 1
+                          "content": "Скругление углов карточек позиций меню",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "frame",
-                          "id": "n3lPSm",
+                          "id": "WCCqb",
                           "name": "Style Options",
-                          "gap": 12,
+                          "gap": 16,
                           "children": [
                             {
                               "type": "frame",
-                              "id": "h3fqP4",
+                              "id": "QuqVC",
                               "name": "Style Острые",
                               "layout": "vertical",
                               "gap": 8,
@@ -20069,7 +20077,7 @@
                               "children": [
                                 {
                                   "type": "rectangle",
-                                  "id": "eyHYt",
+                                  "id": "tGzRK",
                                   "name": "Preview",
                                   "fill": "$--secondary",
                                   "width": 80,
@@ -20077,19 +20085,19 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "bxw2W",
+                                  "id": "r4x8P1",
                                   "name": "Label",
                                   "fill": "$--muted-foreground",
                                   "content": "Острые",
                                   "fontFamily": "Inter",
-                                  "fontSize": 11,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
                             },
                             {
                               "type": "frame",
-                              "id": "phyPY",
+                              "id": "vgEMy",
                               "name": "Style Мягкие",
                               "layout": "vertical",
                               "gap": 8,
@@ -20098,7 +20106,7 @@
                                 {
                                   "type": "rectangle",
                                   "cornerRadius": 8,
-                                  "id": "P5b7A",
+                                  "id": "BCVCH",
                                   "name": "Preview",
                                   "fill": "#ffffff",
                                   "width": 80,
@@ -20108,19 +20116,19 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "AyK25",
+                                  "id": "agmQe",
                                   "name": "Label",
                                   "fill": "$--primary",
                                   "content": "Мягкие",
                                   "fontFamily": "Inter",
-                                  "fontSize": 11,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
                             },
                             {
                               "type": "frame",
-                              "id": "ekVKG",
+                              "id": "bdA2g",
                               "name": "Style Круглые",
                               "layout": "vertical",
                               "gap": 8,
@@ -20129,7 +20137,7 @@
                                 {
                                   "type": "rectangle",
                                   "cornerRadius": 20,
-                                  "id": "fHk5A",
+                                  "id": "n7Hv1A",
                                   "name": "Preview",
                                   "fill": "$--secondary",
                                   "width": 80,
@@ -20137,12 +20145,12 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "ylBcm",
+                                  "id": "AaDai",
                                   "name": "Label",
                                   "fill": "$--muted-foreground",
                                   "content": "Круглые",
                                   "fontFamily": "Inter",
-                                  "fontSize": 11,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -20155,7 +20163,7 @@
                 },
                 {
                   "type": "frame",
-                  "id": "QvRWZ",
+                  "id": "QWY5b",
                   "name": "Right Column",
                   "width": "fill_container",
                   "layout": "vertical",
@@ -20163,95 +20171,97 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "LCEQg",
+                      "id": "A8Y6Tz",
                       "name": "Card – Типографика",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "uG5hi",
+                          "id": "AqsKr",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "BW6mD",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
+                              "id": "A6ApjD",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "text",
-                                  "id": "bI8EA",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Типографика",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "Dbpel",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Шрифт для названий блюд и описаний",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
+                                  "type": "icon",
+                                  "id": "E0f54T",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "type",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
                                 }
                               ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "J3NABI",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Типографика",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
                             }
                           ]
                         },
                         {
-                          "type": "rectangle",
-                          "id": "ot7NS",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
+                          "type": "text",
+                          "id": "h2HfS",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "height": 1
+                          "content": "Шрифт для названий блюд и описаний",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "frame",
-                          "id": "upwTB",
+                          "id": "IBmQD",
                           "name": "Font Inter",
                           "width": "fill_container",
-                          "fill": "$--card",
-                          "cornerRadius": 10,
-                          "stroke": "$--primary",
-                          "strokeWidth": 1.5,
+                          "fill": "$--secondary",
+                          "cornerRadius": 8,
                           "gap": 14,
                           "padding": [
-                            12,
-                            16
+                            10,
+                            12
                           ],
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "THaCd",
+                              "id": "QnzhO",
                               "name": "Letter Box",
                               "width": 40,
                               "height": 40,
-                              "fill": "$--secondary",
+                              "fill": "$--card",
                               "cornerRadius": 8,
                               "justifyContent": "center",
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "iYsmJ",
+                                  "id": "MTz21",
                                   "name": "Aa",
                                   "fill": "$--foreground",
                                   "content": "Aa",
@@ -20263,7 +20273,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "uCplX",
+                              "id": "r62TN",
                               "name": "Info",
                               "width": "fill_container",
                               "layout": "vertical",
@@ -20271,7 +20281,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "hRt79",
+                                  "id": "fhJLW",
                                   "name": "Font Name",
                                   "fill": "$--foreground",
                                   "content": "Inter",
@@ -20281,7 +20291,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "MFujd",
+                                  "id": "LSfF1",
                                   "name": "Font Sub",
                                   "fill": "$--muted-foreground",
                                   "content": "Современный · Читаемый",
@@ -20293,7 +20303,7 @@
                             },
                             {
                               "type": "ellipse",
-                              "id": "FYUuV",
+                              "id": "ZQHEi",
                               "name": "Radio",
                               "fill": "$--primary",
                               "width": 16,
@@ -20303,34 +20313,31 @@
                         },
                         {
                           "type": "frame",
-                          "id": "bqJ4A",
+                          "id": "u8JUF5",
                           "name": "Font Playfair Display",
                           "width": "fill_container",
-                          "fill": "$--card",
-                          "cornerRadius": 10,
-                          "stroke": "$--border",
-                          "strokeWidth": 1,
+                          "cornerRadius": 8,
                           "gap": 14,
                           "padding": [
-                            12,
-                            16
+                            10,
+                            12
                           ],
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "DZDAF",
+                              "id": "r6AFj",
                               "name": "Letter Box",
                               "width": 40,
                               "height": 40,
-                              "fill": "$--secondary",
+                              "fill": "$--card",
                               "cornerRadius": 8,
                               "justifyContent": "center",
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "xrSht",
+                                  "id": "SVg7J",
                                   "name": "Aa",
                                   "fill": "$--foreground",
                                   "content": "Aa",
@@ -20342,7 +20349,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "daeF8",
+                              "id": "igIo8",
                               "name": "Info",
                               "width": "fill_container",
                               "layout": "vertical",
@@ -20350,7 +20357,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "ExUJw",
+                                  "id": "FEeDw",
                                   "name": "Font Name",
                                   "fill": "$--foreground",
                                   "content": "Playfair Display",
@@ -20360,7 +20367,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "b6Td5Y",
+                                  "id": "gzUAi",
                                   "name": "Font Sub",
                                   "fill": "$--muted-foreground",
                                   "content": "Классический · Элегантный",
@@ -20372,7 +20379,7 @@
                             },
                             {
                               "type": "ellipse",
-                              "id": "ata4c",
+                              "id": "htqDY",
                               "name": "Radio",
                               "width": 16,
                               "height": 16,
@@ -20383,34 +20390,31 @@
                         },
                         {
                           "type": "frame",
-                          "id": "Wb8BO",
+                          "id": "lILmh",
                           "name": "Font JetBrains Mono",
                           "width": "fill_container",
-                          "fill": "$--card",
-                          "cornerRadius": 10,
-                          "stroke": "$--border",
-                          "strokeWidth": 1,
+                          "cornerRadius": 8,
                           "gap": 14,
                           "padding": [
-                            12,
-                            16
+                            10,
+                            12
                           ],
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "e5daV",
+                              "id": "kTB0j",
                               "name": "Letter Box",
                               "width": 40,
                               "height": 40,
-                              "fill": "$--secondary",
+                              "fill": "$--card",
                               "cornerRadius": 8,
                               "justifyContent": "center",
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "OvPe4",
+                                  "id": "QnCzR",
                                   "name": "Aa",
                                   "fill": "$--foreground",
                                   "content": "Aa",
@@ -20422,7 +20426,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "M7PFK",
+                              "id": "atQUE",
                               "name": "Info",
                               "width": "fill_container",
                               "layout": "vertical",
@@ -20430,7 +20434,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "lzWqK",
+                                  "id": "CBhgn",
                                   "name": "Font Name",
                                   "fill": "$--foreground",
                                   "content": "JetBrains Mono",
@@ -20440,7 +20444,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "WnDFU",
+                                  "id": "OthdJ",
                                   "name": "Font Sub",
                                   "fill": "$--muted-foreground",
                                   "content": "Технический · Уникальный",
@@ -20452,7 +20456,7 @@
                             },
                             {
                               "type": "ellipse",
-                              "id": "rTMaj",
+                              "id": "kt35h",
                               "name": "Radio",
                               "width": 16,
                               "height": 16,
@@ -20465,53 +20469,72 @@
                     },
                     {
                       "type": "frame",
-                      "id": "h88Af",
+                      "id": "T4Fa8q",
                       "name": "Card – Тёмная тема",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
-                      "padding": [
-                        20,
-                        24
-                      ],
-                      "justifyContent": "space_between",
-                      "alignItems": "center",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "s1FJh",
-                          "name": "Dark Info",
-                          "layout": "vertical",
-                          "gap": 4,
+                          "id": "vsiMW",
+                          "name": "Card Header",
+                          "gap": 12,
+                          "alignItems": "center",
                           "children": [
                             {
-                              "type": "text",
-                              "id": "Pqdbg",
-                              "name": "Title",
-                              "fill": "#131313",
-                              "content": "Тёмная тема",
-                              "fontFamily": "Inter",
-                              "fontSize": 15,
-                              "fontWeight": "500"
+                              "type": "frame",
+                              "id": "fDI3e",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "q1aYmP",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "moon",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
+                                }
+                              ]
                             },
                             {
                               "type": "text",
-                              "id": "qDgz1",
-                              "name": "Desc",
-                              "fill": "#667085",
-                              "content": "Включить тёмный режим для меню",
+                              "id": "CDsdF",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Тёмная тема",
                               "fontFamily": "Inter",
-                              "fontSize": 13,
-                              "fontWeight": "normal"
+                              "fontSize": 16,
+                              "fontWeight": "500"
                             }
                           ]
                         },
                         {
+                          "type": "text",
+                          "id": "BDfPR",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Включить тёмный режим для меню",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
                           "type": "frame",
-                          "id": "FrlXq",
+                          "id": "hx3A8",
                           "name": "Toggle",
                           "width": 48,
                           "height": 26,
@@ -20521,7 +20544,7 @@
                           "children": [
                             {
                               "type": "frame",
-                              "id": "UCX0n",
+                              "id": "PZgzD",
                               "name": "Knob",
                               "width": 20,
                               "height": 20,
@@ -20540,41 +20563,31 @@
                     },
                     {
                       "type": "frame",
-                      "id": "pjYgF",
+                      "id": "HyVvv",
                       "name": "Save Row",
                       "gap": 12,
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "frame",
-                          "id": "Hj8KX",
+                          "id": "vskLW",
+                          "type": "ref",
+                          "ref": "JAQW3",
                           "name": "Save Button",
-                          "fill": "#131313",
-                          "cornerRadius": 8,
-                          "gap": 8,
-                          "padding": [
-                            10,
-                            20
-                          ],
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "BMako",
-                              "name": "Label",
-                              "fill": "#ffffff",
-                              "content": "Сохранить",
-                              "fontFamily": "Inter",
-                              "fontSize": 14,
-                              "fontWeight": "500"
+                          "descendants": {
+                            "QWJcw": {
+                              "enabled": true,
+                              "icon": "check"
+                            },
+                            "B6MWd": {
+                              "content": "Сохранить"
                             }
-                          ]
+                          }
                         },
                         {
                           "type": "text",
-                          "id": "jeOA9",
+                          "id": "Z2lEj",
                           "name": "Cancel",
-                          "fill": "#667085",
+                          "fill": "$--muted-foreground",
                           "content": "Отменить",
                           "fontFamily": "Inter",
                           "fontSize": 14,
@@ -20605,8 +20618,8 @@
       "name": "Admin – Кастомизация (Брендинг)",
       "clip": true,
       "width": 1440,
-      "height": 1300,
-      "fill": "#f3f3f1",
+      "height": 1330,
+      "fill": "$--background",
       "children": [
         {
           "type": "frame",
@@ -20614,8 +20627,8 @@
           "name": "Sidebar",
           "width": 240,
           "height": "fill_container",
-          "fill": "#ffffff",
-          "stroke": "#eaecf0",
+          "fill": "$--card",
+          "stroke": "$--border",
           "strokeWidth": {
             "right": 1
           },
@@ -20643,7 +20656,7 @@
                   "type": "text",
                   "id": "l95go",
                   "name": "Logo Text",
-                  "fill": "#131313",
+                  "fill": "$--foreground",
                   "content": "SHOPNEXT",
                   "fontFamily": "Kodchasan",
                   "fontSize": 20,
@@ -20670,7 +20683,7 @@
                   "name": "Главная",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -20687,13 +20700,13 @@
                       "height": 16,
                       "icon": "layout-dashboard",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "YDzw6",
                       "name": "Главная Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Главная",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -20707,7 +20720,7 @@
                   "name": "Продукты",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -20724,13 +20737,13 @@
                       "height": 16,
                       "icon": "package",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "ejWgu",
                       "name": "Продукты Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Продукты",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -20744,7 +20757,7 @@
                   "name": "Кастомизация",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#f2f4f7",
+                  "fill": "$--secondary",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -20761,13 +20774,13 @@
                       "height": 16,
                       "icon": "palette",
                       "library": "lucide",
-                      "fill": "#e8a98b"
+                      "fill": "$--primary"
                     },
                     {
                       "type": "text",
                       "id": "GTXEM",
                       "name": "Кастомизация Label",
-                      "fill": "#e8a98b",
+                      "fill": "$--primary",
                       "content": "Кастомизация",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -20781,7 +20794,7 @@
                   "name": "Статистика",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -20798,13 +20811,13 @@
                       "height": 16,
                       "icon": "chart-bar",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "Fu7az",
                       "name": "Статистика Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Статистика",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -20818,7 +20831,7 @@
                   "name": "Настройки",
                   "width": "fill_container",
                   "height": 44,
-                  "fill": "#ffffff",
+                  "fill": "$--card",
                   "cornerRadius": 8,
                   "gap": 10,
                   "padding": [
@@ -20835,13 +20848,13 @@
                       "height": 16,
                       "icon": "settings",
                       "library": "lucide",
-                      "fill": "#666666"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "rzp8C",
                       "name": "Настройки Label",
-                      "fill": "#666666",
+                      "fill": "$--muted-foreground",
                       "content": "Настройки",
                       "fontFamily": "Gotham",
                       "fontSize": 14,
@@ -20870,7 +20883,7 @@
                   "name": "Avatar",
                   "width": 32,
                   "height": 32,
-                  "fill": "#f2f4f7",
+                  "fill": "$--secondary",
                   "cornerRadius": 999,
                   "justifyContent": "center",
                   "alignItems": "center",
@@ -20879,7 +20892,7 @@
                       "type": "text",
                       "id": "yPsmC",
                       "name": "Avatar Init",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "L",
                       "fontFamily": "Gotham",
                       "fontSize": 13,
@@ -20891,7 +20904,7 @@
                   "type": "text",
                   "id": "T0FlN",
                   "name": "User Email",
-                  "fill": "#667085",
+                  "fill": "$--muted-foreground",
                   "content": "@luv2kmail.ru",
                   "fontFamily": "Gotham",
                   "fontSize": 14,
@@ -20907,7 +20920,7 @@
           "name": "Content",
           "width": "fill_container",
           "height": "fill_container",
-          "fill": "#f3f3f1",
+          "fill": "$--background",
           "layout": "vertical",
           "gap": 20,
           "padding": 40,
@@ -20931,7 +20944,7 @@
                       "type": "text",
                       "id": "dh2L5",
                       "name": "Page Title",
-                      "fill": "#131313",
+                      "fill": "$--foreground",
                       "content": "Кастомизация",
                       "fontFamily": "Inter",
                       "fontSize": 24,
@@ -20941,7 +20954,7 @@
                       "type": "text",
                       "id": "GLoVh",
                       "name": "Subtitle",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "Настройте внешний вид и брендинг вашего меню",
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -20956,9 +20969,9 @@
               "id": "B9rZ2",
               "name": "Tabs Bar",
               "width": "fill_container",
-              "fill": "#ffffff",
+              "fill": "$--card",
               "cornerRadius": 10,
-              "stroke": "#eaecf0",
+              "stroke": "$--border",
               "strokeWidth": 1,
               "strokeAlignment": "inner",
               "gap": 4,
@@ -20970,7 +20983,7 @@
                   "name": "Tab Внешний вид",
                   "fill": {
                     "type": "color",
-                    "color": "#f2f4f7",
+                    "color": "$--secondary",
                     "enabled": false
                   },
                   "cornerRadius": 7,
@@ -20989,13 +21002,13 @@
                       "height": 14,
                       "icon": "palette",
                       "library": "lucide",
-                      "fill": "#667085"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "s8DuJd",
                       "name": "Tab Label",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "Внешний вид",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -21007,7 +21020,7 @@
                   "type": "frame",
                   "id": "A6eVTw",
                   "name": "Tab Брендинг",
-                  "fill": "#131313",
+                  "fill": "$--foreground",
                   "cornerRadius": 7,
                   "gap": 6,
                   "padding": [
@@ -21024,13 +21037,13 @@
                       "height": 14,
                       "icon": "image",
                       "library": "lucide",
-                      "fill": "#ffffff"
+                      "fill": "$--white"
                     },
                     {
                       "type": "text",
                       "id": "JEEhu",
                       "name": "Tab Label",
-                      "fill": "#ffffff",
+                      "fill": "$--white",
                       "content": "Брендинг",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -21044,7 +21057,7 @@
                   "name": "Tab QR-код",
                   "fill": {
                     "type": "color",
-                    "color": "#f2f4f7",
+                    "color": "$--secondary",
                     "enabled": false
                   },
                   "cornerRadius": 7,
@@ -21063,13 +21076,13 @@
                       "height": 14,
                       "icon": "scan-line",
                       "library": "lucide",
-                      "fill": "#667085"
+                      "fill": "$--muted-foreground"
                     },
                     {
                       "type": "text",
                       "id": "oTzmj",
                       "name": "Tab Label",
-                      "fill": "#667085",
+                      "fill": "$--muted-foreground",
                       "content": "QR-код",
                       "fontFamily": "Inter",
                       "fontSize": 13,
@@ -21081,14 +21094,14 @@
             },
             {
               "type": "frame",
-              "id": "V8cF4H",
+              "id": "u4T5H",
               "name": "Columns",
               "width": "fill_container",
               "gap": 20,
               "children": [
                 {
                   "type": "frame",
-                  "id": "vBK4T",
+                  "id": "rPC19",
                   "name": "Left Column",
                   "width": "fill_container",
                   "layout": "vertical",
@@ -21096,68 +21109,72 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "Avkt5",
+                      "id": "wy6Ey",
                       "name": "Card – Логотип",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "Yyo9D",
+                          "id": "s4TTgu",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "h8fDfU",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
+                              "id": "lcvyw",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "text",
-                                  "id": "O7yrs",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Логотип",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "G9ghT2",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Иконка заведения, отображается в шапке меню",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
+                                  "type": "icon",
+                                  "id": "YnGEL",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "image",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
                                 }
                               ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "uUmb7",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Логотип",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
                             }
                           ]
                         },
                         {
-                          "type": "rectangle",
-                          "id": "XeNsr",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
+                          "type": "text",
+                          "id": "n0WplC",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "height": 1
+                          "content": "Иконка заведения, отображается в шапке меню",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "frame",
-                          "id": "DDxXI",
+                          "id": "MhIZi",
                           "name": "Logo Row",
                           "width": "fill_container",
                           "gap": 20,
@@ -21165,7 +21182,7 @@
                           "children": [
                             {
                               "type": "frame",
-                              "id": "K8GxMc",
+                              "id": "nX0Hh",
                               "name": "Dropzone",
                               "width": 96,
                               "height": 96,
@@ -21180,7 +21197,7 @@
                               "children": [
                                 {
                                   "type": "icon",
-                                  "id": "C4z8n",
+                                  "id": "yMXux",
                                   "name": "Image Icon",
                                   "width": 20,
                                   "height": 20,
@@ -21190,7 +21207,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "WUAjJ",
+                                  "id": "TOvn5",
                                   "name": "Upload Label",
                                   "fill": "$--muted-foreground",
                                   "content": "Загрузить",
@@ -21202,7 +21219,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "pGT8I",
+                              "id": "RWqAd",
                               "name": "Info Col",
                               "width": "fill_container",
                               "layout": "vertical",
@@ -21210,7 +21227,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "aMfc4",
+                                  "id": "u0Xjb4",
                                   "name": "Format Info",
                                   "fill": "$--muted-foreground",
                                   "content": "Формат: PNG, JPG, SVG",
@@ -21220,7 +21237,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "s6fSl6",
+                                  "id": "fUxJF",
                                   "name": "Size Info",
                                   "fill": "$--muted-foreground",
                                   "content": "Размер: 200×200px, до 2МБ",
@@ -21230,7 +21247,7 @@
                                 },
                                 {
                                   "type": "frame",
-                                  "id": "Ou4Wx",
+                                  "id": "cxZyT",
                                   "name": "Delete Btn",
                                   "fill": "$--secondary",
                                   "cornerRadius": 6,
@@ -21243,7 +21260,7 @@
                                   "children": [
                                     {
                                       "type": "icon",
-                                      "id": "IDplZ",
+                                      "id": "oKp87",
                                       "name": "Trash Icon",
                                       "width": 12,
                                       "height": 12,
@@ -21253,7 +21270,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "Kb6QP",
+                                      "id": "zhGma",
                                       "name": "Delete Label",
                                       "fill": "$--muted-foreground",
                                       "content": "Удалить",
@@ -21271,51 +21288,111 @@
                     },
                     {
                       "type": "frame",
-                      "id": "ujDOf",
+                      "id": "IYLUt",
                       "name": "Card – Информация",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "h2OpX",
+                          "id": "U6KfPu",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "wqvzG",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
+                              "id": "Rhaij",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "WcP9W",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "info",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "X9kVH",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Информация",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "n9Odl",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Название и описание заведения",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yYqO0",
+                          "name": "Field Название заведения",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Axcch",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Название заведения",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "sIu6f",
+                              "name": "Input",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "KXUct",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Информация",
+                                  "id": "ErT87",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "Café Shopnext",
                                   "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "N5OgIV",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Название и описание заведения",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
+                                  "fontSize": 14,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -21323,175 +21400,109 @@
                           ]
                         },
                         {
-                          "type": "rectangle",
-                          "id": "qr36g",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
+                          "type": "frame",
+                          "id": "o5DRUF",
+                          "name": "Field Описание",
                           "width": "fill_container",
-                          "height": 1
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ix427",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Описание",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "oebr9",
+                              "name": "Textarea",
+                              "width": "fill_container",
+                              "height": 72,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "layout": "vertical",
+                              "padding": [
+                                10,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "DAlBy",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Кофе, завтраки и обеды в уютной атмосфере",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
                         },
                         {
                           "type": "frame",
-                          "id": "D4zsP",
-                          "name": "Info Content",
+                          "id": "W96ScJ",
+                          "name": "Field Тип",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": 14,
+                          "gap": 6,
                           "children": [
                             {
-                              "type": "frame",
-                              "id": "bgxgq",
-                              "name": "Field Название",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "gyMtr",
-                                  "name": "Label",
-                                  "fill": "#344054",
-                                  "content": "Название заведения",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "iN1Yn",
-                                  "name": "Input",
-                                  "width": "fill_container",
-                                  "height": 40,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "padding": [
-                                    0,
-                                    14
-                                  ],
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "a0TWzM",
-                                      "name": "Value",
-                                      "fill": "$--foreground",
-                                      "content": "Café Shopnext",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                }
-                              ]
+                              "type": "text",
+                              "id": "JlkEg",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Тип заведения",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
                             },
                             {
                               "type": "frame",
-                              "id": "dQjzS",
-                              "name": "Field Описание",
+                              "id": "k4uz1u",
+                              "name": "Select",
                               "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 6,
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "Nhei4",
-                                  "name": "Label",
-                                  "fill": "#344054",
-                                  "content": "Описание",
+                                  "id": "nZBas",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "Кафе",
                                   "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "500"
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
                                 },
                                 {
-                                  "type": "frame",
-                                  "id": "jfxRl",
-                                  "name": "Textarea",
-                                  "width": "fill_container",
-                                  "height": 72,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "layout": "vertical",
-                                  "padding": [
-                                    10,
-                                    14
-                                  ],
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "S3zC6",
-                                      "name": "Value",
-                                      "fill": "$--foreground",
-                                      "textGrowth": "fixed-width",
-                                      "width": "fill_container",
-                                      "content": "Кофе, завтраки и обеды в уютной атмосфере",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "m1B81",
-                              "name": "Field Тип",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "MzWrW",
-                                  "name": "Label",
-                                  "fill": "#344054",
-                                  "content": "Тип заведения",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "gq7yA",
-                                  "name": "Select",
-                                  "width": "fill_container",
-                                  "height": 40,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "padding": [
-                                    0,
-                                    14
-                                  ],
-                                  "justifyContent": "space_between",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "jWYOw",
-                                      "name": "Value",
-                                      "fill": "$--foreground",
-                                      "content": "Кафе",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "normal"
-                                    },
-                                    {
-                                      "type": "icon",
-                                      "id": "EjJrt",
-                                      "name": "Chevron",
-                                      "width": 14,
-                                      "height": 14,
-                                      "icon": "chevron-down",
-                                      "library": "lucide",
-                                      "fill": "$--muted-foreground"
-                                    }
-                                  ]
+                                  "type": "icon",
+                                  "id": "vsbg6",
+                                  "name": "Chevron",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "chevron-down",
+                                  "library": "lucide",
+                                  "fill": "$--muted-foreground"
                                 }
                               ]
                             }
@@ -21501,49 +21512,122 @@
                     },
                     {
                       "type": "frame",
-                      "id": "b32ss9",
+                      "id": "NORZ9",
                       "name": "Card – Социальные сети",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "WxPqd",
+                          "id": "i3tlvt",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "FTucH",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
+                              "id": "ugc2t",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "Y7rFa",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "share-2",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "D7I8D",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Социальные сети",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "VcDRU",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ссылки на страницы заведения в соцсетях",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vxnR8",
+                          "name": "Row instagram",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "CBck6",
+                              "name": "Badge",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 8,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "kTBS1",
+                                  "name": "Icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "icon": "instagram",
+                                  "library": "lucide",
+                                  "fill": "$--muted-foreground"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vpNHJ",
+                              "name": "Input",
+                              "width": "fill_container",
+                              "height": 36,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                12
+                              ],
+                              "alignItems": "center",
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "LZYZn",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Социальные сети",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "q0KqZ",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Ссылки на страницы заведения в соцсетях",
+                                  "id": "joaV6",
+                                  "name": "Handle",
+                                  "fill": "$--foreground",
+                                  "content": "@cafe_shopnext",
                                   "fontFamily": "Inter",
                                   "fontSize": 13,
                                   "fontWeight": "normal"
@@ -21553,201 +21637,122 @@
                           ]
                         },
                         {
-                          "type": "rectangle",
-                          "id": "K9eCZ",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
-                          "width": "fill_container",
-                          "height": 1
-                        },
-                        {
                           "type": "frame",
-                          "id": "szDvQ",
-                          "name": "Social Content",
+                          "id": "GqUjA",
+                          "name": "Row music-2",
                           "width": "fill_container",
-                          "layout": "vertical",
                           "gap": 10,
+                          "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "jiCDe",
-                              "name": "Row instagram",
-                              "width": "fill_container",
-                              "gap": 10,
+                              "id": "gLmi9",
+                              "name": "Badge",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 8,
+                              "justifyContent": "center",
                               "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "frame",
-                                  "id": "adQaY",
-                                  "name": "Badge",
-                                  "width": 36,
-                                  "height": 36,
-                                  "fill": "$--secondary",
-                                  "cornerRadius": 8,
-                                  "justifyContent": "center",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "icon",
-                                      "id": "AHArK",
-                                      "name": "Icon",
-                                      "width": 16,
-                                      "height": 16,
-                                      "icon": "instagram",
-                                      "library": "lucide",
-                                      "fill": "$--muted-foreground"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "IEU9H",
-                                  "name": "Input",
-                                  "width": "fill_container",
-                                  "height": 36,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "padding": [
-                                    0,
-                                    12
-                                  ],
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "tTFvT",
-                                      "name": "Handle",
-                                      "fill": "$--foreground",
-                                      "content": "@cafe_shopnext",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
+                                  "type": "icon",
+                                  "id": "o5SmpV",
+                                  "name": "Icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "icon": "music-2",
+                                  "library": "lucide",
+                                  "fill": "$--muted-foreground"
                                 }
                               ]
                             },
                             {
                               "type": "frame",
-                              "id": "gJyP4",
-                              "name": "Row music-2",
+                              "id": "e3Vxvf",
+                              "name": "Input",
                               "width": "fill_container",
-                              "gap": 10,
+                              "height": 36,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                12
+                              ],
                               "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "frame",
-                                  "id": "apElS",
-                                  "name": "Badge",
-                                  "width": 36,
-                                  "height": 36,
-                                  "fill": "$--secondary",
-                                  "cornerRadius": 8,
-                                  "justifyContent": "center",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "icon",
-                                      "id": "X5fu4",
-                                      "name": "Icon",
-                                      "width": 16,
-                                      "height": 16,
-                                      "icon": "music-2",
-                                      "library": "lucide",
-                                      "fill": "$--muted-foreground"
-                                    }
-                                  ]
-                                },
+                                  "type": "text",
+                                  "id": "wbgdT",
+                                  "name": "Handle",
+                                  "fill": "$--foreground",
+                                  "content": "@cafe_shopnext",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "NEbW0",
+                          "name": "Row facebook",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Fhp5I",
+                              "name": "Badge",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 8,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
                                 {
-                                  "type": "frame",
-                                  "id": "uSBcA",
-                                  "name": "Input",
-                                  "width": "fill_container",
-                                  "height": 36,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "padding": [
-                                    0,
-                                    12
-                                  ],
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "lejwc",
-                                      "name": "Handle",
-                                      "fill": "$--foreground",
-                                      "content": "@cafe_shopnext",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
+                                  "type": "icon",
+                                  "id": "PjAOO",
+                                  "name": "Icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "icon": "facebook",
+                                  "library": "lucide",
+                                  "fill": "$--muted-foreground"
                                 }
                               ]
                             },
                             {
                               "type": "frame",
-                              "id": "QF2S6",
-                              "name": "Row facebook",
+                              "id": "NXera",
+                              "name": "Input",
                               "width": "fill_container",
-                              "gap": 10,
+                              "height": 36,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                12
+                              ],
                               "alignItems": "center",
                               "children": [
                                 {
-                                  "type": "frame",
-                                  "id": "Rtl87",
-                                  "name": "Badge",
-                                  "width": 36,
-                                  "height": 36,
-                                  "fill": "$--secondary",
-                                  "cornerRadius": 8,
-                                  "justifyContent": "center",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "icon",
-                                      "id": "WeltU",
-                                      "name": "Icon",
-                                      "width": 16,
-                                      "height": 16,
-                                      "icon": "facebook",
-                                      "library": "lucide",
-                                      "fill": "$--muted-foreground"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "P28UGP",
-                                  "name": "Input",
-                                  "width": "fill_container",
-                                  "height": 36,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "padding": [
-                                    0,
-                                    12
-                                  ],
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "M8pvYg",
-                                      "name": "Handle",
-                                      "fill": "$--foreground",
-                                      "content": "cafe-shopnext",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
+                                  "type": "text",
+                                  "id": "HJlbb",
+                                  "name": "Handle",
+                                  "fill": "$--foreground",
+                                  "content": "cafe-shopnext",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -21759,7 +21764,7 @@
                 },
                 {
                   "type": "frame",
-                  "id": "qW6oT",
+                  "id": "OnyqZ",
                   "name": "Right Column",
                   "width": "fill_container",
                   "layout": "vertical",
@@ -21767,756 +21772,691 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "Uhtfx",
+                      "id": "e8UST3",
                       "name": "Card – Обложка меню",
                       "width": "fill_container",
-                      "fill": "#ffffff",
+                      "fill": "$--card",
                       "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
                       "layout": "vertical",
                       "gap": 16,
                       "padding": 24,
                       "children": [
                         {
                           "type": "frame",
-                          "id": "a40iH",
+                          "id": "I3Xxy",
                           "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
+                          "gap": 12,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "LDint",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "cpzMx",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Обложка меню",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "Lu7Zx",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Широкий баннер в шапке вашего меню",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "rectangle",
-                          "id": "k2OLhW",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
-                          "width": "fill_container",
-                          "height": 1
-                        },
-                        {
-                          "type": "frame",
-                          "id": "u0XN8F",
-                          "name": "Cover Content",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 10,
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "XrAKF",
-                              "name": "Dropzone Wide",
-                              "width": "fill_container",
-                              "height": 96,
+                              "id": "vhDQ0",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
                               "fill": "$--secondary",
-                              "cornerRadius": 12,
-                              "stroke": "$--border",
-                              "strokeWidth": 1,
-                              "gap": 8,
+                              "cornerRadius": 999,
                               "justifyContent": "center",
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon",
-                                  "id": "VilWe",
-                                  "name": "Image Icon",
+                                  "id": "sCZtV",
+                                  "name": "Icon",
                                   "width": 18,
                                   "height": 18,
-                                  "icon": "image",
+                                  "icon": "images",
                                   "library": "lucide",
-                                  "fill": "$--muted-foreground"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "q3eBM",
-                                  "name": "Upload Label",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Загрузить обложку",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fill": "$--primary"
                                 }
                               ]
                             },
-                            {
-                              "type": "frame",
-                              "id": "JHu0u",
-                              "name": "Hints Row",
-                              "gap": 16,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "hKpAz",
-                                  "name": "Hint",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Формат: PNG, JPG",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 11,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "wTYk7",
-                                  "name": "Hint",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Рек. размер: 1200×400px",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 11,
-                                  "fontWeight": "normal"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "oMGsm",
-                                  "name": "Hint",
-                                  "fill": "$--muted-foreground",
-                                  "content": "Макс. размер: 5МБ",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 11,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "l0pWY4",
-                      "name": "Card – Контакты",
-                      "width": "fill_container",
-                      "fill": "#ffffff",
-                      "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
-                      "layout": "vertical",
-                      "gap": 16,
-                      "padding": 24,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "Ks8r7",
-                          "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "aP0EQ",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "KWknW",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "Контакты",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "RnSDw",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Отображаются в профиле вашего меню",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "rectangle",
-                          "id": "WWDQ6",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
-                          "width": "fill_container",
-                          "height": 1
-                        },
-                        {
-                          "type": "frame",
-                          "id": "w594Y2",
-                          "name": "Contact Content",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 12,
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "t5z7GN",
-                              "name": "Row 1",
-                              "width": "fill_container",
-                              "gap": 14,
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "Q0hakb",
-                                  "name": "Field Телефон",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 6,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "RgfHo",
-                                      "name": "Label",
-                                      "fill": "#344054",
-                                      "content": "Телефон",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "frame",
-                                      "id": "yWkxX",
-                                      "name": "Input",
-                                      "width": "fill_container",
-                                      "height": 40,
-                                      "fill": "#ffffff",
-                                      "cornerRadius": 8,
-                                      "stroke": "#eaecf0",
-                                      "strokeWidth": 1,
-                                      "padding": [
-                                        0,
-                                        14
-                                      ],
-                                      "alignItems": "center",
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "id": "E2C9x",
-                                          "name": "Value",
-                                          "fill": "$--foreground",
-                                          "content": "+7 (999) 000-00-00",
-                                          "fontFamily": "Inter",
-                                          "fontSize": 14,
-                                          "fontWeight": "normal"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "l7WFB",
-                                  "name": "Field Email",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 6,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "AzK2U",
-                                      "name": "Label",
-                                      "fill": "#344054",
-                                      "content": "Email",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "frame",
-                                      "id": "wqkye",
-                                      "name": "Input",
-                                      "width": "fill_container",
-                                      "height": 40,
-                                      "fill": "#ffffff",
-                                      "cornerRadius": 8,
-                                      "stroke": "#eaecf0",
-                                      "strokeWidth": 1,
-                                      "padding": [
-                                        0,
-                                        14
-                                      ],
-                                      "alignItems": "center",
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "id": "d6pmsG",
-                                          "name": "Value",
-                                          "fill": "$--foreground",
-                                          "content": "cafe@shopnext.ru",
-                                          "fontFamily": "Inter",
-                                          "fontSize": 14,
-                                          "fontWeight": "normal"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "ofUaD",
-                              "name": "Row 2",
-                              "width": "fill_container",
-                              "gap": 14,
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "gOeXx",
-                                  "name": "Field Адрес",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 6,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "FqTIc",
-                                      "name": "Label",
-                                      "fill": "#344054",
-                                      "content": "Адрес",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "frame",
-                                      "id": "syS5e",
-                                      "name": "Input",
-                                      "width": "fill_container",
-                                      "height": 40,
-                                      "fill": "#ffffff",
-                                      "cornerRadius": 8,
-                                      "stroke": "#eaecf0",
-                                      "strokeWidth": 1,
-                                      "padding": [
-                                        0,
-                                        14
-                                      ],
-                                      "alignItems": "center",
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "id": "rthKA",
-                                          "name": "Value",
-                                          "fill": "$--foreground",
-                                          "content": "ул. Примерная, 1",
-                                          "fontFamily": "Inter",
-                                          "fontSize": 14,
-                                          "fontWeight": "normal"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "EdEVd",
-                                  "name": "Field Сайт",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 6,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "t09ntb",
-                                      "name": "Label",
-                                      "fill": "#344054",
-                                      "content": "Сайт",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "frame",
-                                      "id": "jvgIC",
-                                      "name": "Input",
-                                      "width": "fill_container",
-                                      "height": 40,
-                                      "fill": "#ffffff",
-                                      "cornerRadius": 8,
-                                      "stroke": "#eaecf0",
-                                      "strokeWidth": 1,
-                                      "padding": [
-                                        0,
-                                        14
-                                      ],
-                                      "alignItems": "center",
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "id": "O9AdQO",
-                                          "name": "Value",
-                                          "fill": "$--foreground",
-                                          "content": "shopnext.ru",
-                                          "fontFamily": "Inter",
-                                          "fontSize": 14,
-                                          "fontWeight": "normal"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "WcCCE",
-                      "name": "Card – WiFi",
-                      "width": "fill_container",
-                      "fill": "#ffffff",
-                      "cornerRadius": 12,
-                      "stroke": "#eaecf0",
-                      "strokeWidth": 1,
-                      "strokeAlignment": "inner",
-                      "layout": "vertical",
-                      "gap": 16,
-                      "padding": 24,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "PYxIO",
-                          "name": "Card Header",
-                          "width": "fill_container",
-                          "justifyContent": "space_between",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "gTDaD",
-                              "name": "Title Group",
-                              "layout": "vertical",
-                              "gap": 4,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "lioNI",
-                                  "name": "Title",
-                                  "fill": "#131313",
-                                  "content": "WiFi",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 15,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "aFzjU",
-                                  "name": "Desc",
-                                  "fill": "#667085",
-                                  "content": "Данные для подключения гостей к интернету",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "rectangle",
-                          "id": "o1ht5",
-                          "name": "Divider",
-                          "fill": "#eaecf0",
-                          "width": "fill_container",
-                          "height": 1
-                        },
-                        {
-                          "type": "frame",
-                          "id": "MWcQO",
-                          "name": "WiFi Content",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "gap": 14,
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "kSymS",
-                              "name": "Field SSID",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "qtG5l",
-                                  "name": "Label",
-                                  "fill": "#344054",
-                                  "content": "Название сети (SSID)",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "B1ckQ",
-                                  "name": "Input SSID",
-                                  "width": "fill_container",
-                                  "height": 40,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "gap": 8,
-                                  "padding": [
-                                    0,
-                                    14
-                                  ],
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "icon",
-                                      "id": "WGvZY",
-                                      "name": "Wifi Icon",
-                                      "width": 14,
-                                      "height": 14,
-                                      "icon": "wifi",
-                                      "library": "lucide",
-                                      "fill": "$--muted-foreground"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "id": "S3gl9",
-                                      "name": "SSID Value",
-                                      "fill": "$--foreground",
-                                      "content": "Cafe_Shopnext_Guest",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 14,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "U5zowT",
-                              "name": "Field Password",
-                              "width": "fill_container",
-                              "layout": "vertical",
-                              "gap": 6,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "UiFAP",
-                                  "name": "Label",
-                                  "fill": "#344054",
-                                  "content": "Пароль",
-                                  "fontFamily": "Inter",
-                                  "fontSize": 13,
-                                  "fontWeight": "500"
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "f5FAh",
-                                  "name": "Input Password",
-                                  "width": "fill_container",
-                                  "height": 40,
-                                  "fill": "#ffffff",
-                                  "cornerRadius": 8,
-                                  "stroke": "#eaecf0",
-                                  "strokeWidth": 1,
-                                  "padding": [
-                                    0,
-                                    14
-                                  ],
-                                  "justifyContent": "space_between",
-                                  "alignItems": "center",
-                                  "children": [
-                                    {
-                                      "type": "frame",
-                                      "id": "vYXD0",
-                                      "name": "Left",
-                                      "gap": 8,
-                                      "alignItems": "center",
-                                      "children": [
-                                        {
-                                          "type": "icon",
-                                          "id": "Da0M1",
-                                          "name": "Lock Icon",
-                                          "width": 14,
-                                          "height": 14,
-                                          "icon": "lock",
-                                          "library": "lucide",
-                                          "fill": "$--muted-foreground"
-                                        },
-                                        {
-                                          "type": "text",
-                                          "id": "nGCQT",
-                                          "name": "Password",
-                                          "fill": "$--foreground",
-                                          "content": "••••••••",
-                                          "fontFamily": "Inter",
-                                          "fontSize": 14,
-                                          "fontWeight": "normal"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "icon",
-                                      "id": "w0vLB",
-                                      "name": "Eye Icon",
-                                      "width": 14,
-                                      "height": 14,
-                                      "icon": "eye",
-                                      "library": "lucide",
-                                      "fill": "$--muted-foreground"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "rectangle",
-                              "id": "f26SmJ",
-                              "name": "Wifi Divider",
-                              "fill": "$--border",
-                              "width": "fill_container",
-                              "height": 1
-                            },
-                            {
-                              "type": "frame",
-                              "id": "JwxM0",
-                              "name": "Toggle Row",
-                              "width": "fill_container",
-                              "justifyContent": "space_between",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "k12Hd",
-                                  "name": "Toggle Left",
-                                  "layout": "vertical",
-                                  "gap": 2,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "k2vUnF",
-                                      "name": "Toggle Title",
-                                      "fill": "#131313",
-                                      "content": "Показывать WiFi гостям",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 13,
-                                      "fontWeight": "500"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "id": "S7lDQA",
-                                      "name": "Toggle Desc",
-                                      "fill": "#667085",
-                                      "content": "Гости увидят пароль в меню",
-                                      "fontFamily": "Inter",
-                                      "fontSize": 11,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "m2Kul",
-                                  "name": "Toggle Track",
-                                  "width": 44,
-                                  "height": 24,
-                                  "fill": "$--primary",
-                                  "cornerRadius": 999,
-                                  "padding": 2,
-                                  "justifyContent": "end",
-                                  "children": [
-                                    {
-                                      "type": "frame",
-                                      "id": "Q40q7H",
-                                      "name": "Toggle Knob",
-                                      "width": 20,
-                                      "height": 20,
-                                      "fill": "$--card",
-                                      "cornerRadius": 999,
-                                      "effect": {
-                                        "type": "shadow",
-                                        "shadowType": "outer",
-                                        "color": "#00000020",
-                                        "blur": 3
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "cbT58",
-                      "name": "Save Row",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "e39tEj",
-                          "name": "Save Button",
-                          "fill": "#131313",
-                          "cornerRadius": 8,
-                          "gap": 8,
-                          "padding": [
-                            10,
-                            20
-                          ],
-                          "alignItems": "center",
-                          "children": [
                             {
                               "type": "text",
-                              "id": "aqfXl",
-                              "name": "Label",
-                              "fill": "#ffffff",
-                              "content": "Сохранить",
+                              "id": "T0D5e6",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Обложка меню",
                               "fontFamily": "Inter",
-                              "fontSize": 14,
+                              "fontSize": 16,
                               "fontWeight": "500"
                             }
                           ]
                         },
                         {
                           "type": "text",
-                          "id": "xQSzl",
+                          "id": "NgXV1",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Широкий баннер в шапке вашего меню",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uamsI",
+                          "name": "Dropzone Wide",
+                          "width": "fill_container",
+                          "height": 96,
+                          "fill": "$--secondary",
+                          "cornerRadius": 12,
+                          "stroke": "$--border",
+                          "strokeWidth": 1,
+                          "gap": 8,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "LA6FZ",
+                              "name": "Image Icon",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "image",
+                              "library": "lucide",
+                              "fill": "$--muted-foreground"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ckRyC",
+                              "name": "Upload Label",
+                              "fill": "$--muted-foreground",
+                              "content": "Загрузить обложку",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lLLeI",
+                          "name": "Hints Row",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "V0C432",
+                              "name": "Hint",
+                              "fill": "$--muted-foreground",
+                              "content": "Формат: PNG, JPG",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "YK7I3",
+                              "name": "Hint",
+                              "fill": "$--muted-foreground",
+                              "content": "Рек. размер: 1200×400px",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "u25H5",
+                              "name": "Hint",
+                              "fill": "$--muted-foreground",
+                              "content": "Макс. размер: 5МБ",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "luFwC",
+                      "name": "Card – Контакты",
+                      "width": "fill_container",
+                      "fill": "$--card",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "x7zSn",
+                          "name": "Card Header",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Bpp4y",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "e0kpig",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "phone",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "f4Eizs",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "Контакты",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ljMaH",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Отображаются в профиле вашего меню",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uDqUP",
+                          "name": "Field Телефон",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KxBPw",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Телефон",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "h5jUW",
+                              "name": "Input",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Dfw2O",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "+7 999 123-45-67",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bHkpn",
+                          "name": "Field Email",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "RUl00",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Email",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "XdSSd",
+                              "name": "Input",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "REnA3",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "info@cafeshopnext.ru",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TRE7y",
+                          "name": "Field Адрес",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wPFh8",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Адрес",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "zj5ZD",
+                              "name": "Input",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "KX30c",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "ул. Пушкина, д. 1",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GwTe0",
+                          "name": "Field Сайт",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bg7oJ",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Сайт",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "a91obU",
+                              "name": "Input",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "scBiV",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "shopnext.ru",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jYLCh",
+                      "name": "Card – WiFi",
+                      "width": "fill_container",
+                      "fill": "$--card",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Bujds",
+                          "name": "Card Header",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "XqNKf",
+                              "name": "Icon Circle",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "$--secondary",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "vNbgn",
+                                  "name": "Icon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "icon": "wifi",
+                                  "library": "lucide",
+                                  "fill": "$--primary"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "THAlZ",
+                              "name": "Card Title",
+                              "fill": "$--foreground",
+                              "content": "WiFi",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "sVVWn",
+                          "name": "Description",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Данные для подключения гостей к интернету",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jn4rE",
+                          "name": "Field SSID",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YmYLC",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Название сети (SSID)",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "SZaya",
+                              "name": "Input SSID",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "Ao2a0",
+                                  "name": "Wifi Icon",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "wifi",
+                                  "library": "lucide",
+                                  "fill": "$--muted-foreground"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "gknpx",
+                                  "name": "SSID Value",
+                                  "fill": "$--foreground",
+                                  "content": "Cafe_Shopnext_Guest",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PPzVy",
+                          "name": "Field Password",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "B8u74J",
+                              "name": "Label",
+                              "fill": "#344054",
+                              "content": "Пароль",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ClfJX",
+                              "name": "Input Password",
+                              "width": "fill_container",
+                              "height": 40,
+                              "fill": "$--card",
+                              "cornerRadius": 8,
+                              "stroke": "$--border",
+                              "strokeWidth": 1,
+                              "padding": [
+                                0,
+                                14
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Yq5P1",
+                                  "name": "Value",
+                                  "fill": "$--foreground",
+                                  "content": "••••••••",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "icon",
+                                  "id": "GTeXA",
+                                  "name": "Eye Icon",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "eye",
+                                  "library": "lucide",
+                                  "fill": "$--muted-foreground"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "EVIrJ",
+                          "name": "Wifi Divider",
+                          "fill": "$--border",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RDWkv",
+                          "name": "Toggle Row",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "My92E",
+                              "name": "Toggle Left",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xIHF7",
+                                  "name": "Toggle Title",
+                                  "fill": "$--foreground",
+                                  "content": "Показывать WiFi гостям",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "eHaRZ",
+                                  "name": "Toggle Desc",
+                                  "fill": "$--muted-foreground",
+                                  "content": "Гости увидят пароль в меню",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "jlcM0",
+                              "name": "Toggle Track",
+                              "width": 44,
+                              "height": 24,
+                              "fill": "$--primary",
+                              "cornerRadius": 999,
+                              "padding": 2,
+                              "justifyContent": "end",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "gQhCi",
+                                  "name": "Toggle Knob",
+                                  "width": 20,
+                                  "height": 20,
+                                  "fill": "$--card",
+                                  "cornerRadius": 999,
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#00000020",
+                                    "blur": 3
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ykd57",
+                      "name": "Save Row",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "cJ8sm",
+                          "type": "ref",
+                          "ref": "JAQW3",
+                          "name": "Save Button",
+                          "descendants": {
+                            "QWJcw": {
+                              "enabled": true,
+                              "icon": "check"
+                            },
+                            "B6MWd": {
+                              "content": "Сохранить"
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "jG54A",
                           "name": "Cancel",
-                          "fill": "#667085",
+                          "fill": "$--muted-foreground",
                           "content": "Отменить",
                           "fontFamily": "Inter",
                           "fontSize": 14,
@@ -27860,6 +27800,7 @@
       "value": 16
     }
   },
+  "fileToken": "7cf6f6a4-b235-4f93-b12c-b20b5dfb2ac0",
   "fonts": [
     {
       "name": "Gotham",
