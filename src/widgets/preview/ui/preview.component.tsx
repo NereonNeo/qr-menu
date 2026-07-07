@@ -17,7 +17,7 @@ export const Preview = () => {
       <div
         className={clsx(
           isShowPreview && "-translate-y-full",
-          "2xl:w-2xl-preview xl:w-xl-preview md:w-md-preview md:top-0 md:pt-0 pt-14 right-0 top-full size-full fixed md:border-l md:border-gray-500 bg-gray-50 transition-transform",
+          "2xl:w-2xl-preview xl:w-xl-preview md:w-md-preview md:top-0 md:pt-0 pt-14 right-0 top-full size-full fixed md:border-l md:border-gray-300 bg-gray-50 transition-transform",
         )}
       >
         <aside className="xl:p-10 tablet:px-5 tablet:p-6 tablet:pt-6 md:pt-14 h-full">

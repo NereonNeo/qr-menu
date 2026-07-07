@@ -9,8 +9,8 @@ export const CustomizationPanel = () => {
   const [activeTab, setActiveTab] = useState<CustomizationTab>("appearance");
 
   return (
-    <div className="flex flex-col h-full bg-gray-50">
-      <div className="flex items-center gap-1.5 h-[52px] px-7 bg-white border-b border-gray-200 shrink-0">
+    <div className="w-full bg-white rounded-xl border border-gray-200 overflow-hidden">
+      <div className="flex items-center gap-1.5 h-13 px-7 border-b border-gray-200">
         {CUSTOMIZATION_TABS.map((tab) => (
           <button
             key={tab.value}
@@ -29,7 +29,7 @@ export const CustomizationPanel = () => {
       {activeTab === "appearance" ? (
         <CustomizationAppearance />
       ) : (
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex items-center justify-center py-20">
           <p className="text-gray-400 font-gotham text-sm">Раздел в разработке</p>
         </div>
       )}
