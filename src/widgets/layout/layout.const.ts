@@ -23,6 +23,7 @@ export const listLink: Array<LinkType> = [
     children: [
       { href: "/products/menu", text: "Меню", icon: "layers" },
       { href: "/products/position", text: "Позиции", icon: "layout-list" },
+      { href: "/products/addons", text: "Добавки", icon: "package" },
     ],
   },
   {

@@ -18,3 +18,37 @@ export interface IProduct {
   description: string;
   img: File[];
 }
+
+export interface IPositionCard {
+  id: number;
+  title: string;
+  price: number;
+  img: string;
+  visible: boolean;
+  menuName: string;
+  tags: string[];
+  views?: number;
+}
+
+export interface IPositionEditForm {
+  title: string;
+  price: string;
+  weight: string;
+  description: string;
+  visible: boolean;
+  menuId: string;
+}
+
+export interface IPositionCreateForm {
+  title: string;
+  price: string;
+  weight: string;
+  description: string;
+  visible: boolean;
+  inStock: boolean;
+  menuId: string;
+  calories: string;
+  protein: string;
+  carbs: string;
+  fat: string;
+}
