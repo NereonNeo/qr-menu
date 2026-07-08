@@ -13,7 +13,7 @@ interface ColorPickerProps extends ComponentProps<"input">, Pick<IInputProps, "m
 }
 
 export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props, ref) => {
-  const { labelText, message, invalid, onChange, wrapperClassname, ...otherProps } = props;
+  const { labelText, message, invalid, onChange, wrapperClassname, value, ...otherProps } = props;
   const colorPickerRef = useRef<HTMLInputElement>(null);
   const inputValueRef = useRef<HTMLInputElement>(null);
   const id = useId();
@@ -44,6 +44,7 @@ export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props
           type="color"
           name="color-picker"
           ref={colorPickerRef}
+          value={value}
           onChange={handlePickerChange}
           className="h-full w-10 rounded-md overflow-hidden appearance-none [&::-webkit-color-swatch-wrapper]:p-0 [&::-webkit-color-swatch]:border-none"
         />
@@ -54,6 +55,7 @@ export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props
           message={message}
           invalid={invalid}
           ref={inputValueRef}
+          value={value}
           {...otherProps}
           type="text"
         />

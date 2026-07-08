@@ -1,11 +1,14 @@
+import type { IconNameTypes } from "@/shared/const/icon.const";
+import type { ISelectType } from "@/shared/ui/select/select.entry";
+
 import type { CardStyle } from "./customization.contract";
 
 export type CustomizationTab = "appearance" | "branding" | "qr";
 
-export const CUSTOMIZATION_TABS: { value: CustomizationTab; label: string }[] = [
-  { value: "appearance", label: "Внешний вид" },
-  { value: "branding", label: "Брендинг" },
-  { value: "qr", label: "QR-код" },
+export const CUSTOMIZATION_TABS: { value: CustomizationTab; label: string; icon: IconNameTypes }[] = [
+  { value: "appearance", label: "Внешний вид", icon: "palette" },
+  { value: "branding", label: "Брендинг", icon: "image" },
+  { value: "qr", label: "QR-код", icon: "scan-line" },
 ];
 
 export const ACCENT_COLOR_PRESETS: string[] = [
@@ -31,4 +34,11 @@ export const CARD_STYLE_OPTIONS: { value: CardStyle; label: string; radius: numb
   { value: "sharp", label: "Острые", radius: 0 },
   { value: "soft", label: "Мягкие", radius: 8 },
   { value: "round", label: "Круглые", radius: 20 },
+];
+
+export const VENUE_TYPE_OPTIONS: ISelectType[] = [
+  { value: "cafe", label: "Кафе" },
+  { value: "restaurant", label: "Ресторан" },
+  { value: "bar", label: "Бар" },
+  { value: "bakery", label: "Пекарня" },
 ];
