@@ -8,12 +8,12 @@ import { Label } from "@/shared/ui/label";
 import { MaskInput, MaskInputOptions } from "../mask-input/mask-input.entry";
 
 interface ColorPickerProps extends ComponentProps<"input">, Pick<IInputProps, "message" | "invalid"> {
-  labelText: string;
+  labelText?: string;
   wrapperClassname?: string;
 }
 
 export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props, ref) => {
-  const { labelText, message, invalid, onChange, wrapperClassname, ...otherProps } = props;
+  const { labelText, message, invalid, onChange, wrapperClassname, value, ...otherProps } = props;
   const colorPickerRef = useRef<HTMLInputElement>(null);
   const inputValueRef = useRef<HTMLInputElement>(null);
   const id = useId();
@@ -37,13 +37,14 @@ export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props
 
   return (
     <div className={clsx(wrapperClassname)}>
-      <Label htmlFor={id} text={labelText} />
+      {labelText && <Label htmlFor={id} text={labelText} />}
       <div className="h-10 w-full flex gap-2">
         <input
           id={id}
           type="color"
           name="color-picker"
           ref={colorPickerRef}
+          value={value}
           onChange={handlePickerChange}
           className="h-full w-10 rounded-md overflow-hidden appearance-none [&::-webkit-color-swatch-wrapper]:p-0 [&::-webkit-color-swatch]:border-none"
         />
@@ -54,6 +55,7 @@ export const ColorPicker = forwardRef<HTMLInputElement, ColorPickerProps>((props
           message={message}
           invalid={invalid}
           ref={inputValueRef}
+          value={value}
           {...otherProps}
           type="text"
         />

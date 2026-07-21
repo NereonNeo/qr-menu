@@ -1,32 +1,44 @@
+import type { IconNameTypes } from "@/shared/const/icon.const";
 import type { ISelectType } from "@/shared/ui/select/select.entry";
 
-export type CustomizationTab = "profile" | "theme" | "fonts" | "buttons";
+import type { CardStyle } from "./customization.contract";
 
-export const CUSTOMIZATION_TABS: { value: CustomizationTab; label: string }[] = [
-  { value: "profile", label: "Профиль" },
-  { value: "theme", label: "Тема" },
-  { value: "fonts", label: "Шрифты" },
-  { value: "buttons", label: "Кнопки" },
+export type CustomizationTab = "appearance" | "branding" | "qr";
+
+export const CUSTOMIZATION_TABS: { value: CustomizationTab; label: string; icon: IconNameTypes }[] = [
+  { value: "appearance", label: "Внешний вид", icon: "palette" },
+  { value: "branding", label: "Брендинг", icon: "image" },
+  { value: "qr", label: "QR-код", icon: "scan-line" },
 ];
 
-export const FONT_OPTIONS: ISelectType[] = [
-  { value: "Inter", label: "Inter" },
-  { value: "Roboto", label: "Roboto" },
-  { value: "Montserrat", label: "Montserrat" },
-  { value: "Playfair Display", label: "Playfair Display" },
-  { value: "Poppins", label: "Poppins" },
-  { value: "Nunito", label: "Nunito" },
+export const ACCENT_COLOR_PRESETS: string[] = [
+  "#111111",
+  "#2563EB",
+  "#16A34A",
+  "#DC2626",
+  "#7C3AED",
+  "#0891B2",
+  "#D97706",
+  "#BE185D",
+  "#059669",
+  "#FF8400",
 ];
 
-export const BUTTON_RADIUS_OPTIONS: ISelectType[] = [
-  { value: "0", label: "Острые — 0px" },
-  { value: "8", label: "Скруглённые — 8px" },
-  { value: "12", label: "Округлые — 12px" },
-  { value: "9999", label: "Пилюля — 9999px" },
+export const FONT_STYLE_OPTIONS: { value: string; label: string; sub: string }[] = [
+  { value: "Inter", label: "Inter", sub: "Современный · Читаемый" },
+  { value: "Playfair Display", label: "Playfair Display", sub: "Классический · Элегантный" },
+  { value: "JetBrains Mono", label: "JetBrains Mono", sub: "Технический · Уникальный" },
 ];
 
-export const BUTTON_STYLE_OPTIONS: ISelectType[] = [
-  { value: "filled", label: "Заливка" },
-  { value: "outlined", label: "Контур" },
-  { value: "ghost", label: "Прозрачные" },
+export const CARD_STYLE_OPTIONS: { value: CardStyle; label: string; radius: number }[] = [
+  { value: "sharp", label: "Острые", radius: 0 },
+  { value: "soft", label: "Мягкие", radius: 8 },
+  { value: "round", label: "Круглые", radius: 20 },
+];
+
+export const VENUE_TYPE_OPTIONS: ISelectType[] = [
+  { value: "cafe", label: "Кафе" },
+  { value: "restaurant", label: "Ресторан" },
+  { value: "bar", label: "Бар" },
+  { value: "bakery", label: "Пекарня" },
 ];

@@ -46,4 +46,12 @@ export const buttonStyleVariantsClassNames: Record<ButtonColorVariant, Record<Bu
     focused:
       "focus-visible:bg-red-600 focus-visible:ring-3 focus-visible:ring-red-100 active:enabled:bg-red-600 active:enabled:ring-3 active:enabled:ring-red-100",
   },
+
+  dark: {
+    disabled: "disabled:bg-gray-200 disabled:text-gray-400 disabled:border-transparent",
+    hover: "hover:bg-black",
+    element: "bg-gray-900 border border-solid border-transparent text-white",
+    focused:
+      "focus-visible:bg-black focus-visible:ring-3 focus-visible:ring-gray-200 active:enabled:bg-black active:enabled:ring-3 active:enabled:ring-gray-200",
+  },
 };

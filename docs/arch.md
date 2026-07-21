@@ -6,7 +6,7 @@
 {scope}.store.ts //вся логика стора
 {scope}.component // UI сегмент
 {scope}.const.ts // Константы
-{scope}.contract.ts // Все типы
+{scope}.contract.ts || .types.ts // Все типы
 
 Слой pages ИГНОРИРУЙ, оставляй как есть
 

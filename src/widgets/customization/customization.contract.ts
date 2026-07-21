@@ -1,13 +1,26 @@
+export type CardStyle = "sharp" | "soft" | "round";
+
 export interface ICustomizationForm {
-  shopName: string;
-  description: string;
-  phone: string;
-  website: string;
-  primaryColor: string;
-  backgroundColor: string;
-  textColor: string;
+  accentColor: string;
   fontFamily: string;
-  buttonRadius: string;
-  buttonStyle: string;
-  visible: boolean;
+  cardStyle: CardStyle;
+  darkMode: boolean;
+}
+
+export interface IBrandingForm {
+  logo: File | null;
+  coverImage: File | null;
+  name: string;
+  description: string;
+  venueType: string;
+  instagram: string;
+  tiktok: string;
+  facebook: string;
+  phone: string;
+  email: string;
+  address: string;
+  website: string;
+  wifiSsid: string;
+  wifiPassword: string;
+  wifiVisible: boolean;
 }
