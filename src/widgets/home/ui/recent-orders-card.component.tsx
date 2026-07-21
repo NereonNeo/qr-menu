@@ -1,0 +1,48 @@
+import { Badge } from "@/shared/ui/badge/badge.entry";
+
+import { HOME_ORDER_STATUS_META, HOME_RECENT_ORDERS } from "../home.const";
+
+export const RecentOrdersCard = () => {
+  return (
+    <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-1 h-full">
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-2.5">
+          <h2 className="text-m font-gotham font-semibold text-gray-900">Последние заказы</h2>
+          <div className="flex items-center gap-1.5 rounded-full bg-green-50 px-2 py-1">
+            <span className="size-1.5 rounded-full bg-green-500" />
+            <span className="text-xxs font-gotham font-bold text-green-600">Live</span>
+          </div>
+        </div>
+        <span className="text-xs font-gotham font-semibold text-primary-700">История →</span>
+      </div>
+
+      {HOME_RECENT_ORDERS.map((order, index) => {
+        const statusMeta = HOME_ORDER_STATUS_META[order.status];
+
+        return (
+          <div key={order.id}>
+            {index > 0 && <div className="h-px bg-gray-100" />}
+            <div className="flex items-center gap-3.5 py-3">
+              <div className="size-11 rounded-xl border border-gray-200 bg-gray-50 flex items-center justify-center shrink-0">
+                <span className="text-s font-gotham font-bold text-gray-900">{order.id}</span>
+              </div>
+
+              <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                <div className="flex items-center gap-2">
+                  <span className="text-s font-gotham font-semibold text-gray-900">{order.table}</span>
+                  <span className="text-xs font-gotham text-gray-400">· {order.timeAgo}</span>
+                </div>
+                <span className="text-xs font-gotham text-gray-500 truncate">{order.items}</span>
+              </div>
+
+              <div className="flex flex-col items-end gap-1.5 shrink-0">
+                <span className="text-s font-gotham font-bold text-gray-900">{order.sum}</span>
+                <Badge content={statusMeta.label} colorVariant={statusMeta.colorVariant} sizeVariant="xs" />
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};

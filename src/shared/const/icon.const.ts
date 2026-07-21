@@ -38,10 +38,12 @@ import {
   Percent,
   PlugZap,
   Plus,
+  QrCode,
   ScanLine,
   Search,
   Share,
   Shield,
+  Sparkles,
   Store,
   Tag,
   Trash,
@@ -49,6 +51,7 @@ import {
   TrendingDown,
   TrendingUp,
   User,
+  Utensils,
   Wallet,
   Wifi,
   X,
@@ -109,6 +112,9 @@ export const iconListComponents = {
   "circle-check": CircleCheck,
   "circle-dot": CircleDot,
   "circle-x": CircleX,
+  sparkles: Sparkles,
+  utensils: Utensils,
+  "qr-code": QrCode,
 } as const satisfies Record<string, FunctionComponent<React.RefAttributes<SVGSVGElement>>>;
 
 export type IconNameTypes = keyof typeof iconListComponents;
