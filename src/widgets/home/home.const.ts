@@ -14,6 +14,18 @@ export const HOME_ACCENT_COLOR_CLASSNAMES: Record<IndicatorColorTypes, { chipBg:
   red: { chipBg: "bg-red-50", chipText: "text-red-500", barBg: "bg-red-400" },
 };
 
+export const HOME_ACCENT_CHART_COLORS: Record<IndicatorColorTypes, { stroke: string; fill: string }> = {
+  orange: { stroke: "#f3b99d", fill: "#fdf6f3" },
+  blue: { stroke: "#53b1fd", fill: "#eff8ff" },
+  green: { stroke: "#32d583", fill: "#ecfdf3" },
+  fuchsia: { stroke: "#e879f9", fill: "#fdf4ff" },
+  yellow: { stroke: "#fdb022", fill: "#fffaeb" },
+  lime: { stroke: "#a3e635", fill: "#f7fee7" },
+  kelli: { stroke: "#92d672", fill: "#eaf8e4" },
+  gray: { stroke: "#98a2b3", fill: "#f3f3f1" },
+  red: { stroke: "#f87171", fill: "#fef2f2" },
+};
+
 export const HOME_KPI_CARDS: HomeKpiCard[] = [
   {
     id: "views",
