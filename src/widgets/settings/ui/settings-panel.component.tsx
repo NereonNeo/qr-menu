@@ -17,7 +17,7 @@ export const SettingsPanel = () => {
         <p className="text-s text-gray-500 font-gotham mt-1">Управление профилем и параметрами ресторана</p>
       </div>
 
-      <div className="flex items-center gap-1 p-1 bg-white border border-gray-200 rounded-xl w-fit">
+      <div className="flex items-center gap-1 p-1 bg-white border border-gray-200 rounded-xl w-full">
         {SETTINGS_TABS.map((tab) => (
           <button
             key={tab.value}

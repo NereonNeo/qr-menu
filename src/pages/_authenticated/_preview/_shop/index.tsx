@@ -1,5 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { Home } from "@/widgets/home/home.entry";
+
 export const Route = createFileRoute("/_authenticated/_preview/_shop/")({
-  component: () => <>Hello /_authenticated/_preview/shop/! Main</>,
+  component: HomePage,
 });
+
+function HomePage() {
+  return <Home />;
+}
