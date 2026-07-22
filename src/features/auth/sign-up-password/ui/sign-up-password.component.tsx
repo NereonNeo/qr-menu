@@ -1,4 +1,4 @@
-import { Input } from "@/shared/ui/input";
+import { Input } from "@/shared/ui/input/input.entry";
 
 import { ISignUpSteps } from "@/entities/auth/auth.entry";
 

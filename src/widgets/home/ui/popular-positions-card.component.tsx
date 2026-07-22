@@ -1,6 +1,6 @@
 import clsx from "clsx/lite";
 
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { HOME_ACCENT_COLOR_CLASSNAMES, HOME_POPULAR_POSITIONS } from "../home.const";
 

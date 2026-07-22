@@ -1,7 +1,7 @@
 import clsx from "clsx/lite";
 
 import { ComingSoon } from "@/shared/ui/coming-soon/coming-soon.entry";
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 import { PageHeader } from "@/shared/ui/page-header/page-header.entry";
 
 import { STAT_KPI_CARDS, STAT_WEEK_BARS } from "../statistics.const";

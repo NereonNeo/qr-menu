@@ -2,8 +2,8 @@ import { Link, useNavigate } from "@tanstack/react-router";
 import { useForm } from "react-hook-form";
 
 import { useAuth } from "@/shared/hooks/use-auth";
-import { Button } from "@/shared/ui/button";
-import { Input } from "@/shared/ui/input";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Input } from "@/shared/ui/input/input.entry";
 
 import { ISignIn } from "@/entities/auth/auth.entry";
 

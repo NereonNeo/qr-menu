@@ -1,8 +1,8 @@
 import type { ToSubOptions } from "@tanstack/react-router";
 import { useNavigate } from "@tanstack/react-router";
 
-import { Button } from "@/shared/ui/button";
 import { IButtonProps } from "@/shared/ui/button/button";
+import { Button } from "@/shared/ui/button/button.entry";
 
 interface IButtonLinkProps extends IButtonProps, ToSubOptions {}
 

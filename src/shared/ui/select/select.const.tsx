@@ -6,8 +6,8 @@ import { ClassNamesConfig, type GroupBase, type MultiValue, type SelectComponent
 import { inputDefaultClassName, inputDisabledClassName, inputInvalidClassName } from "@/shared/const/input.const";
 import { Avatar } from "@/shared/ui/avatar/avatar.entry";
 import { Badge } from "@/shared/ui/badge/badge.entry";
-import { Button } from "@/shared/ui/button";
-import { Icon } from "@/shared/ui/icon";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import type { ISelectType } from "./select.contract";
 

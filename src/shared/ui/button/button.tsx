@@ -6,7 +6,7 @@ import { buttonStyleVariantsClassNames } from "@/shared/const/button.const";
 import { IconNameTypes } from "@/shared/const/icon.const";
 import { ButtonColorVariant, ButtonSizeVariant } from "@/shared/types/button.types";
 
-import { Icon } from "../icon";
+import { Icon } from "../icon/icon.entry";
 import { buttonSizeVariantClassNames } from "./button-class-names";
 
 export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

@@ -2,7 +2,7 @@ import { memo, useMemo } from "react";
 
 import clsx from "clsx/lite";
 
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { PricePlanItemClassNames } from "../common/price-plan-classnames";
 import { IPricePlan, PricePlan } from "../model/plan.contract";

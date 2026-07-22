@@ -1,4 +1,4 @@
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 export const InsightBanner = () => {
   return (

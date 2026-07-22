@@ -6,11 +6,11 @@ import { Controller, useForm } from "react-hook-form";
 import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import type { IconNameTypes } from "@/shared/const/icon.const";
 import { InputPatterns } from "@/shared/const/input-pattern.const";
-import { Icon } from "@/shared/ui/icon";
-import { Input } from "@/shared/ui/input";
+import { Icon } from "@/shared/ui/icon/icon.entry";
+import { Input } from "@/shared/ui/input/input.entry";
 import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
 import { Select } from "@/shared/ui/select/select.entry";
-import { TextArea } from "@/shared/ui/textarea";
+import { TextArea } from "@/shared/ui/textarea/textarea.entry";
 import { Toggle } from "@/shared/ui/toggle/toggle.component";
 
 import { VENUE_TYPE_OPTIONS } from "../customization.const";

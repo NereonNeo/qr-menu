@@ -3,7 +3,7 @@ import clsx from "clsx/lite";
 import type { IconNameTypes } from "@/shared/const/icon.const";
 
 import { Avatar } from "../avatar/avatar.entry";
-import { Icon } from "../icon";
+import { Icon } from "../icon/icon.entry";
 import { avatarSizeVariantByBadges, badgeStyleVariantsClassNames, badgesSizeVariantClassNames } from "./badge.const";
 import type { BadgeColorVariantType, BadgeSizeVariantType } from "./badge.contract";
 

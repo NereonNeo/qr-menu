@@ -2,7 +2,7 @@ import clsx from "clsx/lite";
 
 import type { BadgeColorVariantType } from "@/shared/ui/badge/badge.contract";
 import { Badge } from "@/shared/ui/badge/badge.entry";
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import type { IAddon } from "../addon.contract";
 

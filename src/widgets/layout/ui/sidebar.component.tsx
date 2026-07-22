@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Link, useMatches, useRouterState } from "@tanstack/react-router";
 import clsx from "clsx/lite";
 
-import { Icon } from "@/shared/ui/icon";
-import { Logo } from "@/shared/ui/logo";
+import { Icon } from "@/shared/ui/icon/icon.entry";
+import { Logo } from "@/shared/ui/logo/logo.entry";
 
 import { useSidebarContext } from "../hooks/use-sidebar-context/use-sidebar-context";
 import { type LinkType, listLink } from "../layout.const";

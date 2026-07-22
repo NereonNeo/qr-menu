@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import clsx from "clsx/lite";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 
 import { ShopPreview } from "@/features/shop-preview/shop-preview.entry";
 

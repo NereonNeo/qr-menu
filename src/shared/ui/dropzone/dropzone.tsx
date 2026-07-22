@@ -4,7 +4,7 @@ import clsx from "clsx/lite";
 
 import { DropzoneFileAccept, FileAcceptTypes } from "@/shared/const/file.const";
 
-import { Icon } from "../icon";
+import { Icon } from "../icon/icon.entry";
 
 interface IUIDropzoneProps extends React.InputHTMLAttributes<HTMLInputElement> {
   showIcon?: boolean;

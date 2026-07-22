@@ -2,8 +2,8 @@ import { ComponentProps, forwardRef, useId, useImperativeHandle, useRef } from "
 
 import clsx from "clsx/lite";
 
-import { IInputProps } from "@/shared/ui/input";
-import { Label } from "@/shared/ui/label";
+import { IInputProps } from "@/shared/ui/input/input.entry";
+import { Label } from "@/shared/ui/label/label.entry";
 
 import { MaskInput, MaskInputOptions } from "../mask-input/mask-input.entry";
 

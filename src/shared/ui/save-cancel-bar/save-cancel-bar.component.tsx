@@ -1,6 +1,6 @@
 import clsx from "clsx/lite";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 
 interface ISaveCancelBarProps {
   isDirty: boolean;

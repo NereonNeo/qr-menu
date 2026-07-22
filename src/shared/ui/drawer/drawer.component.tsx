@@ -2,7 +2,7 @@ import clsx from "clsx/lite";
 import type { ModalNames } from "ezzy-modal";
 import { EzzyModal, useEzzyModal } from "ezzy-modal";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 
 import { drawerPositionClassNames, drawerSizeClassNames } from "./drawer.const";
 import type { DrawerPositionType, DrawerSizeType } from "./drawer.contract";

@@ -12,7 +12,7 @@ import {
 } from "@/shared/const/input.const";
 import { AverageSizeVariantType } from "@/shared/types/ui.types";
 
-import { Icon } from "../icon";
+import { Icon } from "../icon/icon.entry";
 import { Label } from "../label/Label";
 import { Message } from "../message/Message";
 

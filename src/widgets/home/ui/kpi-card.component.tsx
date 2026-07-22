@@ -1,7 +1,7 @@
 import clsx from "clsx/lite";
 import { Area, AreaChart, ResponsiveContainer } from "recharts";
 
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { HOME_ACCENT_CHART_COLORS, HOME_ACCENT_COLOR_CLASSNAMES } from "../home.const";
 import type { HomeKpiCard } from "../home.contract";

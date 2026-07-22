@@ -1,7 +1,7 @@
 import clsx from "clsx/lite";
 
 import type { IconNameTypes } from "@/shared/const/icon.const";
-import { Icon } from "@/shared/ui/icon";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 
 interface ISectionCardProps {
   title: string;

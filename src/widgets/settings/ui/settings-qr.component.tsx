@@ -6,8 +6,8 @@ import { Controller, useForm, useWatch } from "react-hook-form";
 import { ColorPicker } from "@/shared/components/color-picker/color-picker.component";
 import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import { InputPatterns } from "@/shared/const/input-pattern.const";
-import { Button } from "@/shared/ui/button";
-import { Icon } from "@/shared/ui/icon";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
 import { Toggle } from "@/shared/ui/toggle/toggle.component";
 

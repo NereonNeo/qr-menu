@@ -4,14 +4,14 @@ import clsx from "clsx/lite";
 import { useEzzyModal } from "ezzy-modal";
 import { Controller, useForm } from "react-hook-form";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 import { Drawer } from "@/shared/ui/drawer/drawer.entry";
-import { Dropzone } from "@/shared/ui/dropzone";
-import { Input } from "@/shared/ui/input";
-import { Label } from "@/shared/ui/label";
+import { Dropzone } from "@/shared/ui/dropzone/dropzone.entry";
+import { Input } from "@/shared/ui/input/input.entry";
+import { Label } from "@/shared/ui/label/label.entry";
 import type { ISelectType } from "@/shared/ui/select/select.entry";
 import { Select } from "@/shared/ui/select/select.entry";
-import { TextArea } from "@/shared/ui/textarea";
+import { TextArea } from "@/shared/ui/textarea/textarea.entry";
 import { Toggle } from "@/shared/ui/toggle/toggle.component";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 
