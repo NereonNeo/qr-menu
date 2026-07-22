@@ -3,12 +3,11 @@ import type { ISelectType } from "@/shared/ui/select/select.entry";
 
 import type { CardStyle } from "./customization.contract";
 
-export type CustomizationTab = "appearance" | "branding" | "qr";
+export type CustomizationTab = "appearance" | "branding";
 
 export const CUSTOMIZATION_TABS: { value: CustomizationTab; label: string; icon: IconNameTypes }[] = [
   { value: "appearance", label: "Внешний вид", icon: "palette" },
   { value: "branding", label: "Брендинг", icon: "image" },
-  { value: "qr", label: "QR-код", icon: "scan-line" },
 ];
 
 export const ACCENT_COLOR_PRESETS: string[] = [

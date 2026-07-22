@@ -20,3 +20,22 @@ export interface ITabItem {
   label: string;
   icon: IconNameTypes;
 }
+
+export type QrModuleStyle = "square" | "rounded" | "dots";
+
+export interface IQrDesignForm {
+  codeColor: string;
+  bgColor: string;
+  bgTransparent: boolean;
+  logo: File | null;
+  showLogo: boolean;
+  moduleStyle: QrModuleStyle;
+}
+
+export interface IQrTable {
+  id: string;
+  number: number;
+  seats: number;
+  url: string;
+  active: boolean;
+}

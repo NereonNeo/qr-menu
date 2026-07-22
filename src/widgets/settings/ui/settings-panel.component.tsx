@@ -6,6 +6,7 @@ import { Icon } from "@/shared/ui/icon";
 
 import { SETTINGS_TABS, SettingsTab } from "../settings.const";
 import { SettingsMenuImport } from "./settings-menu-import.component";
+import { SettingsQr } from "./settings-qr.component";
 
 export const SettingsPanel = () => {
   const [activeTab, setActiveTab] = useState<SettingsTab>("menu-import");
@@ -50,6 +51,7 @@ export const SettingsPanel = () => {
         </div>
       )}
       {activeTab === "menu-import" && <SettingsMenuImport />}
+      {activeTab === "qr" && <SettingsQr />}
     </div>
   );
 };
