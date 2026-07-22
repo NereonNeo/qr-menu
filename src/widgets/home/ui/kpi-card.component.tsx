@@ -17,7 +17,7 @@ export const KpiCard = (props: KpiCardProps) => {
   const chartData = card.sparkline.map((value, index) => ({ index, value }));
 
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl py-5 flex flex-col gap-3.5">
+    <div className="bg-white border border-gray-200 rounded-2xl pt-5 flex flex-col gap-3.5">
       <div className="flex items-center justify-between px-5">
         <div className={clsx("size-9 rounded-lg flex items-center justify-center", colorClassNames.chipBg)}>
           <Icon name={card.icon} className={clsx("size-4", colorClassNames.chipText)} />

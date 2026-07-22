@@ -37,11 +37,6 @@ export const CustomizationPanel = () => {
 
       {activeTab === "appearance" && <CustomizationAppearance />}
       {activeTab === "branding" && <CustomizationBranding />}
-      {activeTab === "qr" && (
-        <div className="flex items-center justify-center py-20">
-          <p className="text-gray-400 font-gotham text-sm">Раздел в разработке</p>
-        </div>
-      )}
     </div>
   );
 };
