@@ -3,18 +3,18 @@ import { useRef } from "react";
 import clsx from "clsx/lite";
 import { Controller, useForm } from "react-hook-form";
 
+import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import type { IconNameTypes } from "@/shared/const/icon.const";
 import { InputPatterns } from "@/shared/const/input-pattern.const";
-import { Button } from "@/shared/ui/button";
 import { Icon } from "@/shared/ui/icon";
 import { Input } from "@/shared/ui/input";
+import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
 import { Select } from "@/shared/ui/select/select.entry";
 import { TextArea } from "@/shared/ui/textarea";
 import { Toggle } from "@/shared/ui/toggle/toggle.component";
 
 import { VENUE_TYPE_OPTIONS } from "../customization.const";
 import type { IBrandingForm } from "../customization.contract";
-import { SectionCard } from "./section-card.component";
 
 const DEFAULT_VALUES: IBrandingForm = {
   logo: null,
@@ -97,7 +97,7 @@ export const CustomizationBranding = () => {
   return (
     <form onSubmit={handleSave} className="flex gap-5 items-start">
       <div className="flex flex-col gap-4 flex-1">
-        <SectionCard title="Логотип" description="Иконка заведения, отображается в шапке меню">
+        <SectionCard divider title="Логотип" description="Иконка заведения, отображается в шапке меню">
           <div className="flex gap-5">
             <Controller
               name="logo"
@@ -125,7 +125,7 @@ export const CustomizationBranding = () => {
           </div>
         </SectionCard>
 
-        <SectionCard title="Информация" description="Название и описание заведения">
+        <SectionCard divider title="Информация" description="Название и описание заведения">
           <div className="flex flex-col gap-3.5">
             <Controller name="name" control={control} render={({ field }) => <Input label="Название заведения" {...field} />} />
             <Controller name="description" control={control} render={({ field }) => <TextArea label="Описание" rows={3} {...field} />} />
@@ -144,7 +144,7 @@ export const CustomizationBranding = () => {
           </div>
         </SectionCard>
 
-        <SectionCard title="Социальные сети" description="Ссылки на страницы заведения в соцсетях">
+        <SectionCard divider title="Социальные сети" description="Ссылки на страницы заведения в соцсетях">
           <div className="flex flex-col gap-2.5">
             {SOCIAL_FIELDS.map((social) => (
               <div key={social.name} className="flex items-center gap-2.5">
@@ -159,7 +159,7 @@ export const CustomizationBranding = () => {
       </div>
 
       <div className="flex flex-col gap-4 flex-1">
-        <SectionCard title="Обложка меню" description="Широкий баннер в шапке вашего меню">
+        <SectionCard divider title="Обложка меню" description="Широкий баннер в шапке вашего меню">
           <div className="flex flex-col gap-4">
             <Controller
               name="coverImage"
@@ -174,7 +174,7 @@ export const CustomizationBranding = () => {
           </div>
         </SectionCard>
 
-        <SectionCard title="Контакты" description="Отображаются в профиле вашего меню">
+        <SectionCard divider title="Контакты" description="Отображаются в профиле вашего меню">
           <div className="flex flex-col gap-3">
             <div className="flex gap-3.5">
               <Controller name="phone" control={control} render={({ field }) => <Input wrapperClassName="flex-1" label="Телефон" {...field} />} />
@@ -192,7 +192,7 @@ export const CustomizationBranding = () => {
           </div>
         </SectionCard>
 
-        <SectionCard title="WiFi" description="Данные для подключения гостей к интернету">
+        <SectionCard divider title="WiFi" description="Данные для подключения гостей к интернету">
           <div className="flex flex-col gap-3.5">
             <Controller name="wifiSsid" control={control} render={({ field }) => <Input label="Название сети (SSID)" left="wifi" {...field} />} />
             <Controller name="wifiPassword" control={control} render={({ field }) => <Input label="Пароль" left="lock" right="eye" {...field} />} />
@@ -209,17 +209,7 @@ export const CustomizationBranding = () => {
           </div>
         </SectionCard>
 
-        <div className="flex items-center gap-3">
-          <Button type="submit" colorVariant="dark" content="Сохранить изменения" disabled={!isDirty} />
-          <button
-            type="button"
-            onClick={() => reset()}
-            disabled={!isDirty}
-            className="text-s text-gray-500 font-gotham cursor-pointer disabled:cursor-not-allowed disabled:text-gray-300"
-          >
-            Отменить
-          </button>
-        </div>
+        <SaveCancelBar isDirty={isDirty} onCancel={() => reset()} />
       </div>
     </form>
   );

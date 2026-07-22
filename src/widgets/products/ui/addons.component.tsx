@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import clsx from "clsx/lite";
 import { useEzzyModal } from "ezzy-modal";
 import { Controller, useForm } from "react-hook-form";
 
@@ -181,9 +182,10 @@ export const Addons = () => {
               key={tab.value}
               type="button"
               onClick={() => setFilter(tab.value)}
-              className={`px-3 py-1.5 rounded-md text-sm font-gotham font-medium transition-colors ${
-                filter === tab.value ? "bg-gray-100 text-gray-900" : "text-gray-500 hover:text-gray-700"
-              }`}
+              className={clsx(
+                "px-3 py-1.5 rounded-md text-sm font-gotham font-medium transition-colors",
+                filter === tab.value ? "bg-gray-100 text-gray-900" : "text-gray-500 hover:text-gray-700",
+              )}
             >
               {tab.label}
             </button>
