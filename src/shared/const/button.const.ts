@@ -1,4 +1,4 @@
-import { ButtonColorVariant, ButtonStyleVariantType } from "../types/button.types";
+import { ButtonColorVariant, ButtonStyleVariantType } from "../types/button.contract";
 
 export const buttonStyleVariantsClassNames: Record<ButtonColorVariant, Record<ButtonStyleVariantType, string>> = {
   beige: {

@@ -1,7 +1,7 @@
 import type { ToOptions } from "@tanstack/react-router";
 
 import type { IconNameTypes } from "@/shared/const/icon.const";
-import type { IndicatorColorTypes } from "@/shared/types/ui.types";
+import type { IndicatorColorTypes } from "@/shared/types/ui.contract";
 
 export type TrendDirection = "up" | "down";
 

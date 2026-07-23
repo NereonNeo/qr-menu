@@ -59,7 +59,11 @@ Leave the `pages/` layer as-is — it is managed by TanStack Router's file-based
 
 ### `shared/` layer
 
-Not divided into slices — organized by type: `api/`, `components/`, `const/`, `hooks/`, `lib/`, `types/`, `ui/`, `utils/`. Shared UI components export via `index.ts` (not `.entry.ts`).
+Not divided into slices — organized by type: `api/`, `components/`, `const/`, `hooks/`, `lib/`, `types/`, `ui/`, `utils/`.
+
+Slice-like modules under `shared/ui/` and `shared/components/` follow the same file-naming convention as the rest of the project: a public entry `{scope}.entry.ts`, plus `{scope}.component.tsx`, `{scope}.const.ts`, `{scope}.contract.ts` as needed. Import them via their full entry path (e.g. `@/shared/ui/button/button.entry`).
+
+By-type folders that are not modules — `api/`, `lib/`, `hooks/`, `utils/`, `const/`, `types/` — use plain descriptive filenames (e.g. `use-auth.ts`, `api-instance.ts`) and are not held to the `{scope}.*` pattern.
 
 ### `widgets/cross/` and `features/cross/`
 

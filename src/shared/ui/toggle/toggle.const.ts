@@ -1,4 +1,4 @@
-import { AverageSizeVariantType } from "@/shared/types/ui.types";
+import { AverageSizeVariantType } from "@/shared/types/ui.contract";
 
 import { ToggleElementTypes } from "./toggle.contract";
 

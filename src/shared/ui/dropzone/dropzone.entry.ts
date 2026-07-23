@@ -1,1 +1,1 @@
-export { Dropzone } from "./dropzone";
+export { Dropzone } from "./dropzone.component";

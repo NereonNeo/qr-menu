@@ -1,4 +1,4 @@
-import type { IndicatorColorTypes } from "@/shared/types/ui.types";
+import type { IndicatorColorTypes } from "@/shared/types/ui.contract";
 
 import type { HomeKpiCard, OrderStatus, PopularPosition, RecentOrder, TrafficBar } from "./home.contract";
 

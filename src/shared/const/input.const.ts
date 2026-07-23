@@ -1,4 +1,4 @@
-import { AverageSizeVariantType } from "../types/ui.types";
+import { AverageSizeVariantType } from "../types/ui.contract";
 
 export const inputSizeVariantClassNames: Record<AverageSizeVariantType, string> = {
   m: "h-11 text-m",
