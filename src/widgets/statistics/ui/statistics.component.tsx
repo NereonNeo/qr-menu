@@ -1,5 +1,6 @@
 import clsx from "clsx/lite";
 
+import { Button } from "@/shared/ui/button/button.entry";
 import { ComingSoon } from "@/shared/ui/coming-soon/coming-soon.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 import { PageHeader } from "@/shared/ui/page-header/page-header.entry";
@@ -13,13 +14,7 @@ export const Statistics = () => {
         className="mb-6"
         title="Статистика"
         description="Аналитика вашего ресторана"
-        action={
-          <button type="button" className="flex items-center gap-2 px-3.5 py-2 rounded-lg border border-gray-200 bg-white">
-            <Icon name="calendar" className="size-4 text-gray-500" />
-            <span className="text-xs font-gotham text-gray-700">Последние 30 дней</span>
-            <Icon name="chevron-down" className="size-4 text-gray-500" />
-          </button>
-        }
+        action={<Button colorVariant="stroke-gray" left="calendar" right="chevron-down" content="Последние 30 дней" />}
       />
 
       <div className="grid grid-cols-4 gap-5 mb-5">
