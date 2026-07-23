@@ -2,8 +2,8 @@ import type { LinkProps } from "@tanstack/react-router";
 import { Link as RouterLink } from "@tanstack/react-router";
 import clsx from "clsx/lite";
 
-import { linkSizeVariantClassNames, linkStyleVariantClassNames } from "./link-class-names";
-import { LinkSizeVariantTypes, LinkStyleVariantTypes } from "./link-types";
+import { linkSizeVariantClassNames, linkStyleVariantClassNames } from "./link.const";
+import { LinkSizeVariantTypes, LinkStyleVariantTypes } from "./link.contract";
 
 interface ILinkProps extends LinkProps<"a"> {
   className?: string;

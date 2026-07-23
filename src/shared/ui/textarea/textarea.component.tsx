@@ -4,8 +4,8 @@ import clsx from "clsx/lite";
 
 import { inputDefaultClassName, inputDisabledClassName, inputInvalidClassName, inputPlaceholderClassName } from "@/shared/const/input.const";
 
-import { Label } from "../label/Label";
-import { Message } from "../message/Message";
+import { Label } from "../label/label.entry";
+import { Message } from "../message/message.entry";
 
 interface ITextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;

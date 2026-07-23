@@ -1,4 +1,4 @@
-import { LinkSizeVariantTypes, LinkStateVariantTypes, LinkStyleVariantTypes } from "./link-types";
+import { LinkSizeVariantTypes, LinkStateVariantTypes, LinkStyleVariantTypes } from "./link.contract";
 
 export const linkSizeVariantClassNames: Record<LinkSizeVariantTypes, string> = {
   xs: "text-xs",

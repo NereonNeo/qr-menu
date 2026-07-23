@@ -10,11 +10,11 @@ import {
   inputPlaceholderClassName,
   inputSizeVariantClassNames,
 } from "@/shared/const/input.const";
-import { AverageSizeVariantType } from "@/shared/types/ui.types";
+import { AverageSizeVariantType } from "@/shared/types/ui.contract";
 
 import { Icon } from "../icon/icon.entry";
-import { Label } from "../label/Label";
-import { Message } from "../message/Message";
+import { Label } from "../label/label.entry";
+import { Message } from "../message/message.entry";
 
 export interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   addon?: string;

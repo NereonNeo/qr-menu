@@ -1,4 +1,4 @@
-import { ButtonSizeVariant } from "@/shared/types/button.types";
+import { ButtonSizeVariant } from "@/shared/types/button.contract";
 
 export const buttonSizeVariantClassNames: Record<"default", Record<ButtonSizeVariant, string>> = {
   default: {
