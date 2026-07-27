@@ -1,5 +1,7 @@
 import clsx from "clsx/lite";
 
+import { Badge } from "@/shared/ui/badge/badge.entry";
+
 import { HOME_TRAFFIC_BARS, HOME_TRAFFIC_LABELS } from "../home.const";
 
 export const TrafficCard = () => {
@@ -10,7 +12,7 @@ export const TrafficCard = () => {
           <h2 className="text-m font-gotham font-semibold text-gray-900">Трафик по часам</h2>
           <span className="text-xs font-gotham text-gray-400">Пик в 13:00 и 19:00</span>
         </div>
-        <span className="text-xxs font-gotham font-bold text-primary-700 bg-primary-50 rounded-full px-2.5 py-1">Сейчас</span>
+        <Badge rounded content="Сейчас" sizeVariant="xs" colorVariant="green" className="font-bold!" />
       </div>
 
       <div className="flex items-end gap-1.5 h-25">

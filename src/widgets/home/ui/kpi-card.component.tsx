@@ -1,14 +1,27 @@
 import clsx from "clsx/lite";
 import { Area, AreaChart, ResponsiveContainer } from "recharts";
 
+import { IconNameTypes } from "@/shared/const/icon.const";
+import { BadgeColorVariantType } from "@/shared/ui/badge/badge.contract";
+import { Badge } from "@/shared/ui/badge/badge.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { HOME_ACCENT_CHART_COLORS, HOME_ACCENT_COLOR_CLASSNAMES } from "../home.const";
-import type { HomeKpiCard } from "../home.contract";
+import type { HomeKpiCard, TrendDirection } from "../home.contract";
 
 interface KpiCardProps {
   card: HomeKpiCard;
 }
+
+const TRENDING_ICON: Record<TrendDirection, IconNameTypes> = {
+  down: "trending-down",
+  up: "trending-up",
+};
+
+const TRENDING_STYLE: Record<TrendDirection, BadgeColorVariantType> = {
+  down: "red",
+  up: "green",
+};
 
 export const KpiCard = (props: KpiCardProps) => {
   const { card } = props;
@@ -22,13 +35,15 @@ export const KpiCard = (props: KpiCardProps) => {
         <div className={clsx("size-9 rounded-lg flex items-center justify-center", colorClassNames.chipBg)}>
           <Icon name={card.icon} className={clsx("size-4", colorClassNames.chipText)} />
         </div>
-        <div className={clsx("flex items-center gap-1 rounded-full px-2 py-1", card.trend === "up" ? "bg-green-50" : "bg-red-50")}>
-          <Icon
-            name={card.trend === "up" ? "trending-up" : "trending-down"}
-            className={clsx("size-3", card.trend === "up" ? "text-green-600" : "text-[#f04438]")}
-          />
-          <span className={clsx("text-xxs font-gotham font-semibold", card.trend === "up" ? "text-green-600" : "text-[#f04438]")}>{card.delta}</span>
-        </div>
+
+        <Badge
+          rounded
+          content={card.delta}
+          left={TRENDING_ICON[card.trend]}
+          sizeVariant="xs"
+          colorVariant={TRENDING_STYLE[card.trend]}
+          className="font-bold!"
+        />
       </div>
 
       <div className="px-5">

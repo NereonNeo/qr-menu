@@ -1,5 +1,6 @@
 import clsx from "clsx/lite";
 
+import { Button } from "@/shared/ui/button/button.component";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { HOME_ACCENT_COLOR_CLASSNAMES, HOME_POPULAR_POSITIONS } from "../home.const";
@@ -12,10 +13,7 @@ export const PopularPositionsCard = () => {
           <h2 className="text-m font-gotham font-semibold text-gray-900">Популярные позиции</h2>
           <span className="text-xs font-gotham text-gray-400">За последние 7 дней</span>
         </div>
-        <button type="button" className="flex items-center gap-1 rounded-lg px-2.5 py-1.5">
-          <span className="text-xs font-gotham font-semibold text-primary-700">Все позиции</span>
-          <Icon name="arrow-right" className="size-3.5 text-primary-700" />
-        </button>
+        <Button content="Все позиции" right="arrow-right" colorVariant="beige" sizeVariant="xs" />
       </div>
 
       {HOME_POPULAR_POSITIONS.map((position, index) => {

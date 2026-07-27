@@ -1,4 +1,6 @@
 import { Badge } from "@/shared/ui/badge/badge.entry";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Indicator } from "@/shared/ui/indicator/indicator.component";
 
 import { HOME_ORDER_STATUS_META, HOME_RECENT_ORDERS } from "../home.const";
 
@@ -8,12 +10,16 @@ export const RecentOrdersCard = () => {
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2.5">
           <h2 className="text-m font-gotham font-semibold text-gray-900">Последние заказы</h2>
-          <div className="flex items-center gap-1.5 rounded-full bg-green-50 px-2 py-1">
-            <span className="size-1.5 rounded-full bg-green-500" />
-            <span className="text-xxs font-gotham font-bold text-green-600">Live</span>
-          </div>
+          <Badge
+            rounded
+            content="Live"
+            sizeVariant="xs"
+            colorVariant="green"
+            className="font-bold!"
+            leftNode={<Indicator sizeVariant="xs" color="green" />}
+          />
         </div>
-        <span className="text-xs font-gotham font-semibold text-primary-700">История →</span>
+        <Button content="История" right="arrow-right" colorVariant="beige" sizeVariant="xs" />
       </div>
 
       {HOME_RECENT_ORDERS.map((order, index) => {

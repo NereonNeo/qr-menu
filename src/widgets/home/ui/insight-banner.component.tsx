@@ -1,3 +1,4 @@
+import { ButtonIcon } from "@/shared/ui/button-icon/button-icon.component";
 import { Button } from "@/shared/ui/button/button.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 
@@ -18,9 +19,7 @@ export const InsightBanner = () => {
 
       <div className="flex items-center gap-2.5 shrink-0">
         <Button colorVariant="dark" left="plus" content="Добавить" />
-        <button type="button" className="size-9 rounded-lg flex items-center justify-center">
-          <Icon name="x" className="size-4 text-primary-700" />
-        </button>
+        <ButtonIcon icon="x" colorVariant="beige" sizeVariant="s" />
       </div>
     </div>
   );
