@@ -2,8 +2,7 @@ import clsx from "clsx/lite";
 import { Area, AreaChart, ResponsiveContainer } from "recharts";
 
 import { IconNameTypes } from "@/shared/const/icon.const";
-import { BadgeColorVariantType } from "@/shared/ui/badge/badge.contract";
-import { Badge } from "@/shared/ui/badge/badge.entry";
+import { Badge, BadgeColorVariantType } from "@/shared/ui/badge/badge.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { HOME_ACCENT_CHART_COLORS, HOME_ACCENT_COLOR_CLASSNAMES } from "../home.const";

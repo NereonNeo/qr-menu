@@ -1,4 +1,4 @@
-import { ButtonIcon } from "@/shared/ui/button-icon/button-icon.component";
+import { ButtonIcon } from "@/shared/ui/button-icon/button-icon.entry";
 import { Button } from "@/shared/ui/button/button.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 

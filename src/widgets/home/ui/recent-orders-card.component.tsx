@@ -1,6 +1,6 @@
 import { Badge } from "@/shared/ui/badge/badge.entry";
 import { Button } from "@/shared/ui/button/button.entry";
-import { Indicator } from "@/shared/ui/indicator/indicator.component";
+import { Indicator } from "@/shared/ui/indicator/indicator.entry";
 
 import { HOME_ORDER_STATUS_META, HOME_RECENT_ORDERS } from "../home.const";
 

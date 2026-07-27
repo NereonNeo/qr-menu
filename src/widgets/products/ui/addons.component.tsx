@@ -12,7 +12,7 @@ import { Label } from "@/shared/ui/label/label.entry";
 import type { ISelectType } from "@/shared/ui/select/select.entry";
 import { Select } from "@/shared/ui/select/select.entry";
 import { TextArea } from "@/shared/ui/textarea/textarea.entry";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 
 import type { IAddon, IAddonCreateForm } from "@/entities/addon/addon.entry";

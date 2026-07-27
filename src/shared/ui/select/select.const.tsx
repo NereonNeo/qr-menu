@@ -4,7 +4,6 @@ import clsx from "clsx/lite";
 import { ClassNamesConfig, type GroupBase, type MultiValue, type SelectComponentsConfig, components } from "react-select";
 
 import { inputDefaultClassName, inputDisabledClassName, inputInvalidClassName } from "@/shared/const/input.const";
-import { Avatar } from "@/shared/ui/avatar/avatar.entry";
 import { Badge } from "@/shared/ui/badge/badge.entry";
 import { Button } from "@/shared/ui/button/button.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
@@ -31,7 +30,7 @@ export const selectComponents: SelectComponentsConfig<ISelectType<unknown>, true
   Option: (props) => {
     return (
       <components.Option {...props}>
-        {props.data.avatar && <Avatar type="img" img={props.data.avatar} className="shrink-0" sizeVariant="xs" />}
+        {/* {props.data.avatar && <Avatar type="img" img={props.data.avatar} className="shrink-0" sizeVariant="xs" />} */}
         {props.data.icon && <Icon name={props.data.icon} className="size-4" />}
         <p className="basis-full">{props.children}</p>
         {props.isSelected && <Icon name="check" className="text-primary-500 size-4" />}
@@ -44,7 +43,7 @@ export const selectComponents: SelectComponentsConfig<ISelectType<unknown>, true
 
     return (
       <components.MultiValue {...props}>
-        <Badge content={props.data.label} onRightClick={handleRemoveOption} avatar={props.data.avatar} right="x" colorVariant="gray" />
+        <Badge content={props.data.label} onRightClick={handleRemoveOption} right="x" colorVariant="gray" />
       </components.MultiValue>
     );
   },
@@ -63,7 +62,7 @@ export const selectComponents: SelectComponentsConfig<ISelectType<unknown>, true
             {values?.map((item) => {
               const handleRemoveOption = () => props.selectOption(item);
 
-              return <Badge content={item.label} onRightClick={handleRemoveOption} avatar={item.avatar} right="x" colorVariant="gray" />;
+              return <Badge content={item.label} onRightClick={handleRemoveOption} right="x" colorVariant="gray" />;
             })}
           </div>
         )}

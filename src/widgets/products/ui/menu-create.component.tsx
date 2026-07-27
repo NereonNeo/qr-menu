@@ -8,7 +8,7 @@ import { Dropzone } from "@/shared/ui/dropzone/dropzone.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 import { Input } from "@/shared/ui/input/input.entry";
 import { Label } from "@/shared/ui/label/label.entry";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 
 import type { IMenuCreateForm } from "@/entities/menu/menu.entry";

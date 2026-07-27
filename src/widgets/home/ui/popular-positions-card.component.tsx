@@ -1,6 +1,6 @@
 import clsx from "clsx/lite";
 
-import { Button } from "@/shared/ui/button/button.component";
+import { Button } from "@/shared/ui/button/button.entry";
 import { Icon } from "@/shared/ui/icon/icon.entry";
 
 import { HOME_ACCENT_COLOR_CLASSNAMES, HOME_POPULAR_POSITIONS } from "../home.const";

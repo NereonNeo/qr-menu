@@ -46,6 +46,14 @@ export default tseslint.config(
           patterns: [
             {
               group: [
+                "@/shared/ui/*/**",
+                "!@/shared/ui/*/*.entry",
+                "!@/shared/ui/*",
+
+                "@/shared/components/*/**",
+                "!@/shared/components/*/*.entry",
+                "!@/shared/components/*",
+
                 "@/entities/*/**",
                 "!@/entities/*/*.entry",
                 "!@/entities/*",

@@ -11,7 +11,7 @@ import { Input } from "@/shared/ui/input/input.entry";
 import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
 import { Select } from "@/shared/ui/select/select.entry";
 import { TextArea } from "@/shared/ui/textarea/textarea.entry";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 
 import { VENUE_TYPE_OPTIONS } from "../customization.const";
 import type { IBrandingForm } from "../customization.contract";

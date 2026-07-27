@@ -1,11 +1,11 @@
 import clsx from "clsx/lite";
 import { Controller, useForm } from "react-hook-form";
 
-import { ColorPicker } from "@/shared/components/color-picker/color-picker.component";
+import { ColorPicker } from "@/shared/components/color-picker/color-picker.entry";
 import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import { InputPatterns } from "@/shared/const/input-pattern.const";
 import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 
 import { ACCENT_COLOR_PRESETS, CARD_STYLE_OPTIONS, FONT_STYLE_OPTIONS } from "../customization.const";
 import type { ICustomizationForm } from "../customization.contract";
