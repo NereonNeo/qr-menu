@@ -1,4 +1,4 @@
-import type { IndicatorColorTypes } from "@/shared/types/ui.types";
+import type { IndicatorColorTypes } from "@/shared/types/ui.contract";
 
 import type { HomeKpiCard, OrderStatus, PopularPosition, RecentOrder, TrafficBar } from "./home.contract";
 
@@ -43,8 +43,8 @@ export const HOME_KPI_CARDS: HomeKpiCard[] = [
     value: "1 729",
     icon: "user",
     colorVariant: "blue",
-    delta: "+6%",
-    trend: "up",
+    delta: "-6%",
+    trend: "down",
     sparkline: [71, 62, 74, 65, 82, 79, 91, 100],
   },
 ];

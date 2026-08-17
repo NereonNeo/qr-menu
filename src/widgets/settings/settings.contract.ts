@@ -1,5 +1,3 @@
-import type { IconNameTypes } from "@/shared/const/icon.const";
-
 export interface IChecklistItem {
   label: string;
   state: "included" | "partial" | "excluded";
@@ -13,12 +11,6 @@ export interface IConnector {
 
 export interface IFormatTag {
   label: string;
-}
-
-export interface ITabItem {
-  value: string;
-  label: string;
-  icon: IconNameTypes;
 }
 
 export type QrModuleStyle = "square" | "rounded" | "dots";

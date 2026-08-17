@@ -1,5 +1,5 @@
-import { Icon } from "@/shared/ui/icon";
-import { Logo } from "@/shared/ui/logo";
+import { Icon } from "@/shared/ui/icon/icon.entry";
+import { Logo } from "@/shared/ui/logo/logo.entry";
 
 import { useSidebarContextHandler } from "../hooks/use-sidebar-context/use-sidebar-context";
 

@@ -3,16 +3,17 @@ import { useRef, useState } from "react";
 import clsx from "clsx/lite";
 import { Controller, useForm, useWatch } from "react-hook-form";
 
-import { ColorPicker } from "@/shared/components/color-picker/color-picker.component";
+import { ColorPicker } from "@/shared/components/color-picker/color-picker.entry";
+import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import { InputPatterns } from "@/shared/const/input-pattern.const";
-import { Button } from "@/shared/ui/button";
-import { Icon } from "@/shared/ui/icon";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Icon } from "@/shared/ui/icon/icon.entry";
+import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 
 import { MOCK_QR_TABLES, QR_BG_COLOR_PRESETS, QR_CODE_COLOR_PRESETS, QR_MODULE_STYLE_OPTIONS } from "../settings.const";
 import type { IQrDesignForm, IQrTable } from "../settings.contract";
 import { QrCodePreview } from "./qr-code-preview.component";
-import { SectionCard } from "./section-card.component";
 
 const DEFAULT_VALUES: IQrDesignForm = {
   codeColor: "#131313",
@@ -210,17 +211,7 @@ export const SettingsQr = () => {
             </div>
           </SectionCard>
 
-          <div className="flex items-center gap-3">
-            <Button type="submit" colorVariant="dark" content="Сохранить изменения" disabled={!isDirty} />
-            <button
-              type="button"
-              onClick={() => reset()}
-              disabled={!isDirty}
-              className="text-s text-gray-500 font-gotham cursor-pointer disabled:cursor-not-allowed disabled:text-gray-300"
-            >
-              Отменить
-            </button>
-          </div>
+          <SaveCancelBar isDirty={isDirty} onCancel={() => reset()} />
         </div>
 
         <div className="flex flex-col gap-4 flex-1">

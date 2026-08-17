@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import clsx from "clsx/lite";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 
 import { ShopPreview } from "@/features/shop-preview/shop-preview.entry";
 
@@ -22,9 +22,15 @@ export const Preview = () => {
       >
         <aside className="xl:p-10 tablet:px-5 tablet:p-6 tablet:pt-6 md:pt-14 h-full">
           <ShopPreview wrapperClassName="h-full tablet:p-0 p-2" className="size-full" />
-          <div className="md:block hidden">
-            shop.next/luv2k@mail.ru
-            <button type="button">Copy</button>
+          <div className="md:flex hidden items-center gap-2">
+            <span>shop.next/luv2k@mail.ru</span>
+            <Button
+              colorVariant="white"
+              sizeVariant="xs"
+              left="copy"
+              content="Copy"
+              onClick={() => navigator.clipboard.writeText("shop.next/luv2k@mail.ru")}
+            />
           </div>
         </aside>
       </div>

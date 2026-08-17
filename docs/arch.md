@@ -4,9 +4,13 @@
 Также резервные имена для:
 {scope}.service.ts // сама бизнес логика и все запросы
 {scope}.store.ts //вся логика стора
-{scope}.component // UI сегмент
-{scope}.const.ts // Константы
-{scope}.contract.ts || .types.ts // Все типы
+{scope}.component.tsx // UI сегмент
+{scope}.const.ts // Константы (в т.ч. карты классов, варианты)
+{scope}.contract.ts // Все типы
+
+Это касается и модулей в shared/ui и shared/components — точка входа {scope}.entry.ts
+(не index.ts). By-type папки shared (api/, lib/, hooks/, utils/, const/, types/) под это правило
+не попадают — там обычные описательные имена файлов.
 
 Слой pages ИГНОРИРУЙ, оставляй как есть
 

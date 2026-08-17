@@ -3,12 +3,12 @@ import { useState } from "react";
 import { useRouter } from "@tanstack/react-router";
 import { Controller, useForm } from "react-hook-form";
 
-import { Button } from "@/shared/ui/button";
-import { Dropzone } from "@/shared/ui/dropzone";
-import { Icon } from "@/shared/ui/icon";
-import { Input } from "@/shared/ui/input";
-import { Label } from "@/shared/ui/label";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Dropzone } from "@/shared/ui/dropzone/dropzone.entry";
+import { Icon } from "@/shared/ui/icon/icon.entry";
+import { Input } from "@/shared/ui/input/input.entry";
+import { Label } from "@/shared/ui/label/label.entry";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 
 import type { IMenuCreateForm } from "@/entities/menu/menu.entry";

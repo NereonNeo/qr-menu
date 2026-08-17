@@ -1,4 +1,4 @@
-import { ButtonColorVariant, ButtonStyleVariantType } from "../types/button.types";
+import { ButtonColorVariant, ButtonStyleVariantType } from "../types/button.contract";
 
 export const buttonStyleVariantsClassNames: Record<ButtonColorVariant, Record<ButtonStyleVariantType, string>> = {
   beige: {
@@ -52,6 +52,6 @@ export const buttonStyleVariantsClassNames: Record<ButtonColorVariant, Record<Bu
     hover: "hover:bg-black",
     element: "bg-gray-900 border border-solid border-transparent text-white",
     focused:
-      "focus-visible:bg-black focus-visible:ring-3 focus-visible:ring-gray-200 active:enabled:bg-black active:enabled:ring-3 active:enabled:ring-gray-200",
+      "focus-visible:bg-black focus-visible:ring-3 focus-visible:ring-gray-300 active:enabled:bg-black active:enabled:ring-3 active:enabled:ring-gray-300",
   },
 };

@@ -3,7 +3,7 @@ import { Ref, useEffect, useImperativeHandle, useMemo, useRef } from "react";
 import { MaskitoOptions, maskitoTransform } from "@maskito/core";
 import { useMaskito } from "@maskito/react";
 
-import { IInputProps, Input } from "@/shared/ui/input";
+import { IInputProps, Input } from "@/shared/ui/input/input.entry";
 import { mergeRefs } from "@/shared/utils/refs-merge";
 
 import { InputMasks, MaskInputOptions } from "./mask-input.const";

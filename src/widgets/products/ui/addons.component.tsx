@@ -1,17 +1,18 @@
 import { useState } from "react";
 
+import clsx from "clsx/lite";
 import { useEzzyModal } from "ezzy-modal";
 import { Controller, useForm } from "react-hook-form";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 import { Drawer } from "@/shared/ui/drawer/drawer.entry";
-import { Dropzone } from "@/shared/ui/dropzone";
-import { Input } from "@/shared/ui/input";
-import { Label } from "@/shared/ui/label";
+import { Dropzone } from "@/shared/ui/dropzone/dropzone.entry";
+import { Input } from "@/shared/ui/input/input.entry";
+import { Label } from "@/shared/ui/label/label.entry";
 import type { ISelectType } from "@/shared/ui/select/select.entry";
 import { Select } from "@/shared/ui/select/select.entry";
-import { TextArea } from "@/shared/ui/textarea";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { TextArea } from "@/shared/ui/textarea/textarea.entry";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 
 import type { IAddon, IAddonCreateForm } from "@/entities/addon/addon.entry";
@@ -181,9 +182,10 @@ export const Addons = () => {
               key={tab.value}
               type="button"
               onClick={() => setFilter(tab.value)}
-              className={`px-3 py-1.5 rounded-md text-sm font-gotham font-medium transition-colors ${
-                filter === tab.value ? "bg-gray-100 text-gray-900" : "text-gray-500 hover:text-gray-700"
-              }`}
+              className={clsx(
+                "px-3 py-1.5 rounded-md text-sm font-gotham font-medium transition-colors",
+                filter === tab.value ? "bg-gray-100 text-gray-900" : "text-gray-500 hover:text-gray-700",
+              )}
             >
               {tab.label}
             </button>

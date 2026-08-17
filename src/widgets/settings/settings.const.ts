@@ -1,10 +1,11 @@
 import type { IconNameTypes } from "@/shared/const/icon.const";
+import type { ITab } from "@/shared/ui/tabs/tabs.entry";
 
-import type { IChecklistItem, IConnector, IFormatTag, IQrTable, ITabItem, QrModuleStyle } from "./settings.contract";
+import type { IChecklistItem, IConnector, IFormatTag, IQrTable, QrModuleStyle } from "./settings.contract";
 
 export type SettingsTab = "profile" | "notifications" | "security" | "menu-import" | "qr";
 
-export const SETTINGS_TABS: ITabItem[] = [
+export const SETTINGS_TABS: ITab<SettingsTab>[] = [
   { value: "profile", label: "Профиль", icon: "user" },
   { value: "notifications", label: "Уведомления", icon: "bell" },
   { value: "security", label: "Безопасность", icon: "shield" },

@@ -1,11 +1,11 @@
-import type { IconNameTypes } from "@/shared/const/icon.const";
 import type { ISelectType } from "@/shared/ui/select/select.entry";
+import type { ITab } from "@/shared/ui/tabs/tabs.entry";
 
 import type { CardStyle } from "./customization.contract";
 
 export type CustomizationTab = "appearance" | "branding";
 
-export const CUSTOMIZATION_TABS: { value: CustomizationTab; label: string; icon: IconNameTypes }[] = [
+export const CUSTOMIZATION_TABS: ITab<CustomizationTab>[] = [
   { value: "appearance", label: "Внешний вид", icon: "palette" },
   { value: "branding", label: "Брендинг", icon: "image" },
 ];

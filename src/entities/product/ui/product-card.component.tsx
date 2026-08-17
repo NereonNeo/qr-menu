@@ -1,7 +1,7 @@
 import clsx from "clsx/lite";
-import { Eye, MoreHorizontal, Pencil, Utensils } from "lucide-react";
 
 import { Badge } from "@/shared/ui/badge/badge.entry";
+import { Icon } from "@/shared/ui/icon/icon.entry";
 import { Indicator } from "@/shared/ui/indicator/indicator.entry";
 
 import type { IPositionCard } from "../product.contract";
@@ -32,7 +32,7 @@ export const ProductCard = ({ title, price, img, visible, menuName, tags, views 
 
         {/* Menu category row */}
         <div className="flex items-center gap-1.5 text-xs text-gray-400 font-gotham">
-          <Utensils size={12} />
+          <Icon name="utensils" className="size-3" />
           <span className="truncate">{menuName}</span>
         </div>
 
@@ -49,17 +49,17 @@ export const ProductCard = ({ title, price, img, visible, menuName, tags, views 
         <div className="flex items-center justify-between">
           {/* Views */}
           <div className="flex items-center gap-1 text-xs text-gray-400 font-gotham">
-            <Eye size={14} />
+            <Icon name="eye" className="size-3.5" />
             <span>{views ?? 0}</span>
           </div>
 
           {/* Action buttons */}
           <div className="flex items-center gap-1">
             <button type="button" className={clsx("p-1.5 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors text-gray-500")}>
-              <Pencil size={14} />
+              <Icon name="pencil" className="size-3.5" />
             </button>
             <button type="button" className={clsx("p-1.5 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors text-gray-500")}>
-              <MoreHorizontal size={14} />
+              <Icon name="more-horizontal" className="size-3.5" />
             </button>
           </div>
         </div>

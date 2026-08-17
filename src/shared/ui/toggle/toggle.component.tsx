@@ -2,7 +2,7 @@ import { forwardRef, useId } from "react";
 
 import clsx from "clsx/lite";
 
-import { AverageSizeVariantType } from "@/shared/types/ui.types";
+import { AverageSizeVariantType } from "@/shared/types/ui.contract";
 
 import { toggleSizeVariantClassNames } from "./toggle.const";
 

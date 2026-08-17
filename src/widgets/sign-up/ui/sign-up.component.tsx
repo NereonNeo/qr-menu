@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { SessionStorageNames } from "@/shared/const/web-storage.const";
 import { useAuth } from "@/shared/hooks/use-auth";
 import { useSessionStorage } from "@/shared/hooks/use-session-storage";
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/button/button.entry";
 
 import { ISignUp, ISignUpSteps, SignUpNames } from "@/entities/auth/auth.entry";
 

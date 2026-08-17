@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
 
-import { Button } from "@/shared/ui/button";
-import { Input } from "@/shared/ui/input";
-import { TextArea } from "@/shared/ui/textarea";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Input } from "@/shared/ui/input/input.entry";
+import { TextArea } from "@/shared/ui/textarea/textarea.entry";
 import { formErrorsHandler } from "@/shared/utils/form-error-adapter";
 
 import { IProduct, ProductImage } from "@/entities/product/product.entry";

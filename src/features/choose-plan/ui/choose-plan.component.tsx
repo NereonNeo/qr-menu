@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 import { IPricePlan, PricePlanArr, PricePlanItem, PricePlanRadio } from "@/entities/plan/plan.entry";
 
-import { ChoosePlanForm } from "../common/choose-plan.types";
+import { ChoosePlanForm } from "../common/choose-plan.contract";
 
 export const ChoosePlan = () => {
   const { register, getValues } = useForm<ChoosePlanForm>();

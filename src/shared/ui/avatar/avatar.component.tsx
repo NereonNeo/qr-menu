@@ -4,7 +4,7 @@ import clsx from "clsx/lite";
 
 import type { IconNameTypes } from "@/shared/const/icon.const";
 
-import { Icon } from "../icon";
+import { Icon } from "../icon/icon.entry";
 import type { IndicatorColorTypes } from "../indicator/indicator.entry";
 import { Indicator } from "../indicator/indicator.entry";
 import {

@@ -1,14 +1,14 @@
 import clsx from "clsx/lite";
 import { Controller, useForm } from "react-hook-form";
 
-import { ColorPicker } from "@/shared/components/color-picker/color-picker.component";
+import { ColorPicker } from "@/shared/components/color-picker/color-picker.entry";
+import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import { InputPatterns } from "@/shared/const/input-pattern.const";
-import { Button } from "@/shared/ui/button";
-import { Toggle } from "@/shared/ui/toggle/toggle.component";
+import { SaveCancelBar } from "@/shared/ui/save-cancel-bar/save-cancel-bar.entry";
+import { Toggle } from "@/shared/ui/toggle/toggle.entry";
 
 import { ACCENT_COLOR_PRESETS, CARD_STYLE_OPTIONS, FONT_STYLE_OPTIONS } from "../customization.const";
 import type { ICustomizationForm } from "../customization.contract";
-import { SectionCard } from "./section-card.component";
 
 const DEFAULT_VALUES: ICustomizationForm = {
   accentColor: "#FF8400",
@@ -35,7 +35,7 @@ export const CustomizationAppearance = () => {
   return (
     <form onSubmit={handleSave} className="flex gap-5 items-start">
       <div className="flex flex-col gap-4 flex-1">
-        <SectionCard title="Акцентный цвет" description="Основной цвет кнопок и активных элементов меню">
+        <SectionCard divider title="Акцентный цвет" description="Основной цвет кнопок и активных элементов меню">
           <Controller
             name="accentColor"
             control={control}
@@ -68,7 +68,7 @@ export const CustomizationAppearance = () => {
           />
         </SectionCard>
 
-        <SectionCard title="Стиль карточек" description="Скругление углов карточек позиций меню">
+        <SectionCard divider title="Стиль карточек" description="Скругление углов карточек позиций меню">
           <Controller
             name="cardStyle"
             control={control}
@@ -100,7 +100,7 @@ export const CustomizationAppearance = () => {
       </div>
 
       <div className="flex flex-col gap-4 flex-1">
-        <SectionCard title="Типографика" description="Шрифт для названий блюд и описаний">
+        <SectionCard divider title="Типографика" description="Шрифт для названий блюд и описаний">
           <Controller
             name="fontFamily"
             control={control}
@@ -146,17 +146,7 @@ export const CustomizationAppearance = () => {
           <Controller name="darkMode" control={control} render={({ field: { value, ...field } }) => <Toggle {...field} checked={value} />} />
         </div>
 
-        <div className="flex items-center gap-3">
-          <Button type="submit" colorVariant="dark" content="Сохранить изменения" disabled={!isDirty} />
-          <button
-            type="button"
-            onClick={() => reset()}
-            disabled={!isDirty}
-            className="text-s text-gray-500 font-gotham cursor-pointer disabled:cursor-not-allowed disabled:text-gray-300"
-          >
-            Отменить
-          </button>
-        </div>
+        <SaveCancelBar isDirty={isDirty} onCancel={() => reset()} />
       </div>
     </form>
   );

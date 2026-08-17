@@ -4,8 +4,8 @@ import clsx from "clsx/lite";
 import ReactSelect, { type ClassNamesConfig, type GroupBase, type Props, type SelectComponentsConfig } from "react-select";
 
 import { IconNameTypes } from "@/shared/const/icon.const";
-import { Label } from "@/shared/ui/label";
-import { Message } from "@/shared/ui/message";
+import { Label } from "@/shared/ui/label/label.entry";
+import { Message } from "@/shared/ui/message/message.entry";
 
 import { selectClassNames, selectComponents } from "./select.const";
 import { ISelectType } from "./select.contract";

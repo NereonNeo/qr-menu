@@ -2,15 +2,15 @@ import { useRef, useState } from "react";
 
 import clsx from "clsx/lite";
 
+import { SectionCard } from "@/shared/components/section-card/section-card.entry";
 import type { IconNameTypes } from "@/shared/const/icon.const";
 import { Badge } from "@/shared/ui/badge/badge.entry";
-import { Button } from "@/shared/ui/button";
-import { Icon } from "@/shared/ui/icon";
-import { Input } from "@/shared/ui/input";
+import { Button } from "@/shared/ui/button/button.entry";
+import { Icon } from "@/shared/ui/icon/icon.entry";
+import { Input } from "@/shared/ui/input/input.entry";
 
 import { IMPORT_FORMAT_TAGS, MENU_CONNECTORS, MENU_IMPORT_CHECKLIST } from "../settings.const";
 import type { IChecklistItem } from "../settings.contract";
-import { SectionCard } from "./section-card.component";
 
 const CHECKLIST_ICON: Record<IChecklistItem["state"], { icon: IconNameTypes; className: string }> = {
   included: { icon: "circle-check", className: "text-green-600" },
